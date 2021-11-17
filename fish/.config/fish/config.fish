@@ -3,6 +3,11 @@
 
 
 
+# Environment Variables
+set -x -g EDITOR nvim
+
+
+
 # Shell aliases
 alias configurefish="nvim ~/.config/fish/config.fish"
 alias configurenvim="nvim ~/.config/nvim/init.lua"
