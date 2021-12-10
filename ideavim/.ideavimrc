@@ -1,0 +1,5 @@
+source ~/.vimrc
+set clipboard+=ideaput
+
+nnoremap <c-s> :action source ~/.ideavimrc<CR>
+nnoremap <c-f> :action ToggleFullScreen<CR>

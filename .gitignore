@@ -1,1 +1,4 @@
 .stow-local-ignore
+**/undo/
+**/shada/
+**/swap/

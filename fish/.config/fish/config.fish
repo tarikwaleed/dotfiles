@@ -1,19 +1,24 @@
+# On Startup
+tmuxinator start goodmorning
 # Functions
 
 
 
 
 # Environment Variables
-set -x -g EDITOR nvim
+set -x -g EDITOR vim
 
 
 
 # Shell aliases
-alias configurefish="nvim ~/.config/fish/config.fish"
-alias configurenvim="nvim ~/.config/nvim/init.lua"
-alias configuretmux="nvim ~/.tmux.conf"
+alias fishconfiguration="vim ~/.config/fish/config.fish"
+alias nvimconfiguration="vim ~/.config/nvim/init.vim"
+alias tmuxconfiguration="vim ~/.tmux.conf"
 alias sourcefish="source ~/.config/fish/config.fish"
-alias vim="nvim"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias install="sudo apt-get install"
+alias phpconfiguration="sudo vim /etc/php/7.4/cli/php.ini"
 
 
 
@@ -23,17 +28,16 @@ alias tmuxlist="tmux list-sessions"
 
 # Tmuxinator aliases
 alias start="tmuxinator start"
+alias new="tmuxinator new"
 alias stop="tmuxinator stop"
 alias edit="tmuxinator edit"
 alias list="tmuxinator list"
-function restart 
-	tmuxinator stop $argv && tmuxinator start $argv
-end
-
-
-
 
 # Git aliases
+alias st='git status'
+alias add='git add'
+alias push='cat ~/access-token && git push origin master'
+alias cm='git commit -m'
 
 
 
@@ -43,3 +47,10 @@ set -gx PATH /media/takizee/dev/tools $PATH
 # Notes:
 # Example To set environment variables from the shell:
 #  set -x -g EDITOR nvim
+
+# Initialize Conda
+#eval ~/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+
+
+
+
