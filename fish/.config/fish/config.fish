@@ -36,6 +36,8 @@ alias log='git log --oneline'
 
 # Add to your path
 set -gx PATH /media/takizee/dev/tools $PATH
+# set if your term supports `pipenv shell --fancy`
+set pipenv_fish_fancy yes
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
