@@ -8,13 +8,13 @@ set -x -g EDITOR vim
 
 # Shell aliases
 alias fishconfiguration="vim ~/.config/fish/config.fish"
-alias nvimconfiguration="vim ~/.config/nvim/init.vim"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias sourcefish="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias install="sudo apt-get install -y"
-alias access-token="clear && cat ~/access-token"
+alias ubuntu-access-token="clear && cat ~/ubuntu-access-token"
+alias studio="studio.sh"
 
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
@@ -34,8 +34,20 @@ alias push='cat ~/access-token && git push -u origin'
 alias cm='git commit -m'
 alias log='git log --oneline'
 
+# Django Aliases
+alias mpym='python3 manage.py migrate'
+alias mpymm='python3 manage.py makemigrations'
+alias mpymmm='python3 manage.py migrate && python3 manage.py makemigrations'
+alias mpy='python3 manage.py'
+alias mpyrs='python3 manage.py runserver'
+
+
 # Add to your path
 set -gx PATH /media/takizee/dev/tools $PATH
+set -gx PATH ~/Downloads/android-studio/bin $PATH
+set -gx PATH ~/Downloads/clion/bin $PATH
+set -gx PATH ~/.local/bin $PATH
+set -gx PATH ~/.pub-cache/bin $PATH
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'

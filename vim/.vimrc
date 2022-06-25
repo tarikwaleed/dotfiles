@@ -38,7 +38,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'gmarik/Vundle.vim'
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold'

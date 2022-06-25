@@ -2,8 +2,8 @@
 nnoremap <space> za
 inoremap jk <Esc>
 inoremap JK <Esc>
-nnoremap fl :tabnext<CR>
-nnoremap fh :tabprev<CR>
+nnoremap fk :tabnext<CR>
+nnoremap fj :tabprev<CR>
 nnoremap fh :tabfirst<CR>
 nnoremap fl :tablast<CR>
 nnoremap <silent> <C-w> :BufferClose<CR>
@@ -30,7 +30,15 @@ syntax on
 
 "actions
 nmap <leader>t <action>(ViewToolBar)
+nmap <leader>l <action>(FindInPath)
+nmap <leader>o <action>(GotoFile)
 nmap <leader>s <action>(ViewStatusBar)
+nmap <leader>f <action>(ToggleFullScreen)
+nmap <leader>e <action>(ActivateAndroidEmulatorToolWindow)
+nmap <leader>\ <action>(SplitVertically)
+nmap <leader>u <action>(Unsplit)
+nmap fl <action>(NextSplitter)
+nmap fh <action>(PrevSplitter)
 
 " configurations for vundle - vundle is a package manager for vim plugins
 " think of it as pip for python packages
