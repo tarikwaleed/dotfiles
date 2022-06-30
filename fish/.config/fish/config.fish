@@ -13,7 +13,7 @@ alias sourcefish="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="clear && cat ~/ubuntu-access-token|xclip -selection clipboard"
+alias ubuntu-access-token="cat ~/ubuntu-access-token|xclip -selection clipboard"
 alias studio="studio.sh"
 
 # Tmux aliases
@@ -30,7 +30,7 @@ alias list="tmuxinator list"
 # Git aliases
 alias st='git status'
 alias add='git add'
-alias push='cat ~/ubuntu-access-token && git push -u origin'
+alias push='ubuntu-access-token && git push -u origin'
 alias cm='git commit -m'
 alias log='git log --oneline'
 
