@@ -9,6 +9,7 @@ set -x -g EDITOR vim
 # Shell aliases
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
+alias ideavimrc="vim ~/.ideavimrc"
 alias sourcefish="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"

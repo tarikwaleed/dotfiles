@@ -30,6 +30,7 @@ syntax on
 
 "actions
 nmap <leader>t <action>(ViewToolBar)
+nmap <leader>r <action>(Run)
 nmap <leader>l <action>(FindInPath)
 nmap <leader>o <action>(GotoFile)
 nmap <leader>s <action>(ViewStatusBar)
@@ -37,7 +38,10 @@ nmap <leader>f <action>(ToggleFullScreen)
 nmap <leader>e <action>(ActivateAndroidEmulatorToolWindow)
 nmap <leader>\ <action>(SplitVertically)
 nmap <leader>- <action>(SplitHorizontally)
+
 nmap <leader>u <action>(Unsplit)
+nmap <leader>j <action>(MethodDown)
+nmap <leader>k <action>(MethodUp)
 nmap fl <action>(NextSplitter)
 nmap fh <action>(PrevSplitter)
 
