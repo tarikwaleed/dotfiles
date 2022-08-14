@@ -30,6 +30,7 @@ syntax on
 
 "actions
 nmap <leader>t <action>(ViewToolBar)
+nmap <leader>i <action>(OverrideMethods)
 nmap <leader>r <action>(Run)
 nmap <leader>l <action>(FindInPath)
 nmap <leader>o <action>(GotoFile)

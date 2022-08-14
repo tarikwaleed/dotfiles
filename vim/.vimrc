@@ -33,17 +33,14 @@ syntax on
 set nocompatible              " required
 filetype off                  " required
 
-" Plugins
+" Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'preservim/nerdtree'
-Plugin 'sheerun/vim-polyglot'
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" vim-plug
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()

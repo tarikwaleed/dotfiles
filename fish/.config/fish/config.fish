@@ -29,6 +29,7 @@ alias edit="tmuxinator edit"
 alias list="tmuxinator list"
 
 # Git aliases
+alias cln='git clone'
 alias st='git status'
 alias add='git add'
 alias push='ubuntu-access-token && git push -u origin'
@@ -49,6 +50,7 @@ set -gx PATH ~/Downloads/android-studio/bin $PATH
 set -gx PATH ~/Downloads/clion/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
+set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
