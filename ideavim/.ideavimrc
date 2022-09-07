@@ -1,4 +1,5 @@
 "Key Mappings
+inoremap <leader>; <C-o>A;<Esc>
 nnoremap <space> za
 inoremap jk <Esc>
 inoremap JK <Esc>
@@ -28,8 +29,12 @@ let python_highlight_all=1
 let g:airline#extensions#tabline#enabled = 1
 syntax on
 
-"actions
+"actions"
+ActivateTODOToolWindow
+
 nmap <leader>t <action>(ViewToolBar)
+nmap <leader><CR> <action>(ActivateTODOToolWindow)
+nmap <leader>g <action>(Generate)
 nmap <leader>i <action>(OverrideMethods)
 nmap <leader>r <action>(Run)
 nmap <leader>l <action>(FindInPath)

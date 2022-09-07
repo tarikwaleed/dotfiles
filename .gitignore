@@ -2,3 +2,5 @@
 **/undo/
 **/shada/
 **/swap/
+*.swp
+*.swo
