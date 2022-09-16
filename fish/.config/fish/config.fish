@@ -42,6 +42,9 @@ alias mpymm='python3 manage.py makemigrations'
 alias mpymmm='python3 manage.py migrate && python3 manage.py makemigrations'
 alias mpy='python3 manage.py'
 alias mpyrs='python3 manage.py runserver'
+# Flutter and Dart Aliases
+alias pget='flutter pub get'
+alias padd='flutter pub add'
 
 
 # Add to your path

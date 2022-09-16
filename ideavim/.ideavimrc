@@ -1,5 +1,7 @@
 "Key Mappings
 inoremap <leader>; <C-o>A;<Esc>
+inoremap <leader>p <C-o>A(){<CR>
+inoremap <leader>[ <C-o>A{<CR>
 nnoremap <space> za
 inoremap jk <Esc>
 inoremap JK <Esc>
@@ -7,7 +9,7 @@ nnoremap fk :tabnext<CR>
 nnoremap fj :tabprev<CR>
 nnoremap fh :tabfirst<CR>
 nnoremap fl :tablast<CR>
-nnoremap <silent> <C-w> :BufferClose<CR>
+nnoremap <leader>~ :source ~/.ideavimrc<CR>
 nmap <Tab> :NERDTreeToggle<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -35,21 +37,22 @@ ActivateTODOToolWindow
 nmap <leader>t <action>(ViewToolBar)
 nmap <leader><CR> <action>(ActivateTODOToolWindow)
 nmap <leader>g <action>(Generate)
+nmap <leader>v <action>(OverrideMethods)
 nmap <leader>i <action>(OverrideMethods)
 nmap <leader>r <action>(Run)
 nmap <leader>l <action>(FindInPath)
 nmap <leader>o <action>(GotoFile)
 nmap <leader>s <action>(ViewStatusBar)
 nmap <leader>f <action>(ToggleFullScreen)
-nmap <leader>e <action>(ActivateAndroidEmulatorToolWindow)
 nmap <leader>\ <action>(SplitVertically)
 nmap <leader>- <action>(SplitHorizontally)
-
+nnoremap <leader>q :action CloseActiveTab<CR>
 nmap <leader>u <action>(Unsplit)
 nmap <leader>j <action>(MethodDown)
 nmap <leader>k <action>(MethodUp)
 nmap fl <action>(NextSplitter)
 nmap fh <action>(PrevSplitter)
+nnoremap <leader>w :source ~/.ideavimrc<CR>
 
 " configurations for vundle - vundle is a package manager for vim plugins
 " think of it as pip for python packages
