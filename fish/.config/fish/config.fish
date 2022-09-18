@@ -16,7 +16,7 @@ alias upgrade="sudo apt-get upgrade -y"
 alias install="sudo apt-get install -y"
 alias ubuntu-access-token="cat ~/ubuntu-access-token|xclip -selection clipboard"
 alias studio="studio.sh"
-
+alias back="cd .."
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"
