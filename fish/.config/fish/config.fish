@@ -17,6 +17,7 @@ alias install="sudo apt-get install -y"
 alias ubuntu-access-token="cat ~/ubuntu-access-token|xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
+alias rc="vim ~/dotfiles/awesome/.config/awesome/rc.lua"
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"
