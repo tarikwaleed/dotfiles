@@ -5,6 +5,7 @@ pcall(require, "luarocks.loader")
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
+local lain=require("lain")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
@@ -17,6 +18,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+local xrandr=require("xrandr")
 
 -- Load Debian menu entries
 local debian = require("debian.menu")
@@ -247,6 +249,8 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+    awful.key({ modkey, "Control" }, "=", function () lain.util.useless_gaps_resize(1) end),
+    awful.key({ modkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end),
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
@@ -462,6 +466,8 @@ root.keys(globalkeys)
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
+     { rule = { class = "Firefox" },
+       properties = { screen = 1, tag = "2" } },
     -- All clients will match this rule.
     { rule = { },
       properties = { border_width = beautiful.border_width,
@@ -508,12 +514,10 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
@@ -585,3 +589,6 @@ awful.screen.set_auto_dpi_enabled(true)
 -- To Change keyboard delay rate
 os.execute("xset r rate 250 50")
 os.execute("sct 3500")
+-- Autostart apps
+awful.spawn.with_shell("firefox")
+awful.spawn(terminal)
