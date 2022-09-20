@@ -1,6 +1,5 @@
 # On Startup
 tmuxinator start goodmorning
-sct 3500
 
 
 # Environment Variables
