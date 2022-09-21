@@ -466,8 +466,6 @@ root.keys(globalkeys)
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
-     { rule = { class = "Firefox" },
-       properties = { screen = 1, tag = "2" } },
     -- All clients will match this rule.
     { rule = { },
       properties = { border_width = beautiful.border_width,

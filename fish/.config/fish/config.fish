@@ -1,4 +1,4 @@
-# On Startup
+: On Startup
 tmuxinator start goodmorning
 
 
