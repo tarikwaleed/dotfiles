@@ -24,6 +24,7 @@ alias vdown="amixer -D pulse sset Master 10%- -q"
 alias vmid="amixer -D pulse sset Master 50% -q"
 alias vhigh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
+# alias battery='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"'
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"

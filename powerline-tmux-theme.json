@@ -1,1 +1,17 @@
-/usr/share/powerline/config_files/themes/tmux/default.json
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%I:%M",
+					"istime": true
+				}
+			}
+		]
+	}
+}
