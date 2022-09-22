@@ -585,8 +585,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- To fix the screen resolution
 awful.screen.set_auto_dpi_enabled(true)
 -- To Change keyboard delay rate
-os.execute("xset r rate 250 50")
+os.execute("xset r rate 200 50")
 os.execute("sct 3500")
 -- Autostart apps
 awful.spawn.with_shell("firefox")
 awful.spawn(terminal)
+awful.spawn.with_shell("scripts.touchpad.sh")

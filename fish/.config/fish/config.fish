@@ -1,5 +1,4 @@
-: On Startup
-tmuxinator start goodmorning
+# On Startup
 
 
 # Environment Variables
@@ -24,6 +23,7 @@ alias vup="amixer -D pulse sset Master 10%+ -q"
 alias vdown="amixer -D pulse sset Master 10%- -q"
 alias vmid="amixer -D pulse sset Master 50% -q"
 alias vhigh="amixer -D pulse sset Master 100% -q"
+alias vim="nvim"
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"
