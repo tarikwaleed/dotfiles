@@ -2,7 +2,12 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.time.date"
+				"function": "powerline.segments.common.time.date",
+				"name":"date",
+				"arge":{
+					"format":"%m-%d",
+					:"istime":false
+				}
 			},
 			{
 				"function": "powerline.segments.common.time.date",
