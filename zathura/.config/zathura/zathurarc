@@ -1,5 +1,7 @@
 set selection-clipboard clipboard
 set window-height 2000
 set window-width 2000
-set adjust-open "best-fit"
+unmap f
 map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreenset adjust-open "best-fit"
+#map f toggle_fullscreen

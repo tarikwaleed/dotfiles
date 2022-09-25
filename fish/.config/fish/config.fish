@@ -50,6 +50,7 @@ alias mpymm='python3 manage.py makemigrations'
 alias mpymmm='python3 manage.py migrate && python3 manage.py makemigrations'
 alias mpy='python3 manage.py'
 alias mpyrs='python3 manage.py runserver'
+
 # Flutter and Dart Aliases
 alias pget='flutter pub get'
 alias padd='flutter pub add'
@@ -58,6 +59,7 @@ alias padd='flutter pub add'
 # Add to your path
 set -gx PATH /media/takizee/dev/tools $PATH
 set -gx PATH ~/Downloads/android-studio/bin $PATH
+set -gx PATH ~/Downloads/code/bin $PATH
 set -gx PATH ~/Downloads/clion/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
@@ -66,3 +68,8 @@ set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
 #set-window-option -g mode-keys vi
+
+# Configuring ruby
+set -gx PATH $HOME/.rbenv/bin $PATH
+set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
+rbenv init - | source
