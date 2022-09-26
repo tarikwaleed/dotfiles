@@ -15,7 +15,7 @@ alias sourcefish="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat ~/ubuntu-access-token|xclip -selection clipboard"
+alias ubuntu-access-token="cat ~/ubuntu-access-token.txt|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
@@ -43,7 +43,7 @@ alias list="tmuxinator list"
 alias cln='git clone'
 alias st='git status'
 alias add='git add'
-alias push='ubuntu-access-token && git push -u origin'
+alias push='ubuntu-access-token&& git push -u origin'
 alias cm='git commit -m'
 alias log='git log --oneline'
 
