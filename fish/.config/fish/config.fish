@@ -3,8 +3,11 @@
 
 # Environment Variables
 set -x -g EDITOR vim
+set -x -g TERMINAL gnome-terminal
 
 # Shell aliases
+alias r="zathura"
+alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
