@@ -7,7 +7,7 @@ set -x -g TERMINAL gnome-terminal
 
 # Shell aliases
 alias r="zathura"
-alias la="colorls -lA --git-status --light"
+alias la="colorls -lA --git-status --dark"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
@@ -23,10 +23,10 @@ alias awrc="vim ~/dotfiles/awesome/.config/awesome/rc.lua"
 alias awtheme="vim ~/dotfiles/awesome/.config/awesome/theme.lua"
 alias awxrandr="vim ~/dotfiles/awesome/.config/awesome/xrandr.lua"
 alias logout="dm-tool switch-to-greeter"
-alias vup="amixer -D pulse sset Master 10%+ -q"
-alias vdown="amixer -D pulse sset Master 10%- -q"
-alias vmid="amixer -D pulse sset Master 50% -q"
-alias vhigh="amixer -D pulse sset Master 100% -q"
+alias vu="amixer -D pulse sset Master 10%+ -q"
+alias vd="amixer -D pulse sset Master 10%- -q"
+alias vm="amixer -D pulse sset Master 50% -q"
+alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"

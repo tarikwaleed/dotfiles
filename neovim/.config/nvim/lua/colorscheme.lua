@@ -1,3 +1,25 @@
-vim.cmd[[
-    colorscheme delek
-]]
+vim.cmd[[silent! colorscheme tokyonight]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
