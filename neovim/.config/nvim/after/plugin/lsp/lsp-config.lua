@@ -1,8 +1,14 @@
-local nvim_lsp = require'lspconfig'
+local lsp_installer = require("nvim-lsp-installer")
+local lspkind = require("lspkind")
+
+-- Add icons to the popup
+lspkind.init({
+    mode = "symbol",
+})
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
@@ -37,51 +43,64 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
---require('lspconfig')['pyright'].setup{
-    --on_attach = on_attach,
-    --flags = lsp_flags,
---}
---require('lspconfig')['tsserver'].setup{
-    --on_attach = on_attach,
-    --flags = lsp_flags,
---}
---require('lspconfig')['rust_analyzer'].setup{
-    --on_attach = on_attach,
-    --flags = lsp_flags,
-    -- Server-specific settings...
-    --settings = {
-      --["rust-analyzer"] = {}
-    --}
---}
+-- Pass configurations settings to the different LSP's
+local settings = {
+    intelephense = {
+        -- Add wordpress to the list of stubs
+        stubs = {
+            "apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", "curl", "date",
+            "dba", "dom", "enchant", "exif", "FFI", "fileinfo", "filter", "fpm", "ftp", "gd", "gettext",
+            "gmp", "hash", "iconv", "imap", "intl", "json", "ldap", "libxml", "mbstring", "meta", "mysqli",
+            "oci8", "odbc", "openssl", "pcntl", "pcre", "PDO", "pdo_ibm", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql",
+            "Phar", "posix", "pspell", "readline", "Reflection", "session", "shmop", "SimpleXML", "snmp", "soap",
+            "sockets", "sodium", "SPL", "sqlite3", "standard", "superglobals", "sysvmsg", "sysvsem", "sysvshm", "tidy",
+            "tokenizer", "xml", "xmlreader", "xmlrpc", "xmlwriter", "xsl", "Zend OPcache", "zip", "zlib",
+            "wordpress", "phpunit",
+        },
+        diagnostics = {
+            enable = true,
+        },
+    },
+    Lua = {
+        diagnostics = {
+            globals = { "vim" }, -- Gets rid of "Global variable not found" error message
+        },
+    },
+    json = {
+        schemas = {
+         {
+          description = "NPM configuration file",
+          fileMatch = {
+           "package.json",
+          },
+          url = "https://json.schemastore.org/package.json",
+         },
+        },
+    },
+}
+local handlers = {
+    ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
+    ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
+}
 
-require('lspconfig')['intelephense'].setup({
-  on_attach=on_attach,
-  flags=lsp_flags,
-    settings = {
-        intelephense = {
-            stubs = { 
-                "bcmath",
-                "bz2",
-                "calendar",
-                "Core",
-                "curl",
-                "zip",
-                "zlib",
-                --"wordpress",
-                --"woocommerce",
-                --"acf-pro",
-                --"wordpress-globals",
-                --"wp-cli",
-                --"genesis",
-                --"polylang"
-            },
-            environment = {
-              includePaths = '/home/takizee/.composer/vendor/php-stubs/' -- this line forces the composer path for the stubs in case inteliphense don't find it...
-            },
-            files = {
-                maxSize = 5000000;
-            };
-        };
-    }
-});
+-- Add capabilities
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+-- Equivalent (but not equal) to lspconfig.<langserver>.setup{}
+lsp_installer.on_server_ready(function(server)
+  server:setup({
+    on_attach = on_attach,
+    flags = flags,
+    settings = settings,
+    handlers = handlers,
+    capabilities = capabilities,
+  })
+end)
+
+-- De clutter the editor by only showing diagnostic messages when the cursor is over the error
+vim.diagnostic.config({
+    virtual_text = false, -- Do not show the text in front of the error
+    float = {
+        border = "rounded",
+    },
+})

@@ -74,8 +74,29 @@ use({ -- Install and configure tree-sitter languages
   --require("config.treesitter") end,
 })
 
-use({ -- Configure LSP client for Intelephense
-  'neovim/nvim-lspconfig',
+use({ -- Configure LSP client and Use an LSP server installer.
+ "neovim/nvim-lspconfig",
+ requires = {
+  "williamboman/nvim-lsp-installer", -- Installs servers within neovim
+  "onsails/lspkind-nvim",            -- adds vscode-like pictograms to neovim built-in lsp
+ },
+})
+
+use({ -- CMP completion engine
+ "hrsh7th/nvim-cmp",
+ requires = {
+  "onsails/lspkind-nvim",     -- Icons on the popups
+  "hrsh7th/cmp-nvim-lsp",     -- LSP source for nvim-cmp
+  "saadparwaiz1/cmp_luasnip", -- Snippets source
+  "L3MON4D3/LuaSnip",         -- Snippet engine
+ },
+})
+
+use({ -- Null-LS Use external formatters and linters
+    "jose-elias-alvarez/null-ls.nvim",
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
 })
 
 -- Automatically set up your configuration after cloning packer.nvim

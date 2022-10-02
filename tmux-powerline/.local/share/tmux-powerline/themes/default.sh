@@ -52,7 +52,7 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"tmux_session_info 235 136" \
+		"tmux_session_info 31 255" \
 		#"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
@@ -69,20 +69,20 @@ fi
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		#"earthquake 3 0" \
-		"pwd 235 136" \
+		#"pwd 235 136" \
 		#"macos_notification_count 29 255" \
 		#"mailcount 9 255" \
 		#"now_playing 234 37" \
 		#"cpu 240 136" \
 		#"load 237 167" \
 		#"tmux_mem_cpu_load 234 136" \
-		"battery 137 255" \
+		"battery 35 255" \
 		#"weather 37 255" \
 		#"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"xkb_layout 125 117" \
-		"date_day 235 136" \
-		"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"time 137 255  ${TMUX_POWERLINE_SEPARATOR_LEFT_BOLD}" \
+		"date_day 235 255" \
+		"date 235 255 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"time 31 255  ${TMUX_POWERLINE_SEPARATOR_LEFT_BOLD}" \
 		#"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi
