@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --path PATH:/home/takizee/\x2econfig/composer/vendor/bin/\x1e/home/takizee/\x2erbenv/shims\x1e/home/takizee/\x2erbenv/plugins/ruby\x2dbuild/bin\x1e/home/takizee/\x2erbenv/bin\x1e/home/takizee/\x2ecargo/bin\x1e/home/takizee/Downloads/nvim\x2dlinux64/bin\x1e/home/takizee/\x2epub\x2dcache/bin\x1e/home/takizee/\x2elocal/bin\x1e/home/takizee/Downloads\x1e/home/takizee/Downloads/android\x2dstudio/bin\x1e/media/takizee/dev/tools\x1e/home/takizee/\x2epoetry/bin\x1e/home/takizee/\x2erbenv/versions/3\x2e1\x2e2/bin\x1e/home/takizee/\x2erbenv/libexec\x1e/home/takizee/\x2erbenv/plugins/ruby\x2dbuild/bin\x1e/home/takizee/\x2erbenv/shims\x1e/home/takizee/\x2erbenv/plugins/ruby\x2dbuild/bin\x1e/home/takizee/\x2erbenv/bin\x1e/home/takizee/\x2ecargo/bin\x1e/home/takizee/Downloads/nvim\x2dlinux64/bin\x1e/home/takizee/\x2epub\x2dcache/bin\x1e/home/takizee/\x2elocal/bin\x1e/home/takizee/Downloads\x1e/home/takizee/Downloads/android\x2dstudio/bin\x1e/media/takizee/dev/tools\x1e/home/takizee/\x2elocal/share/nvm/v18\x2e7\x2e0/bin\x1e/home/takizee/\x2ecargo/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/sbin\x1e/bin\x1e/usr/games\x1e/usr/local/games\x1e/snap/bin
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/takizee/\x2elocal/share/z/data

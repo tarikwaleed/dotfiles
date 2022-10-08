@@ -62,11 +62,12 @@ alias padd='flutter pub add'
 # Add to your path
 set -gx PATH /media/takizee/dev/tools $PATH
 set -gx PATH ~/Downloads/android-studio/bin $PATH
-set -gx PATH ~/Downloads/code/bin $PATH
-set -gx PATH ~/Downloads/clion/bin $PATH
+set -gx PATH ~/Downloads $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
+set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/.config/composer/vendor/bin $PATH
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'

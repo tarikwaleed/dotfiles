@@ -5,7 +5,7 @@ local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.n
 
 -- Install packer from github if is not in our system
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  -- the function vim.vn.system will be called and its return value will be saved 
+  -- the function vim.vn.system will be called and its return value will be saved
   -- in PAKCER_BOOTSTRAP
   PACKER_BOOTSTRAP = vim.fn.system({
     "git",
@@ -52,51 +52,70 @@ local use = packer.use
 use({ -- Have packer manage itself
   "wbthomason/packer.nvim",
 })
-use({ -- Port of VSCode's Tokio Night theme
-  "folke/tokyonight.nvim",
-  config = function()
-    vim.g.tokyonight_style = "day" -- Possible values: storm, night and day
-  end,
-})
-use( {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+use({ -- Best color scheme
+  "bluz71/vim-moonfly-colors",
 })
 use({
-  'kyazdani42/nvim-tree.lua',
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  "nvim-lualine/lualine.nvim",
+  requires = { "kyazdani42/nvim-web-devicons", opt = true },
+})
+use({
+  "kyazdani42/nvim-tree.lua",
+  tag = "nightly", -- optional, updated every week. (see issue #1193)
 })
 
 use({ -- Install and configure tree-sitter languages
- "nvim-treesitter/nvim-treesitter",
- run = ":TSUpdate",
- --config = function()
+  "nvim-treesitter/nvim-treesitter",
+  run = ":TSUpdate",
+  --config = function()
   --require("config.treesitter") end,
 })
 
 use({ -- Configure LSP client and Use an LSP server installer.
- "neovim/nvim-lspconfig",
- requires = {
-  "williamboman/nvim-lsp-installer", -- Installs servers within neovim
-  "onsails/lspkind-nvim",            -- adds vscode-like pictograms to neovim built-in lsp
- },
+  "neovim/nvim-lspconfig",
+  requires = {
+    "williamboman/nvim-lsp-installer", -- Installs servers within neovim
+    "onsails/lspkind-nvim", -- adds vscode-like pictograms to neovim built-in lsp
+  },
 })
 
 use({ -- CMP completion engine
- "hrsh7th/nvim-cmp",
- requires = {
-  "onsails/lspkind-nvim",     -- Icons on the popups
-  "hrsh7th/cmp-nvim-lsp",     -- LSP source for nvim-cmp
-  "saadparwaiz1/cmp_luasnip", -- Snippets source
-  "L3MON4D3/LuaSnip",         -- Snippet engine
- },
+  "hrsh7th/nvim-cmp",
+  requires = {
+    "onsails/lspkind-nvim", -- Icons on the popups
+    "hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
+    "saadparwaiz1/cmp_luasnip", -- Snippets source
+    "L3MON4D3/LuaSnip", -- Snippet engine
+  },
 })
 
 use({ -- Null-LS Use external formatters and linters
-    "jose-elias-alvarez/null-ls.nvim",
-    requires = {
-        "nvim-lua/plenary.nvim",
-    },
+  "jose-elias-alvarez/null-ls.nvim",
+  requires = {
+    "nvim-lua/plenary.nvim",
+  },
+})
+
+-- using packer.nvim
+use({
+  "akinsho/bufferline.nvim",
+  tag = "v2.*",
+  requires = "kyazdani42/nvim-web-devicons",
+})
+use({
+  "nvim-telescope/telescope.nvim",
+  tag = "0.1.0",
+  -- or                            , branch = '0.1.x',
+  requires = { { "nvim-lua/plenary.nvim" } },
+})
+use({
+  "kyazdani42/nvim-web-devicons",
+})
+use({
+  "nvim-telescope/telescope-fzf-native.nvim", run = "make",
+})
+use({
+  'akinsho/flutter-tools.nvim',
 })
 
 -- Automatically set up your configuration after cloning packer.nvim
