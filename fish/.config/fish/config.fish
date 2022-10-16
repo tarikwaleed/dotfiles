@@ -28,6 +28,7 @@ alias vd="amixer -D pulse sset Master 10%- -q"
 alias vm="amixer -D pulse sset Master 50% -q"
 alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
+alias tldr="tldr -t ocean"
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"
@@ -60,12 +61,9 @@ alias padd='flutter pub add'
 
 
 # Add to your path
-set -gx PATH /media/takizee/dev/tools $PATH
-set -gx PATH ~/Downloads/android-studio/bin $PATH
-set -gx PATH ~/Downloads $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
-set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
+set -gx PATH ~/Downloads/tarballs/bin $PATH
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/.config/composer/vendor/bin $PATH
 
@@ -77,3 +75,11 @@ set -gx PATH ~/.config/composer/vendor/bin $PATH
 set -gx PATH $HOME/.rbenv/bin $PATH
 set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
 rbenv init - | source
+
+# Setting up autojump
+begin
+    set --local AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
+    if test -e $AUTOJUMP_PATH
+        source $AUTOJUMP_PATH
+    end
+end
