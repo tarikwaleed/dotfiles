@@ -63,10 +63,8 @@ alias padd='flutter pub add'
 # Add to your path
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
-set -gx PATH ~/Downloads/tarballs/bin $PATH
-set -gx PATH ~/.cargo/bin $PATH
-set -gx PATH ~/.config/composer/vendor/bin $PATH
-
+set -gx PATH ~/Downloads/tarballs/flutter/bin $PATH
+set -gx PATH ~/Downloads/tarballs/nvim-linux64/bin $PATH
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
 #set-window-option -g mode-keys vi
