@@ -4,3 +4,10 @@
 **/swap/
 *.swp
 *.swo
+_*.fish
+_*
+*.log
+fisher.fish
+fish_prompt.fish
+nvm.fish
+bass.fish
