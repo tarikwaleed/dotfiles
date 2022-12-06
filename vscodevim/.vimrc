@@ -1,6 +1,7 @@
+let mapleader=" "
 inoremap jk <Esc>
 nnoremap fk :tabnext<CR>
 nnoremap fj :tabprev<CR>
-inoremap <leader>; <C-o>A;
+nnoremap <leader>; <C-o>A;<Esc>
 set relativenumber
 

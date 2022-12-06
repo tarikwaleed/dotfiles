@@ -55,6 +55,8 @@ use({ -- Have packer manage itself
 use({ -- Best color scheme
   "bluz71/vim-moonfly-colors",
 })
+use {("folke/tokyonight.nvim")}
+
 use({
   "nvim-lualine/lualine.nvim",
   requires = { "kyazdani42/nvim-web-devicons", opt = true },

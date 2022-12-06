@@ -5,15 +5,21 @@
 set -x -g EDITOR vim
 set -x -g TERMINAL gnome-terminal
 
+# Add to your path
+set -gx PATH ~/.local/bin $PATH
+set -gx PATH ~/.pub-cache/bin $PATH
+set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/flutter/bin $PATH
+
 # Shell aliases
 alias r="zathura"
-alias la="colorls -lA --git-status --dark"
+alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
 alias sourcefish="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
+alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
 alias ubuntu-access-token="cat ~/ubuntu-access-token.txt|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
@@ -63,10 +69,6 @@ alias pget='flutter pub get'
 alias padd='flutter pub add'
 
 
-# Add to your path
-set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/.pub-cache/bin $PATH
-set -gx PATH ~/media/tarikwaleed/Data/tarballs/flutter/bin $PATH
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
