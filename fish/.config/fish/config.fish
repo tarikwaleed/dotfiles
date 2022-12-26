@@ -1,4 +1,5 @@
 # On Startup
+nvm use lts
 
 
 # Environment Variables
@@ -9,6 +10,27 @@ set -x -g TERMINAL gnome-terminal
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/flutter/bin $PATH
+set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin $PATH
+
+# Git aliases
+alias cln='git clone'
+alias st='git status'
+alias add='git add'
+alias push='ubuntu-access-token&& git push -u origin'
+alias cm='git commit'
+alias cmm='git commit -m'
+alias lg='git log --oneline'
+alias df='git diff'
+alias co='git checkout'
+alias nb="git checkout -b"
+alias bls='git branch'
+alias bla='git branch -a'
+alias swb="git switch"
+
+# Flutter and Dart Aliases
+alias pget='flutter pub get'
+alias padd='flutter pub add'
+alias pup='flutter pub upgrade'
 
 # Shell aliases
 alias r="zathura"
@@ -41,6 +63,7 @@ alias tldr="tldr -t ocean"
 # Tmux aliases
 alias tmuxkill="tmux kill-session -t"
 alias tmuxlist="tmux list-sessions"
+alias notes="cd ~/repos/study-notes && code ."
 
 # Tmuxinator aliases
 alias start="tmuxinator start"
@@ -49,13 +72,6 @@ alias stop="tmuxinator stop"
 alias edit="tmuxinator edit"
 alias list="tmuxinator list"
 
-# Git aliases
-alias cln='git clone'
-alias st='git status'
-alias add='git add'
-alias push='ubuntu-access-token&& git push -u origin'
-alias cm='git commit -m'
-alias log='git log --oneline'
 
 # Django Aliases
 alias mpym='python3 manage.py migrate'
@@ -64,9 +80,6 @@ alias mpymmm='python3 manage.py migrate && python3 manage.py makemigrations'
 alias mpy='python3 manage.py'
 alias mpyrs='python3 manage.py runserver'
 
-# Flutter and Dart Aliases
-alias pget='flutter pub get'
-alias padd='flutter pub add'
 
 
 
