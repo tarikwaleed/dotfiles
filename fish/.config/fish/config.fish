@@ -31,6 +31,7 @@ alias swb="git switch"
 alias pget='flutter pub get'
 alias padd='flutter pub add'
 alias pup='flutter pub upgrade'
+alias frn="flutter run"
 
 # Shell aliases
 alias r="zathura"
