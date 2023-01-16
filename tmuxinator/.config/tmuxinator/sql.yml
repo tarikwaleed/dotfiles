@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/oop.yml
+# /home/tarikwaleed/.config/tmuxinator/sql.yml
 
-name: oop
+name: sql
 root: ~/
 
 # Optional tmux socket
@@ -45,6 +45,6 @@ root: ~/
 # attach: false
 
 windows:
-  - Labs: cd ~/repos/iti-repos/iti-oop-labs && code .
-  - Demos: cd /media/tarikwaleed/Data/iti/OOP && code .
-  - Practice: cd ~/repos/practice/oop-practice && code .
+  - General:
+  - SQL: 
+  - JS: tail -f log/development.log

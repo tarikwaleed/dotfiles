@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/oop.yml
+# /home/tarikwaleed/.config/tmuxinator/jq.yml
 
-name: oop
+name: jq
 root: ~/
 
 # Optional tmux socket
@@ -27,7 +27,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+#pre_window: cd ~/repos/iti-repos/iti-html5-labs
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -45,6 +45,6 @@ root: ~/
 # attach: false
 
 windows:
-  - Labs: cd ~/repos/iti-repos/iti-oop-labs && code .
-  - Demos: cd /media/tarikwaleed/Data/iti/OOP && code .
-  - Practice: cd ~/repos/practice/oop-practice && code .
+  - Repo: cd ~/repos/iti-repos/iti-jquery-labs && code .
+  - Day: cd /media/tarikwaleed/Data/iti/JQUERY && code .
+  - Practice: cd ~/repos/practice/ajax-practice && code .

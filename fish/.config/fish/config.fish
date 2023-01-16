@@ -62,8 +62,8 @@ alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 alias tldr="tldr -t ocean"
 # Tmux aliases
-alias tmuxkill="tmux kill-session -t"
-alias tmuxlist="tmux list-sessions"
+alias tmuxkl="tmux kill-session -t"
+alias tmuxls="tmux list-sessions"
 alias notes="cd ~/repos/study-notes && code ."
 
 # Tmuxinator aliases

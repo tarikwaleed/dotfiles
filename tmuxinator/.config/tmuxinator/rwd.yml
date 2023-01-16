@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/oop.yml
+# /home/tarikwaleed/.config/tmuxinator/rwd.yml
 
-name: oop
+name: rwd
 root: ~/
 
 # Optional tmux socket
@@ -45,6 +45,6 @@ root: ~/
 # attach: false
 
 windows:
-  - Labs: cd ~/repos/iti-repos/iti-oop-labs && code .
-  - Demos: cd /media/tarikwaleed/Data/iti/OOP && code .
-  - Practice: cd ~/repos/practice/oop-practice && code .
+  - Demos: cd /media/tarikwaleed/Data/iti/RWD && code .
+  - Labs: cd ~/repos/iti-repos/iti-rwd-labs && code .
+  - Practice: cd ~/repos/practice/rwd-practice && code .
