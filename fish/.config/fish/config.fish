@@ -11,7 +11,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/flutter/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin $PATH
-
+set -gx PATH ~/repos/personal-automation-scripts $PATH
 # Git aliases
 alias cln='git clone'
 alias st='git status'

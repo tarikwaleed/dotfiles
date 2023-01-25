@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/sql.yml
+# /home/tarikwaleed/.config/tmuxinator/mongo.yml
 
-name: sql
+name: mongo
 root: ~/
 
 # Optional tmux socket
@@ -27,7 +27,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+#pre_window: cd ~/repos/iti-repos/iti-html5-labs
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -45,6 +45,8 @@ root: ~/
 # attach: false
 
 windows:
-  - General: 
-  - SQL: 
-  - JS: 
+  - Fish: cd /media/tarikwaleed/Data/iti/MONGODB && code .
+  - Labs: cd /media/tarikwaleed/Data/iti/MONGODB/labs/iti-mongodb-labs
+  - Days: cd /media/tarikwaleed/Data/iti/MONGODB/days
+  - Practice: cd /media/tarikwaleed/Data/iti/MONGODB/practice/mongodb-practice
+  - Mongosh: mongo

@@ -27,7 +27,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+pre_window: cd /media/tarikwaleed/Data/iti/RWD
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -45,6 +45,8 @@ root: ~/
 # attach: false
 
 windows:
-  - Demos: cd /media/tarikwaleed/Data/iti/RWD && code .
-  - Labs: cd ~/repos/iti-repos/iti-rwd-labs && code .
-  - Practice: cd ~/repos/practice/rwd-practice && code .
+  - Fish: code .
+  - Days: cd days
+  - Labs: cd iti-rwd-labs
+  - Practice: cd rwd-practice
+  - Twitter-Clone: cd twitter-clone
