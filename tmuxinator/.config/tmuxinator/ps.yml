@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/rwd.yml
+# /home/tarikwaleed/.config/tmuxinator/ps.yml
 
-name: rwd
+name: ps
 root: ~/
 
 # Optional tmux socket
@@ -27,7 +27,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window: cd /media/tarikwaleed/Data/iti/RWD
+pre_window: cd ~/repos/problem-solving
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -45,12 +45,4 @@ pre_window: cd /media/tarikwaleed/Data/iti/RWD
 # attach: false
 
 windows:
-  - Main: 
-      layout: even-horizontal
-      panes:
-        - code .
-        - clear
-  - Days: cd days
-  - Labs: cd iti-rwd-labs
-  - Practice: cd rwd-practice
-  - Twitter-Clone: cd twitter-clone
+  - Editor: firefox https://github.com/tarikwaleed/problem-solving && firefox https://docs.google.com/spreadsheets/d/1usA9K1Si4IIezQltJ2D7fytQPgOYBK9FdBDu7TW4T7U/edit#gid=1160016643 && code . 

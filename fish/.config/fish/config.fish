@@ -61,10 +61,11 @@ alias vm="amixer -D pulse sset Master 50% -q"
 alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 alias tldr="tldr -t ocean"
+
 # Tmux aliases
-alias tmxkl="tmux kill-session -t"
-alias tmxls="tmux list-sessions"
-alias tmxsync="tmuxinator-sync.sh"
+alias tkl="tmux kill-session -t"
+alias tls="tmux list-sessions"
+alias tsync="tmuxinator-sync.sh"
 
 # Tmuxinator aliases
 alias start="tmuxinator start"
@@ -72,17 +73,6 @@ alias new="tmuxinator new"
 alias stop="tmuxinator stop"
 alias edit="tmuxinator edit"
 alias list="tmuxinator list"
-
-
-# Django Aliases
-alias mpym='python3 manage.py migrate'
-alias mpymm='python3 manage.py makemigrations'
-alias mpymmm='python3 manage.py migrate && python3 manage.py makemigrations'
-alias mpy='python3 manage.py'
-alias mpyrs='python3 manage.py runserver'
-
-
-
 
 # Enable Powerline
 #run-shell 'powerline-config tmux setup'
