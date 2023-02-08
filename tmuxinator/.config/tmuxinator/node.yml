@@ -51,4 +51,10 @@ windows:
         - firefox https://github.com/tarikwaleed/iti-nodejs-labs && cd iti-nodejs-labs && code .
         - clear
   - Node: node
-  - nodemon: 
+  - DB: mongo
+  - Server: 
+      layout: even-horizontal
+      panes:
+        - cd iti-nodejs-labs/assignment3 && npm run devstart
+        - clear
+  - Practice: cd ~/repos/practice/js-practice && code .
