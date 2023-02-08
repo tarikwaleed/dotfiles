@@ -26,6 +26,7 @@ alias nb="git checkout -b"
 alias bls='git branch'
 alias bla='git branch -a'
 alias swb="git switch"
+alias rcm="regular-commit.sh"
 
 # Flutter and Dart Aliases
 alias pget='flutter pub get'
