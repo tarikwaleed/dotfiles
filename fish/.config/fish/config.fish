@@ -3,7 +3,7 @@ nvm use lts
 
 
 # Environment Variables
-set -x -g EDITOR vim
+set -x -g EDITOR nvim
 set -x -g TERMINAL gnome-terminal
 
 # Add to your path
@@ -11,7 +11,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/flutter/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin $PATH
-set -gx PATH ~/repos/personal-automation-scripts $PATH
+set -gx PATH /media/tarikwaleed/Data/repos/personal-automation-scripts $PATH
 # Git aliases
 alias cln='git clone'
 alias st='git status'
@@ -45,21 +45,21 @@ alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat ~/ubuntu-access-token.txt|xclip -selection clipboard"
+alias ubuntu-access-token="cat /media/tarikwaleed/Data/repos/ubuntu-access-token|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
 alias bb="cd ../.."
 alias bbb="cd ../../.."
 alias bbbb="cd ../../../.."
-alias awrc="vim ~/dotfiles/awesome/.config/awesome/rc.lua"
-alias awtheme="vim ~/dotfiles/awesome/.config/awesome/theme.lua"
-alias awxrandr="vim ~/dotfiles/awesome/.config/awesome/xrandr.lua"
-alias logout="dm-tool switch-to-greeter"
-alias vu="amixer -D pulse sset Master 10%+ -q"
-alias vd="amixer -D pulse sset Master 10%- -q"
-alias vm="amixer -D pulse sset Master 50% -q"
-alias vh="amixer -D pulse sset Master 100% -q"
+#alias awrc="vim ~/dotfiles/awesome/.config/awesome/rc.lua"
+#alias awtheme="vim ~/dotfiles/awesome/.config/awesome/theme.lua"
+#alias awxrandr="vim ~/dotfiles/awesome/.config/awesome/xrandr.lua"
+#alias logout="dm-tool switch-to-greeter"
+#alias vu="amixer -D pulse sset Master 10%+ -q"
+#alias vd="amixer -D pulse sset Master 10%- -q"
+#alias vm="amixer -D pulse sset Master 50% -q"
+#alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 alias tldr="tldr -t ocean"
 
@@ -75,19 +75,8 @@ alias stop="tmuxinator stop"
 alias edit="tmuxinator edit"
 alias list="tmuxinator list"
 
-# Enable Powerline
-#run-shell 'powerline-config tmux setup'
-#set-window-option -g mode-keys vi
-
 # Configuring ruby
 set -gx PATH $HOME/.rbenv/bin $PATH
 set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
 rbenv init - | source
 
-# Setting up autojump
-begin
-    set --local AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
-    if test -e $AUTOJUMP_PATH
-        source $AUTOJUMP_PATH
-    end
-end
