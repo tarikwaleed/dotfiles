@@ -18,7 +18,7 @@ active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file
 subtitle-encoding='UTF-8'
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='mouse'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -102,7 +102,8 @@ speed=-0.31617647058823528
 [org/gnome/desktop/peripherals/touchpad]
 click-method='fingers'
 edge-scrolling-enabled=false
-speed=1.0
+send-events='enabled'
+speed=0.80147058823529416
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -138,6 +139,24 @@ use-background-color=true
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/gedit/plugins]
+active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///media/tarikwaleed/Data/repos'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 700)
+state=87168
 
 [org/gnome/mutter]
 center-new-windows=true
@@ -198,8 +217,23 @@ check-timestamp=int64 1676277185
 [org/gnome/system/location]
 enabled=false
 
+[org/gnome/terminal/legacy]
+new-terminal-mode='tab'
+theme-variant='system'
+
 [org/gnome/terminal/legacy/keybindings]
 close-window='<alt>Escape'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(238,238,236)'
+cursor-blink-mode='on'
+default-size-columns=90
+default-size-rows=30
+font='Cousine Nerd Font Bold 18'
+foreground-color='rgb(46,52,54)'
+use-system-font=false
+use-theme-colors=false
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
