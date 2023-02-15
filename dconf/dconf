@@ -4,8 +4,8 @@ launch-count=1
 launch-time=int64 1676155440
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/extensions/dash-to-dock/custom-theme-running-dots-border-width'
-saved-view='/org/gnome/shell/extensions/dash-to-dock/custom-theme-running-dots-border-width'
+saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-7'
+saved-view='/org/gnome/shell/keybindings/switch-to-application-7'
 window-height=500
 window-is-maximized=true
 window-width=540
@@ -18,7 +18,7 @@ active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file
 subtitle-encoding='UTF-8'
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='power'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -68,7 +68,10 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem']
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -82,11 +85,17 @@ application-id='gnome-power-panel.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-totem]
+application-id='org.gnome.Totem.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/snap-store-ubuntu-software]
 application-id='snap-store_ubuntu-software.desktop'
+
+[org/gnome/desktop/notifications/application/teams-for-linux-teams-for-linux]
+application-id='teams-for-linux_teams-for-linux.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
@@ -103,7 +112,7 @@ speed=-0.31617647058823528
 click-method='fingers'
 edge-scrolling-enabled=false
 send-events='enabled'
-speed=0.80147058823529416
+speed=1.0
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -118,7 +127,7 @@ primary-color='#000000000000'
 secondary-color='#000000000000'
 
 [org/gnome/desktop/session]
-idle-delay=uint32 600
+idle-delay=uint32 0
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
@@ -126,6 +135,8 @@ allow-volume-above-100-percent=false
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
+switch-to-workspace-down=['<Alt>j', '<Control><Alt>Down']
+switch-to-workspace-up=['<Alt>k', '<Control><Alt>Up']
 
 [org/gnome/desktop/wm/preferences]
 auto-raise=true
@@ -136,9 +147,15 @@ num-workspaces=3
 background-color='rgb(0,0,0)'
 use-background-color=true
 
+[org/gnome/evince/default]
+window-ratio=(0.99861111111111112, 0.75740740740740742)
+
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/file-roller/listing]
+show-path=false
 
 [org/gnome/gedit/plugins]
 active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
@@ -146,7 +163,13 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///media/tarikwaleed/Data/repos'
+virtual-root='file:///media/tarikwaleed/Data/iti/ANGULAR/eng-hany-saad/recordings'
+
+[org/gnome/gedit/preferences/editor]
+editor-font='Cousine Nerd Font Bold 16'
+scheme='tango'
+use-default-font=false
+wrap-last-split-mode='word'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -156,7 +179,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(900, 700)
-state=87168
+state=43908
 
 [org/gnome/mutter]
 center-new-windows=true
@@ -186,6 +209,7 @@ night-light-schedule-from=6.0
 night-light-temperature=uint32 3274
 
 [org/gnome/settings-daemon/plugins/power]
+idle-dim=false
 power-button-action='nothing'
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
@@ -197,7 +221,7 @@ hinting='slight'
 [org/gnome/shell]
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]
 dock-fixed=false
@@ -210,6 +234,7 @@ switch-to-application-3=['<alt>t']
 switch-to-application-4=['<alt>m']
 switch-to-application-5=['<alt>v']
 switch-to-application-6=['<alt>e']
+switch-to-application-7=['<alt>r']
 
 [org/gnome/software]
 check-timestamp=int64 1676277185
@@ -239,15 +264,15 @@ use-theme-colors=false
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=161
+sidebar-width=170
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(288, 118)
+window-position=(768, 243)
 window-size=(1343, 790)
 
 [system/locale]
