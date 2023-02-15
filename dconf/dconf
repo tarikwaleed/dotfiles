@@ -220,7 +220,7 @@ hinting='slight'
 
 [org/gnome/shell]
 disabled-extensions=@as []
-enabled-extensions=['ubuntu-dock@ubuntu.com']
+enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]
