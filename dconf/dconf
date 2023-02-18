@@ -4,8 +4,8 @@ launch-count=1
 launch-time=int64 1676155440
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-7'
-saved-view='/org/gnome/shell/keybindings/switch-to-application-7'
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/switch-to-workspace-down'
+saved-view='/org/gnome/desktop/wm/keybindings/switch-to-workspace-down'
 window-height=500
 window-is-maximized=true
 window-width=540
@@ -18,7 +18,7 @@ active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file
 subtitle-encoding='UTF-8'
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='wifi'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -148,14 +148,23 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince/default]
-window-ratio=(0.99861111111111112, 0.75740740740740742)
+window-ratio=(1.6107382550335569, 1.2268408551068883)
 
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
 show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
 
 [org/gnome/gedit/plugins]
 active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
@@ -163,7 +172,7 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///media/tarikwaleed/Data/iti/ANGULAR/eng-hany-saad/recordings'
+virtual-root='file:///home/tarikwaleed/Downloads/lab2/src/app/component/card'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -178,14 +187,14 @@ show-tabs-mode='auto'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(900, 700)
-state=43908
+size=(960, 1033)
+state=87168
 
 [org/gnome/mutter]
 center-new-windows=true
 dynamic-workspaces=false
 experimental-features=['x11-randr-fractional-scaling']
-workspaces-only-on-primary=false
+workspaces-only-on-primary=true
 
 [org/gnome/nautilus/icon-view]
 default-zoom-level='larger'
@@ -196,8 +205,12 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(946, 1033)
 maximized=true
+
+[org/gnome/nm-applet/eap/6c5ef409-4509-4af8-b6eb-41b00ad66717]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/peripherals/mouse]
 double-click=293
@@ -220,8 +233,11 @@ hinting='slight'
 
 [org/gnome/shell]
 disabled-extensions=@as []
-enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me']
+enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop']
+
+[org/gnome/shell/extensions/auto-move-windows]
+application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.desktop:2', 'org.gnome.Nautilus.desktop:3', 'org.gnome.Totem.desktop:3']
 
 [org/gnome/shell/extensions/dash-to-dock]
 dock-fixed=false
