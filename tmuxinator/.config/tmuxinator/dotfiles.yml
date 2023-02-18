@@ -54,3 +54,4 @@ windows:
       #  - vim
       #  - guard
   - Fish: fishconfiguration
+  - Scripts: cd /media/tarikwaleed/Data/repos/personal-automation-scripts
