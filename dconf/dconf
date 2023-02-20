@@ -1,11 +1,11 @@
 [apps/update-manager]
 first-run=false
-launch-count=1
-launch-time=int64 1676155440
+launch-count=2
+launch-time=int64 1676838486
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/switch-to-workspace-down'
-saved-view='/org/gnome/desktop/wm/keybindings/switch-to-workspace-down'
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/move-to-workspace-up'
+saved-view='/org/gnome/desktop/wm/keybindings/move-to-workspace-up'
 window-height=500
 window-is-maximized=true
 window-width=540
@@ -15,6 +15,7 @@ release-check-time=uint32 1676155430
 
 [org/gnome/Totem]
 active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file', 'movie-properties', 'apple-trailers', 'skipto', 'open-directory', 'vimeo', 'recent', 'screenshot', 'rotation', 'media-player-keys']
+open-uri='file:///media/tarikwaleed/Data/iti/ANGULAR/hs-course/recordings/Day2'
 subtitle-encoding='UTF-8'
 
 [org/gnome/control-center]
@@ -68,7 +69,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -81,6 +82,9 @@ application-id='gnome-control-center.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-writer]
+application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -135,6 +139,8 @@ allow-volume-above-100-percent=false
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
+move-to-workspace-down=['<Alt><Shift>j', '<Control><Shift><Alt>Down']
+move-to-workspace-up=['<alt><Shift>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Alt>j', '<Control><Alt>Down']
 switch-to-workspace-up=['<Alt>k', '<Control><Alt>Up']
 
@@ -148,7 +154,7 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince/default]
-window-ratio=(1.6107382550335569, 1.2268408551068883)
+window-ratio=(1.3333333333333333, 1.912962962962963)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -172,7 +178,7 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarikwaleed/Downloads/lab2/src/app/component/card'
+virtual-root='file:///home/tarikwaleed/Downloads/app/home-page'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -205,8 +211,8 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(946, 1033)
-maximized=true
+initial-size=(960, 1033)
+maximized=false
 
 [org/gnome/nm-applet/eap/6c5ef409-4509-4af8-b6eb-41b00ad66717]
 ignore-ca-cert=false
@@ -253,7 +259,7 @@ switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 
 [org/gnome/software]
-check-timestamp=int64 1676277185
+check-timestamp=int64 1676914431
 
 [org/gnome/system/location]
 enabled=false
@@ -288,7 +294,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(768, 243)
+window-position=(2016, 243)
 window-size=(1343, 790)
 
 [system/locale]

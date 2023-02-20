@@ -20,6 +20,7 @@ alias push='ubuntu-access-token&& git push -u origin'
 alias cm='git commit'
 alias cmm='git commit -m'
 alias lg='git log --oneline'
+alias lga='git log --oneline --all'
 alias df='git diff'
 alias co='git checkout'
 alias nb="git checkout -b"
