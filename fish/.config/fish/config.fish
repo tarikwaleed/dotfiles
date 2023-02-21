@@ -99,8 +99,8 @@ alias dila="sudo docker image ls -a"
 alias dcla="sudo docker container ls -a"
 alias dpl="sudo docker pull"
 alias dpsh="sudo docker push"
-alias drc="sudo docker container rm"
-alias dri="sudo docker image rm"
+alias dc="sudo docker container"
+alias di="sudo docker image"
 
 
 
