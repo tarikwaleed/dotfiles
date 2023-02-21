@@ -12,6 +12,7 @@ set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/flutter/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/repos/personal-automation-scripts $PATH
+
 # Git aliases
 alias cln='git clone'
 alias st='git status'
@@ -35,13 +36,13 @@ alias padd='flutter pub add'
 alias pup='flutter pub upgrade'
 alias frn="flutter run"
 
-# Shell aliases
+# General aliases
 alias r="zathura"
 alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
-alias sourcefish="source ~/.config/fish/config.fish"
+alias sf="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
@@ -63,6 +64,7 @@ alias bbbb="cd ../../../.."
 #alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 alias tldr="tldr -t ocean"
+alias debi="sudo dpkg -i"
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"
@@ -75,6 +77,36 @@ alias new="tmuxinator new"
 alias stop="tmuxinator stop"
 alias edit="tmuxinator edit"
 alias list="tmuxinator list"
+
+# Angular aliases
+alias ns="ng serve"
+alias nso="ng serve --open"
+alias nsop="ng serve --open --port"
+alias ngc="ng generate component"
+alias ngi="ng generate interface"
+alias ngs="ng generate service"
+alias ngp="ng generate pipe"
+alias ngd="ng generate directive"
+alias nge="ng generate enum"
+alias ngm="ng generate module"
+alias ngg="ng generate guard"
+alias ngcl="ng generate cl"
+
+# Docker Aliases
+alias dils="sudo docker image ls"
+alias dcls="sudo docker container ls"
+alias dila="sudo docker image ls -a"
+alias dcla="sudo docker container ls -a"
+alias dpl="sudo docker pull"
+alias dpsh="sudo docker push"
+alias drc="sudo docker container rm"
+alias dri="sudo docker image rm"
+
+
+
+
+
+
 
 # Configuring ruby
 set -gx PATH $HOME/.rbenv/bin $PATH

@@ -47,26 +47,17 @@ pre_window: cd /media/tarikwaleed/Data/iti/ANGULAR
 windows:
   - General:
       layout: even-horizontal
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
       panes:
         - clear
         - clear
   - Node: node
-  - Labs:
+  - Project:
       layout: even-horizontal
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
       panes:
-        - cd iti-angular-labs
-        - cd iti-angular-labs
-  - Practice:
+        - cd angular-ecommerce
+        - cd angular-ecommerce && nsop 4201
+  - Demo:
       layout: even-horizontal
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
       panes:
-        - cd angular-practice 
-        - cd angular-practice
+        - cd /home/tarikwaleed/temp-repos/hany-saad-angular-course-demo
+        - cd /home/tarikwaleed/temp-repos/hany-saad-angular-course-demo && nsop 4202
