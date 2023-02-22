@@ -153,8 +153,8 @@ allow-volume-above-100-percent=false
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
 maximize=['<Alt>i']
-move-to-monitor-left=['<Alt>u']
-move-to-monitor-right=['<Alt>o']
+move-to-monitor-left=['<Alt>h']
+move-to-monitor-right=['<Alt>l']
 move-to-workspace-down=['<Alt><Shift>j', '<Control><Shift><Alt>Down']
 move-to-workspace-up=['<alt><Shift>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Alt>j', '<Control><Alt>Down']
@@ -219,8 +219,8 @@ experimental-features=['x11-randr-fractional-scaling']
 workspaces-only-on-primary=true
 
 [org/gnome/mutter/keybindings]
-toggle-tiled-left=['<Alt>h']
-toggle-tiled-right=['<Alt>l']
+toggle-tiled-left=['<Alt>u']
+toggle-tiled-right=['<Alt>o']
 
 [org/gnome/nautilus/icon-view]
 default-zoom-level='larger'
