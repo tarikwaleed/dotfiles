@@ -4,10 +4,10 @@ launch-count=2
 launch-time=int64 1676838486
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/move-to-workspace-up'
-saved-view='/org/gnome/desktop/wm/keybindings/move-to-workspace-up'
+saved-pathbar-path='/org/gnome/mutter/keybindings/toggle-tiled-left'
+saved-view='/org/gnome/mutter/keybindings/toggle-tiled-left'
 window-height=500
-window-is-maximized=true
+window-is-maximized=false
 window-width=540
 
 [com/ubuntu/update-notifier]
@@ -150,6 +150,7 @@ allow-volume-above-100-percent=false
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
+maximize=['<Alt>i']
 move-to-monitor-left=['<Alt>h']
 move-to-monitor-right=['<Alt>l']
 move-to-workspace-down=['<Alt><Shift>j', '<Control><Shift><Alt>Down']
@@ -277,7 +278,7 @@ switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 
 [org/gnome/software]
-check-timestamp=int64 1676914431
+check-timestamp=int64 1677053487
 
 [org/gnome/system/location]
 enabled=false

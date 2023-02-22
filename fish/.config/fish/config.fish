@@ -30,12 +30,6 @@ alias bla='git branch -a'
 alias swb="git switch"
 alias rcm="regular-commit.sh"
 
-# Flutter and Dart Aliases
-alias pget='flutter pub get'
-alias padd='flutter pub add'
-alias pup='flutter pub upgrade'
-alias frn="flutter run"
-
 # General aliases
 alias r="zathura"
 alias la="colorls -lA --git-status --light"
@@ -65,6 +59,7 @@ alias bbbb="cd ../../../.."
 alias vim="nvim"
 alias tldr="tldr -t ocean"
 alias debi="sudo dpkg -i"
+alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"
