@@ -4,7 +4,7 @@ launch-count=2
 launch-time=int64 1676838486
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/maximize'
+saved-pathbar-path='focus'
 saved-view='/org/gnome/desktop/wm/keybindings/maximize'
 show-warning=false
 window-height=500
@@ -28,7 +28,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='background'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -54,7 +54,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-13-11-16-41-nodejs.png'
+picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-22-19-07-51-wallpapersden.com_laravel-php-4k_1920x1080.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -139,7 +139,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-13-11-16-41-nodejs.png'
+picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-22-19-07-51-wallpapersden.com_laravel-php-4k_1920x1080.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -279,6 +279,9 @@ switch-to-application-5=['<alt>v']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 
+[org/gnome/shell/overrides]
+focus-change-on-pointer-rest=false
+
 [org/gnome/software]
 check-timestamp=int64 1677053487
 
@@ -315,7 +318,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(2016, 243)
+window-position=(288, 118)
 window-size=(1343, 790)
 
 [system/locale]

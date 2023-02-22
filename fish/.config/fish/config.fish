@@ -96,6 +96,15 @@ alias dpl="sudo docker pull"
 alias dpsh="sudo docker push"
 alias dc="sudo docker container"
 alias di="sudo docker image"
+alias dvla="sudo docker volume ls"
+alias dvi="sudo docker volume inspect"
+alias dci="sudo docker container inspect"
+alias dvc="sudo docker volume create"
+alias dclq="sudo docker container ls -q"
+alias db="sudo docker build -t"
+alias dv="sudo docker volume"
+
+
 
 
 

@@ -53,7 +53,7 @@ windows:
       panes:
         - clear
         - clear
-  - Configs: vim /etc/apache2
-  - Logs: vim /var/log/apache2
-  - Public: vim /var/www/html
+  - Configs: sudo vim /etc/apache2/apache2.conf
+  - Logs: sudo vim /var/log/apache2
+  - Public: sudo vim /var/www/html
 
