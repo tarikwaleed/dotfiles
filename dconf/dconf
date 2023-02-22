@@ -150,6 +150,8 @@ allow-volume-above-100-percent=false
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
+move-to-monitor-left=['<Alt>h']
+move-to-monitor-right=['<Alt>l']
 move-to-workspace-down=['<Alt><Shift>j', '<Control><Shift><Alt>Down']
 move-to-workspace-up=['<alt><Shift>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Alt>j', '<Control><Alt>Down']
