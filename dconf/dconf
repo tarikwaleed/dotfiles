@@ -215,6 +215,10 @@ dynamic-workspaces=false
 experimental-features=['x11-randr-fractional-scaling']
 workspaces-only-on-primary=true
 
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Alt>9']
+toggle-tiled-right=['<Alt>0']
+
 [org/gnome/nautilus/icon-view]
 default-zoom-level='larger'
 
