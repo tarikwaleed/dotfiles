@@ -1,5 +1,8 @@
 # On Startup
 nvm use lts
+sct 4000
+xrandr --output DP-2 --brightness .5 
+
 
 
 # Environment Variables
