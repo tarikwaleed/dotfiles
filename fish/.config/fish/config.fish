@@ -4,7 +4,6 @@ sct 4000
 xrandr --output DP-2 --brightness .5 
 
 
-
 # Environment Variables
 set -x -g EDITOR nvim
 set -x -g TERMINAL gnome-terminal
