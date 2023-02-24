@@ -104,16 +104,10 @@ alias dvi="sudo docker volume inspect"
 alias dci="sudo docker container inspect"
 alias dvc="sudo docker volume create"
 alias dclq="sudo docker container ls -q"
+alias dilq="sudo docker image ls -q"
+alias dvlq="sudo docker volume ls -q"
 alias db="sudo docker build -t"
 alias dv="sudo docker volume"
-
-
-
-
-
-
-
-
 
 # Configuring ruby
 set -gx PATH $HOME/.rbenv/bin $PATH
