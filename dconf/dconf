@@ -19,6 +19,21 @@ active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file
 open-uri='file:///media/tarikwaleed/Data/iti/ANGULAR/hs-course/recordings/Day2'
 subtitle-encoding='UTF-8'
 
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-position=(2513, 457)
+word-size=64
+
 [org/gnome/cheese]
 burst-delay=1000
 camera='HP HD Camera: HP HD Camera'
@@ -78,7 +93,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -88,6 +103,9 @@ application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -169,8 +187,11 @@ num-workspaces=3
 background-color='rgb(0,0,0)'
 use-background-color=true
 
+[org/gnome/evince]
+document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
+
 [org/gnome/evince/default]
-window-ratio=(1.3333333333333333, 2.5498617693522907)
+window-ratio=(1.5686274509803921, 0.99747474747474751)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -283,7 +304,7 @@ switch-to-application-7=['<alt>r']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1677053487
+check-timestamp=int64 1677138977
 
 [org/gnome/system/location]
 enabled=false
@@ -318,7 +339,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(288, 118)
+window-position=(96, 27)
 window-size=(1343, 790)
 
 [system/locale]
