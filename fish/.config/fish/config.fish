@@ -1,6 +1,6 @@
 # On Startup
 nvm use lts
-sct 4000
+sct 3400
 xrandr --output DP-2 --brightness .5 
 
 
