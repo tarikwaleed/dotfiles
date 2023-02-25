@@ -53,4 +53,4 @@ windows:
       panes:
         - ssh root@172.16.178.128
         - ssh root@172.16.178.128
-  - Local: cd /media/tarikwaleed/Data/iti/ADMIN2/iti-admin2-gists
+  - Local: cd /media/tarikwaleed/Data/iti/ADMIN2/iti-admin2-gists && code .
