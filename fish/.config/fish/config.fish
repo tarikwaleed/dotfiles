@@ -16,21 +16,23 @@ set -gx PATH /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin $PATH
 set -gx PATH /media/tarikwaleed/Data/repos/personal-automation-scripts $PATH
 
 # Git aliases
-alias cln='git clone'
-alias st='git status'
-alias add='git add'
-alias push='ubuntu-access-token&& git push -u origin'
-alias cm='git commit'
-alias cmm='git commit -m'
-alias lg='git log --oneline'
-alias lga='git log --oneline --all'
-alias df='git diff'
-alias co='git checkout'
-alias nb="git checkout -b"
-alias bls='git branch'
-alias bla='git branch -a'
-alias swb="git switch"
+alias gcln='git clone'
+alias gst='git status'
+alias ga='git add'
+alias gaa='git add --all'
+alias gpush='ubuntu-access-token&& git push -u origin'
+alias gcm='git commit'
+alias gcmm='git commit -m'
+alias glg='git log --oneline'
+alias glga='git log --oneline --all'
+alias gdf='git diff'
+alias gco='git checkout'
+alias gnb="git checkout -b"
+alias glsb='git branch'
+alias glab='git branch -a'
+alias gswb="git switch"
 alias rcm="regular-commit.sh"
+
 
 # General aliases
 alias r="zathura"
