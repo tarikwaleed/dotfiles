@@ -46,18 +46,18 @@ pre_window: cd /media/tarikwaleed/Data/iti/ANGULAR
 
 windows:
   - General:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - clear
         - clear
   - Node: node
   - Project:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - cd angular-ecommerce
         - cd angular-ecommerce && nsop 4201
   - Demo:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - cd /home/tarikwaleed/temp-repos/hany-saad-angular-course-demo
         - cd /home/tarikwaleed/temp-repos/hany-saad-angular-course-demo && nsop 4202

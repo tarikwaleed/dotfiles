@@ -32,6 +32,7 @@ alias glsb='git branch'
 alias glab='git branch -a'
 alias gswb="git switch"
 alias rcm="regular-commit.sh"
+alias gr="git restore"
 
 
 # General aliases
