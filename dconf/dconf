@@ -1,18 +1,19 @@
 [apps/update-manager]
+check-new-release-ignore='jammy'
 first-run=false
-launch-count=2
-launch-time=int64 1676838486
+launch-count=3
+launch-time=int64 1677581010
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='focus'
-saved-view='/org/gnome/desktop/wm/keybindings/maximize'
+saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-8'
+saved-view='/org/gnome/shell/keybindings/switch-to-application-8'
 show-warning=false
 window-height=500
 window-is-maximized=true
 window-width=540
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1676155430
+release-check-time=uint32 1677366263
 
 [org/gnome/Totem]
 active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file', 'movie-properties', 'apple-trailers', 'skipto', 'open-directory', 'vimeo', 'recent', 'screenshot', 'rotation', 'media-player-keys']
@@ -79,7 +80,7 @@ show-weekdate=true
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('xkb', 'ara')]
 sources=[('xkb', 'us'), ('xkb', 'ara')]
-xkb-options=['ctrl:swapcaps']
+xkb-options=['ctrl:swapcaps', 'shift:both_capslock']
 
 [org/gnome/desktop/interface]
 clock-format='12h'
@@ -93,7 +94,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -118,6 +119,9 @@ application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
+application-id='org.gnome.Shell.PortalHelper.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-totem]
 application-id='org.gnome.Totem.desktop'
@@ -191,7 +195,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.5686274509803921, 0.99747474747474751)
+window-ratio=(1.56790079464063, 1.3035882273887915)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -282,7 +286,7 @@ hinting='slight'
 [org/gnome/shell]
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'libreoffice-writer.desktop']
 
 [org/gnome/shell/extensions/auto-move-windows]
 application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.desktop:2', 'org.gnome.Nautilus.desktop:3', 'org.gnome.Totem.desktop:3', 'teams-for-linux_teams-for-linux.desktop:3']
@@ -299,12 +303,13 @@ switch-to-application-4=['<alt>m']
 switch-to-application-5=['<alt>v']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
+switch-to-application-8=['<Alt>s']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1677138977
+check-timestamp=int64 1677740861
 
 [org/gnome/system/location]
 enabled=false
@@ -339,7 +344,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(96, 27)
+window-position=(2016, 243)
 window-size=(1343, 790)
 
 [system/locale]
