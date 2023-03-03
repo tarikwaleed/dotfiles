@@ -63,7 +63,7 @@ alias bbbb="cd ../../../.."
 #alias vh="amixer -D pulse sset Master 100% -q"
 alias vim="nvim"
 alias tldr="tldr -t ocean"
-alias debi="sudo dpkg -i"
+alias dpi="sudo dpkg -i"
 alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
 
 # Tmux aliases
