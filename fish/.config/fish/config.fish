@@ -28,11 +28,20 @@ alias glga='git log --oneline --all'
 alias gdf='git diff'
 alias gco='git checkout'
 alias gnb="git checkout -b"
-alias glsb='git branch'
-alias glab='git branch -a'
+alias gbls='git branch'
+alias gbla='git branch -a'
 alias gswb="git switch"
 alias rcm="regular-commit.sh"
-alias gr="git restore"
+#alias gr="git restore"
+alias gra="git remote add"
+alias grla="git remote -v"
+alias gf="git fetch"
+alias gpull="git pull"
+alias gbrm="git branch -d"
+alias gsls="git stash list"
+alias gsu="git stash -u"
+alias gsd="git stash drop"
+alias gsa="git stash apply"
 
 
 # General aliases
