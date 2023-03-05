@@ -44,7 +44,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='bluetooth'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -94,7 +94,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -117,6 +117,9 @@ application-id='libreoffice-impress.desktop'
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
@@ -128,6 +131,9 @@ application-id='org.gnome.Totem.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/slack-slack]
+application-id='slack_slack.desktop'
 
 [org/gnome/desktop/notifications/application/snap-store-ubuntu-software]
 application-id='snap-store_ubuntu-software.desktop'
@@ -195,7 +201,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.56790079464063, 1.3035882273887915)
+window-ratio=(0.91223318960909383, 1.3271065716973522)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -287,6 +293,7 @@ hinting='slight'
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'libreoffice-writer.desktop']
+had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
 application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.desktop:2', 'org.gnome.Nautilus.desktop:3', 'org.gnome.Totem.desktop:3', 'teams-for-linux_teams-for-linux.desktop:3']
@@ -304,12 +311,13 @@ switch-to-application-5=['<alt>v']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 switch-to-application-8=['<Alt>s']
+switch-to-application-9=['<Alt>p']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1677740861
+check-timestamp=int64 1677816625
 
 [org/gnome/system/location]
 enabled=false
@@ -344,7 +352,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(2016, 243)
+window-position=(768, 243)
 window-size=(1343, 790)
 
 [system/locale]
