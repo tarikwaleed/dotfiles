@@ -20,9 +20,8 @@ alias gcln='git clone'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
-alias gpush='ubuntu-access-token&& git push -u origin'
-alias gcm='git commit'
-alias gcmm='git commit -m'
+alias gps='ubuntu-access-token&& git push -u origin'
+alias gcm='git commit -m'
 alias glg='git log --oneline'
 alias glga='git log --oneline --all'
 alias gdf='git diff'
@@ -30,7 +29,7 @@ alias gco='git checkout'
 alias gnb="git checkout -b"
 alias gbls='git branch'
 alias gbla='git branch -a'
-alias gswb="git switch"
+alias gsb="git switch"
 alias rcm="regular-commit.sh"
 #alias gr="git restore"
 alias gra="git remote add"
@@ -42,6 +41,8 @@ alias gsls="git stash list"
 alias gsu="git stash -u"
 alias gsd="git stash drop"
 alias gsa="git stash apply"
+alias gm="git merge"
+alias gpl="git pull"
 
 
 # General aliases
