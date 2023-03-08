@@ -1,7 +1,10 @@
 # On Startup
-nvm use lts
-sct 3400
-xrandr --output DP-2 --brightness .6
+# Load myscript.fish only if the MYSCRIPT_LOADED variable is not set
+if not set -q MYSCRIPT_LOADED
+    set -x MYSCRIPT_LOADED 1
+    source ~/.config/scripts/startup_commands.sh
+end
+
 
 
 # Environment Variables
