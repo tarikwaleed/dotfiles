@@ -1,4 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/goodreads-clone-api.yml
+# /home/tarikwaleed/.config/tmuxinator/java.yml
+
+
 # Optional tmux socket
 # socket_name: foo
 
@@ -40,25 +42,14 @@
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
-
-
-name: goodreads-clone-api
-root: ~/temp-repos/Goodreads-Clone-API
-  #pre_window: npm install
-
+name: java
+root: /media/tarikwaleed/Data/iti/JAVA/iti-java-labs
 windows:
   - console:
-      layout: even-horizontal
+      layout: even-vertical
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
       panes:
         - code .
         - clear
-  - server:
-      layout: even-horizontal
-      panes:
-        - nodemon bin/www
-  - database:
-      layout: even-horizontal
-      panes:
-        - mongo
-
-

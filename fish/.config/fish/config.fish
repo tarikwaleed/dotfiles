@@ -1,7 +1,7 @@
 # On Startup
 nvm use lts
 sct 3400
-xrandr --output DP-2 --brightness .5 
+xrandr --output DP-2 --brightness .6
 
 
 # Environment Variables
@@ -20,7 +20,7 @@ alias gcln='git clone'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
-alias gps='ubuntu-access-token&& git push -u origin'
+alias gp='ubuntu-access-token&& git push -u origin'
 alias gcm='git commit -m'
 alias glg='git log --oneline'
 alias glga='git log --oneline --all'
@@ -29,6 +29,7 @@ alias gco='git checkout'
 alias gnb="git checkout -b"
 alias gbls='git branch'
 alias gbla='git branch -a'
+alias gblr='git branch -r'
 alias gsb="git switch"
 alias rcm="regular-commit.sh"
 #alias gr="git restore"
@@ -37,12 +38,14 @@ alias grla="git remote -v"
 alias gf="git fetch"
 alias gpull="git pull"
 alias gbrm="git branch -d"
-alias gsls="git stash list"
+alias gsla="git stash list"
 alias gsu="git stash -u"
 alias gsd="git stash drop"
 alias gsa="git stash apply"
 alias gm="git merge"
 alias gpl="git pull"
+alias gu="git fetch origin"
+
 
 
 # General aliases
