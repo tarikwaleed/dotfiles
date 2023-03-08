@@ -55,4 +55,3 @@ windows:
       #  - guard
   - Fish: fishconfiguration
   - Functions: cd ~/.config/fish/functions
-  - Scripts: cd /media/tarikwaleed/Data/repos/personal-automation-scripts
