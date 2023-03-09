@@ -48,16 +48,16 @@ root: ~/temp-repos/Goodreads-Clone-API
 
 windows:
   - console:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - code .
         - clear
   - server:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - nodemon bin/www
   - database:
-      layout: even-horizontal
+      layout: even-vertical
       panes:
         - mongo
 
