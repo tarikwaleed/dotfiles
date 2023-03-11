@@ -1,7 +1,5 @@
 # /home/tarikwaleed/.config/tmuxinator/js.yml
 
-name: js
-root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -44,6 +42,8 @@ root: ~/
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
+name: js
+root: ~/
 windows:
   - Repo: cd ~/repos/iti-repos/iti-js-labs && code .
   - Days: cd /media/tarikwaleed/Data/iti/JS && code .

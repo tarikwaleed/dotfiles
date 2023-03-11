@@ -1,7 +1,5 @@
 # /home/tarikwaleed/.config/tmuxinator/book-store.yml
 
-name: book-store
-root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -27,7 +25,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window: cd /media/tarikwaleed/Data/iti/ANGULAR
+#pre_window: cd /media/tarikwaleed/Data/iti/ANGULAR
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -44,15 +42,16 @@ pre_window: cd /media/tarikwaleed/Data/iti/ANGULAR
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
+name: book-store
+root: /media/tarikwaleed/Data/iti/ANGULAR/MEAN-book-store
 windows:
-  - General:
+  - console:
       layout: even-vertical
       panes:
+        - code .
         - clear
-        - clear
-  - Node: node
-  - Project:
+  - node: node
+  - server:
       layout: even-vertical
       panes:
-        - cd MEAN-book-store && code .
-        - cd MEAN-book-store && nsop 4201
+        - nsop 4201
