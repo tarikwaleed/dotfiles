@@ -1,24 +1,28 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=3
-launch-time=int64 1677581010
+launch-count=7
+launch-time=int64 1680079875
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-8'
-saved-view='/org/gnome/shell/keybindings/switch-to-application-8'
+saved-pathbar-path='/org/gnome/mutter/keybindings/toggle-tiled-left'
+saved-view='/org/gnome/mutter/keybindings/toggle-tiled-left'
 show-warning=false
 window-height=500
 window-is-maximized=true
 window-width=540
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1677366263
+release-check-time=uint32 1679800682
 
 [org/gnome/Totem]
 active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file', 'movie-properties', 'apple-trailers', 'skipto', 'open-directory', 'vimeo', 'recent', 'screenshot', 'rotation', 'media-player-keys']
 open-uri='file:///media/tarikwaleed/Data/iti/ANGULAR/hs-course/recordings/Day2'
 subtitle-encoding='UTF-8'
+
+[org/gnome/baobab/ui]
+window-size=(960, 600)
+window-state=87168
 
 [org/gnome/calculator]
 accuracy=9
@@ -44,11 +48,11 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='display'
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2023-02-11T22:46:50+00'
+prompt-check='2023-03-18T03:54:14+00'
 
 [org/gnome/deja-dup/file]
 migrated=true
@@ -70,7 +74,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-22-19-07-51-wallpapersden.com_laravel-php-4k_1920x1080.jpg'
+picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-03-09-09-15-56-nodejs2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -94,10 +98,13 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
+
+[org/gnome/desktop/notifications/application/code]
+application-id='code.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -111,11 +118,20 @@ application-id='gnome-network-panel.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/jetbrains-idea-ce]
+application-id='jetbrains-idea-ce.desktop'
+
 [org/gnome/desktop/notifications/application/libreoffice-impress]
 application-id='libreoffice-impress.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-dejadup]
+application-id='org.gnome.DejaDup.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
@@ -126,11 +142,17 @@ application-id='org.gnome.Nautilus.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
 application-id='org.gnome.Shell.PortalHelper.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-totem]
 application-id='org.gnome.Totem.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/postman]
+application-id='Postman.desktop'
 
 [org/gnome/desktop/notifications/application/slack-slack]
 application-id='slack_slack.desktop'
@@ -151,13 +173,13 @@ repeat-interval=uint32 12
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
-speed=-0.31617647058823528
+speed=0.75
 
 [org/gnome/desktop/peripherals/touchpad]
 click-method='fingers'
 edge-scrolling-enabled=false
 send-events='enabled'
-speed=1.0
+speed=0.83088235294117641
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -167,7 +189,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-02-22-19-07-51-wallpapersden.com_laravel-php-4k_1920x1080.jpg'
+picture-uri='file:///home/tarikwaleed/.local/share/backgrounds/2023-03-09-09-15-56-nodejs2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -181,8 +203,8 @@ allow-volume-above-100-percent=false
 close=['<Alt>Escape']
 cycle-windows=['<Super>Escape']
 maximize=['<Alt>i']
-move-to-monitor-left=['<Alt>u']
-move-to-monitor-right=['<Alt>o']
+move-to-monitor-left=['<Alt>h']
+move-to-monitor-right=['<Alt>l']
 move-to-workspace-down=['<Alt><Shift>j', '<Control><Shift><Alt>Down']
 move-to-workspace-up=['<alt><Shift>k', '<Control><Shift><Alt>Up']
 switch-to-workspace-down=['<Alt>j', '<Control><Alt>Down']
@@ -201,7 +223,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(0.91223318960909383, 1.3271065716973522)
+window-ratio=(1.3333333333333333, 1.9135802469135803)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -225,7 +247,7 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarikwaleed/Downloads/app/home-page'
+virtual-root='file:///home/tarikwaleed/keys'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -240,7 +262,7 @@ show-tabs-mode='auto'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(960, 1033)
+size=(960, 763)
 state=87168
 
 [org/gnome/mutter]
@@ -250,8 +272,8 @@ experimental-features=['x11-randr-fractional-scaling']
 workspaces-only-on-primary=true
 
 [org/gnome/mutter/keybindings]
-toggle-tiled-left=['<Alt>h']
-toggle-tiled-right=['<Alt>l']
+toggle-tiled-left=['<Alt>u']
+toggle-tiled-right=['<Alt>o']
 
 [org/gnome/nautilus/icon-view]
 default-zoom-level='larger'
@@ -263,10 +285,18 @@ search-view='list-view'
 
 [org/gnome/nautilus/window-state]
 initial-size=(960, 1033)
-maximized=false
+maximized=true
 start-with-sidebar=true
 
+[org/gnome/nm-applet/eap/13b70904-d6dc-47e7-a07f-8f3db446497b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/6c5ef409-4509-4af8-b6eb-41b00ad66717]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/9a8c1ca4-f480-34b3-8f4f-cb622dd9bee1]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -292,7 +322,7 @@ hinting='slight'
 [org/gnome/shell]
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.eog.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'Postman.desktop', 'jetbrains-pycharm-ce.desktop', 'jetbrains-idea-ce.desktop', 'org.gnome.Totem.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -307,7 +337,7 @@ switch-to-application-1=['<alt>f']
 switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
 switch-to-application-4=['<alt>m']
-switch-to-application-5=['<alt>v']
+switch-to-application-5=['<alt>m']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 switch-to-application-8=['<Alt>s']
@@ -317,7 +347,9 @@ switch-to-application-9=['<Alt>p']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1677816625
+check-timestamp=int64 1680262277
+online-updates-timestamp=int64 1678682555
+update-notification-timestamp=int64 1679977727
 
 [org/gnome/system/location]
 enabled=false
@@ -347,12 +379,12 @@ location-mode='path-bar'
 show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=170
+sidebar-width=198
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(768, 243)
+window-position=(96, 27)
 window-size=(1343, 790)
 
 [system/locale]
