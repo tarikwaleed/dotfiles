@@ -42,7 +42,7 @@ startup_window: server
 
 
 
-name: goodreads-clone-api
+name: salah-back
 root: ~/temp-repos/Goodreads-Clone-API
   #pre_window: npm install
 

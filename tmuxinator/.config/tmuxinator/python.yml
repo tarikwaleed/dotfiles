@@ -1,4 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/goodreads-clone-api.yml
+# /home/tarikwaleed/.config/tmuxinator/python.yml
+
+
 # Optional tmux socket
 # socket_name: foo
 
@@ -32,7 +34,7 @@
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-startup_window: server
+# startup_window: editor
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
@@ -40,25 +42,12 @@ startup_window: server
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
-
-
-name: goodreads-clone-api
-root: ~/temp-repos/Goodreads-Clone-API
-  #pre_window: npm install
-
+name: python
+root: /media/tarikwaleed/Data/iti/PYTHON
 windows:
   - console:
       layout: even-vertical
       panes:
-        - code .
-        - npm install
-  - database:
-      layout: even-vertical
-      panes:
-        - mongo
-  - server:
-      layout: even-vertical
-      panes:
-        - nodemon bin/www
-
-
+        - clear
+        - clear
+  - server: clear

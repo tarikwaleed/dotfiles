@@ -34,7 +34,7 @@
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: editor
+startup_window: server
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
@@ -49,9 +49,9 @@ windows:
       layout: even-vertical
       panes:
         - code .
-        - clear
+        - npm install
   - node: node
   - server:
       layout: even-vertical
       panes:
-        - nsop 4201
+        - nsop 4201 --live-reload false

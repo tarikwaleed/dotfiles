@@ -1,7 +1,5 @@
 # /home/tarikwaleed/.config/tmuxinator/node.yml
 
-name: node
-root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -27,7 +25,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window: cd /media/tarikwaleed/Data/iti/NODEJS
+#pre_window: cd /media/tarikwaleed/Data/iti/NODEJS
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -44,17 +42,18 @@ pre_window: cd /media/tarikwaleed/Data/iti/NODEJS
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
+name: node
+root: /media/tarikwaleed/Data/iti/NODEJS/iti-nodejs-labs
 windows:
-  - Editor: 
+  - console: 
       layout: even-horizontal
       panes:
-        - firefox https://github.com/tarikwaleed/iti-nodejs-labs && cd iti-nodejs-labs && code .
+        - code .
         - clear
-  - Node: node
-  - DB: mongo
-  - Server: 
+  - node: node
+  - mongo: mongo
+  - server: 
       layout: even-horizontal
       panes:
-        - cd iti-nodejs-labs/assignment3 && npm run devstart
+        - cd assignment4 && npm run devstart
         - clear
-  - Practice: cd ~/repos/practice/js-practice && code .

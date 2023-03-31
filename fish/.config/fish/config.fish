@@ -106,6 +106,10 @@ alias ngm="ng generate module"
 alias ngg="ng generate guard"
 alias ngcl="ng generate cl"
 
+#Node and Nest aliases
+alias nr="npm run"
+alias ni="npm install"
+
 # Docker Aliases
 alias dils="sudo docker image ls"
 alias dcls="sudo docker container ls"
@@ -124,9 +128,16 @@ alias dilq="sudo docker image ls -q"
 alias dvlq="sudo docker volume ls -q"
 alias db="sudo docker build -t"
 alias dv="sudo docker volume"
+alias dcrma="sudo docker rm (sudo docker ps -a -q)"
 
 # Configuring ruby
 set -gx PATH $HOME/.rbenv/bin $PATH
 set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
 rbenv init - | source
+
+# set if your term supports `pipenv shell --fancy`
+set pipenv_fish_fancy yes
+set -x PS1 $PS1' (⚡️  pipenv venv)'
+set -x PIPENV_VENV_IN_PROJECT 1
+
 
