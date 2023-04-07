@@ -50,5 +50,5 @@ windows:
       panes:
         - clear
         - clear
-  - server: clear
-  - container: dcla
+  - DB: clear
+  - server: cd /var/www/html

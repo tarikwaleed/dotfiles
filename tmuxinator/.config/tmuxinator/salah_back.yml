@@ -1,8 +1,4 @@
-# /home/tarikwaleed/.config/tmuxinator/flutter.yml
-
-name: salah_construction
-root: ~/
-
+# /home/tarikwaleed/.config/tmuxinator/goodreads-clone-api.yml
 # Optional tmux socket
 # socket_name: foo
 
@@ -12,14 +8,13 @@ root: ~/
 # Project hooks
 
 # Runs on project start, always
-#on_project_start: cd ~/repos/salah-construction
+# on_project_start: command
 
 # Run on project start, the first time
-#on_project_first_start: cd ~/repos/salah-construction
+# on_project_first_start: command
 
 # Run on project start, after the first time
-#on_project_restart: cd ~/repos/salah-construction
-
+# on_project_restart: command
 
 # Run on project exit ( detaching from tmux session )
 # on_project_exit: command
@@ -28,7 +23,7 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window: cd ~/repos/salah-construction
+# pre_window: rbenv shell 2.0.0-p247
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -37,33 +32,33 @@ pre_window: cd ~/repos/salah-construction
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-startup_window: Emulator
+startup_window: server
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
-#attach: false
+# attach: false
+
+
+
+name: salah-back
+root: ~/temp-repos/salah_back
+  #pre_window: npm install
 
 windows:
-  - General:
-      layout: main-vertical
+  - console:
+      layout: even-vertical
       panes:
-        - cd ~/repos/salah-construction
-  - Run: 
-      layout: main-vertical
+        - code .
+        - npm install
+  - database:
+      layout: even-vertical
       panes:
-        - cd ~/repos/salah-construction
-  - Pubspec: 
-      layout: main-vertical
+        - mongo
+  - server:
+      layout: even-vertical
       panes:
-        - cd ~/repos/salah-construction && vim pubspec.yaml
-  - Emulator: 
-      layout: main-vertical
-      panes:
-        - firebase emulators:start
-  - FishConfiguration: 
-      layout: main-vertical
-      panes:
-        - fishconfiguration
+        - nodemon bin/www
+
 

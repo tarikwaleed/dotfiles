@@ -43,7 +43,7 @@ startup_window: server
 
 
 name: nesttodo
-root: ~/temp-repos/nest-js-todo-app
+root: ~/temp-repos/NestJs-TodoApp
   #pre_window: npm install
 
 windows:

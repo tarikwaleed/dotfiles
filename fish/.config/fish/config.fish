@@ -50,6 +50,7 @@ alias gu="git fetch origin"
 
 
 # General aliases
+alias vs="code ."
 alias r="zathura"
 alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"

@@ -1,12 +1,12 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=7
-launch-time=int64 1680079875
+launch-count=8
+launch-time=int64 1680713585
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/mutter/keybindings/toggle-tiled-left'
-saved-view='/org/gnome/mutter/keybindings/toggle-tiled-left'
+saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-4'
+saved-view='/org/gnome/shell/keybindings/switch-to-application-4'
 show-warning=false
 window-height=500
 window-is-maximized=true
@@ -48,7 +48,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='universal-access'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -56,6 +56,9 @@ prompt-check='2023-03-18T03:54:14+00'
 
 [org/gnome/deja-dup/file]
 migrated=true
+
+[org/gnome/desktop/a11y/keyboard]
+mousekeys-enable=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -98,7 +101,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -120,6 +123,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/jetbrains-idea-ce]
 application-id='jetbrains-idea-ce.desktop'
+
+[org/gnome/desktop/notifications/application/jetbrains-pycharm-ce]
+application-id='jetbrains-pycharm-ce.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-impress]
 application-id='libreoffice-impress.desktop'
@@ -223,7 +229,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.3333333333333333, 1.9135802469135803)
+window-ratio=(0.83333333333333337, 1.4814814814814814)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -247,7 +253,7 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarikwaleed/keys'
+virtual-root='file:///home/tarikwaleed/Downloads/restify-lab1'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -263,7 +269,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(960, 763)
-state=87168
+state=43908
 
 [org/gnome/mutter]
 center-new-windows=true
@@ -284,7 +290,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1033)
+initial-size=(768, 790)
 maximized=true
 start-with-sidebar=true
 
@@ -301,7 +307,7 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/peripherals/mouse]
-double-click=293
+double-click=196
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -322,7 +328,7 @@ hinting='slight'
 [org/gnome/shell]
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'teams-for-linux_teams-for-linux.desktop', 'org.gnome.eog.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'Postman.desktop', 'jetbrains-pycharm-ce.desktop', 'jetbrains-idea-ce.desktop', 'org.gnome.Totem.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'slack_slack.desktop', 'Postman.desktop', 'jetbrains-pycharm-ce.desktop', 'org.gnome.eog.desktop', 'jetbrains-idea-ce.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -336,7 +342,7 @@ intellihide=false
 switch-to-application-1=['<alt>f']
 switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
-switch-to-application-4=['<alt>m']
+switch-to-application-4=['<alt>d']
 switch-to-application-5=['<alt>m']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
@@ -347,7 +353,7 @@ switch-to-application-9=['<Alt>p']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1680262277
+check-timestamp=int64 1680864819
 online-updates-timestamp=int64 1678682555
 update-notification-timestamp=int64 1679977727
 
@@ -384,7 +390,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(96, 27)
+window-position=(2016, 243)
 window-size=(1343, 790)
 
 [system/locale]
