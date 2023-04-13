@@ -43,8 +43,10 @@
 # attach: false
 
 name: js
-root: ~/
+root: ~/temp-repos/practice-js
 windows:
-  - Repo: cd ~/repos/iti-repos/iti-js-labs && code .
-  - Days: cd /media/tarikwaleed/Data/iti/JS && code .
-  - Practice: cd ~/repos/practice/js-practice && code .
+  - console:
+      layout: even-vertical
+      panes:
+        - vs
+        - clear
