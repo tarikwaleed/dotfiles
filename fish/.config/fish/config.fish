@@ -15,6 +15,7 @@ set -x -g TERMINAL gnome-terminal
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
+set -gx PATH ~/.cargo/bin $PATH
 
 # Git aliases
 alias gcln='git clone'
@@ -50,6 +51,7 @@ alias gu="git fetch origin"
 
 
 # General aliases
+alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"
 alias la="colorls -lA --git-status --light"
@@ -62,6 +64,7 @@ alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
 alias ubuntu-access-token="cat /media/tarikwaleed/Data/repos/ubuntu-access-token|xclip -selection clipboard"
+alias bitbucket-app-password="cat /media/tarikwaleed/Data/repos/bitbucket-app-password|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
@@ -131,7 +134,31 @@ alias db="docker build -t"
 alias dv="docker volume"
 alias dcrma="docker rm (docker ps -a -q)"
 
+# Django Aliases
+alias py='python3'
+alias ipy='ipython3'
+alias py2='python2'
+alias ipy2='ipython2'
+alias jn='jupyter notebook'
+alias wo='workon'
+alias pf='pip freeze | sort'
+alias pi='pip install'
+alias pui='pip uninstall'
+alias dj="python manage.py"
+alias drs="python manage.py runserver"
+alias drp="python manage.py runserverplus"
+alias dsh="python manage.py shell"
+alias dsp="python manage.py shell_plus"
+alias dsm="python manage.py schemamigration"
+alias dm="python manage.py migrate"
+alias dmm="python manage.py makemigrations"
+alias dmmm="python manage.py makemigrations & python manage.py migrate"
+alias ddd="python manage.py dumpdata"
+alias dld="python manage.py loaddata"
+alias dt="python manage.py test"
+
 # Configuring ruby
+
 set -gx PATH $HOME/.rbenv/bin $PATH
 set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
 rbenv init - | source
