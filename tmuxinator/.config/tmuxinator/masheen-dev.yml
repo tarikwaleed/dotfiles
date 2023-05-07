@@ -1,0 +1,26 @@
+# /home/tarikwaleed/.config/tmuxinator/masheen-local.yml
+
+name: masheen-local
+root: /media/tarikwaleed/Data/jobs/completed/mostaql/733149-مطلوب-مطور-full-stack-engineer/repos
+
+
+
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - clear
+        - clear
+
+  - front:
+      layout: even-vertical
+      panes:
+        - cd masheenn_admin
+  - back:
+      layout: even-vertical
+      panes:
+        - cd masheenn_api
+  - database:
+      layout: even-vertical
+      panes:
+        - clear

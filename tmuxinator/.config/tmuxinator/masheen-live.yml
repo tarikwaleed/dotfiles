@@ -1,0 +1,19 @@
+name: masheen-live
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - ssh root@206.189.24.217
+
+  - front:
+      layout: even-vertical
+      panes:
+        - ssh root@206.189.24.217
+  - back:
+      layout: even-vertical
+      panes:
+        - ssh root@206.189.24.217
+  - database:
+      layout: even-vertical
+      panes:
+        - ssh root@206.189.24.217

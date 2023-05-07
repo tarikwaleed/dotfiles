@@ -1,0 +1,21 @@
+# /home/tarikwaleed/.config/tmuxinator/masheen-local.yml
+
+name: masheen-dev
+windows:
+  - console: 
+      layout: even-vertical
+      panes:
+        - ssh root@143.198.249.188
+        - firefox http://143.198.249.188/dashboard/analytics && firefox https://bitbucket.org/mashheen/masheenn_admin/src/master/ && firefox https://bitbucket.org/mashheen/masheenn_api/src/master/ && firefox https://trello.com/b/qu4xAdTI/backend-2023  
+  - front:
+      layout: even-vertical
+      panes:
+        - ssh root@143.198.249.188
+  - back:
+      layout: even-vertical
+      panes:
+        - ssh root@143.198.249.188
+  - database:
+      layout: even-vertical
+      panes:
+        - clear

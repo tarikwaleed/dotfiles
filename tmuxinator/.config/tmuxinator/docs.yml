@@ -1,0 +1,9 @@
+
+name: docs
+root: /media/tarikwaleed/Data/repos/docs
+windows:
+  - General:
+      layout: main-vertical
+      panes:
+        - code .
+
