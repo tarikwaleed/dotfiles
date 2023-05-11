@@ -1,12 +1,11 @@
-# /home/tarikwaleed/.config/tmuxinator/masheen-local.yml
+# /home/tarikwaleed/.config/tmuxinator/masheen-staging.yml
 
-name: masheen-dev
+name: masheen-staging
 windows:
   - console: 
       layout: even-vertical
       panes:
-        - ssh root@143.198.249.188
-        - firefox http://143.198.249.188/dashboard/analytics && firefox https://bitbucket.org/mashheen/masheenn_admin/src/master/ && firefox https://bitbucket.org/mashheen/masheenn_api/src/master/ && firefox https://trello.com/b/qu4xAdTI/backend-2023  
+        - masheen-staging-creds && ssh root@143.198.249.188
   - front:
       layout: even-vertical
       panes:

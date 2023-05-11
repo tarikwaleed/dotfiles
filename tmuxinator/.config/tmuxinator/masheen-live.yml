@@ -3,8 +3,7 @@ windows:
   - console:
       layout: even-vertical
       panes:
-        - ssh root@206.189.24.217
-
+        - masheen-live-creds && ssh root@206.189.24.217
   - front:
       layout: even-vertical
       panes:

@@ -1,6 +1,6 @@
-# /home/tarikwaleed/.config/tmuxinator/masheen-local.yml
+# /home/tarikwaleed/.config/tmuxinator/masheen-dev.yml
 
-name: masheen-local
+name: masheen-dev
 root: /media/tarikwaleed/Data/jobs/completed/mostaql/733149-مطلوب-مطور-full-stack-engineer/repos
 
 
@@ -9,9 +9,7 @@ windows:
   - console:
       layout: even-vertical
       panes:
-        - clear
-        - clear
-
+        - firefox http://143.198.249.188/dashboard/analytics && firefox https://bitbucket.org/mashheen
   - front:
       layout: even-vertical
       panes:
