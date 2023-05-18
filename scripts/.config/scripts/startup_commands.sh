@@ -1,8 +1,4 @@
-nvm use lts
-echo "nvm setup done"
+nvm use 16.13.2
 sct 3400
-echo "sct setup done"
-xrandr --output DP-2 --brightness .6
-echo "xrandr setup done"
+#xrandr --output DP-2 --brightness .6
 xinput set-prop 13 334 1
-echo "xinput setup done"

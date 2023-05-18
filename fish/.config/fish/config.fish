@@ -147,18 +147,18 @@ alias wo='workon'
 alias pf='pip freeze | sort'
 alias pi='pip install'
 alias pui='pip uninstall'
-alias dj="python manage.py"
-alias drs="python manage.py runserver"
-alias drp="python manage.py runserverplus"
-alias dsh="python manage.py shell"
-alias dsp="python manage.py shell_plus"
-alias dsm="python manage.py schemamigration"
-alias dm="python manage.py migrate"
-alias dmm="python manage.py makemigrations"
-alias dmmm="python manage.py makemigrations & python manage.py migrate"
-alias ddd="python manage.py dumpdata"
-alias dld="python manage.py loaddata"
-alias dt="python manage.py test"
+alias dj=".venv/bin/python manage.py"
+alias drs=".venv/bin/python manage.py runserver"
+alias drp=".venv/bin/python manage.py runserverplus"
+alias dsh=".venv/bin/python manage.py shell"
+alias dsp=".venv/bin/python manage.py shell_plus"
+alias dsm=".venv/bin/python manage.py schemamigration"
+alias dm=".venv/bin/python manage.py migrate"
+alias dmm=".venv/bin/python manage.py makemigrations"
+alias dmmm=".venv/bin/python manage.py makemigrations & python manage.py migrate"
+alias ddd=".venv/bin/python manage.py dumpdata"
+alias dld=".venv/bin/python manage.py loaddata"
+alias dt=".venv/bin/python manage.py test"
 
 #PHP Aliases
 #systemctl Aliases
