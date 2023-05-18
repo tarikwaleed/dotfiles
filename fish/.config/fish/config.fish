@@ -63,10 +63,11 @@ alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat /media/tarikwaleed/Data/repos/ubuntu-access-token|xclip -selection clipboard"
-alias bitbucket-app-password="cat /media/tarikwaleed/Data/repos/bitbucket-app-password|xclip -selection clipboard"
-alias masheen-staging-creds="cat /media/tarikwaleed/Data/repos/masheen-staging-creds|xclip -selection clipboard"
-alias masheen-live-creds="cat /media/tarikwaleed/Data/repos/masheen-live-creds|xclip -selection clipboard"
+alias ubuntu-access-token="cat /media/tarikwaleed/Data/creds/ubuntu-access-token|xclip -selection clipboard"
+alias bitbucket-app-password="cat /media/tarikwaleed/Data/creds/bitbucket-app-password|xclip -selection clipboard"
+alias masheen-staging-creds="cat /media/tarikwaleed/Data/creds/masheen-staging-creds|xclip -selection clipboard"
+alias masheen-live-creds="cat /media/tarikwaleed/Data/creds/masheen-live-creds|xclip -selection clipboard"
+alias mostaql1-creds="cat /media/tarikwaleed/Data/creds/mostaql1-creds|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
@@ -112,7 +113,7 @@ alias ngm="ng generate module"
 alias ngg="ng generate guard"
 alias ngcl="ng generate cl"
 
-#Node and Nest aliases
+#Node aliases
 alias nr="npm run"
 alias ni="npm install"
 
@@ -159,6 +160,17 @@ alias ddd="python manage.py dumpdata"
 alias dld="python manage.py loaddata"
 alias dt="python manage.py test"
 
+#PHP Aliases
+#systemctl Aliases
+alias ctls="systemctl status"
+alias ctlsr="systemctl start"
+alias ctlen="systemctl enable"
+alias ctldis="systemctl disable"
+alias ctlsp="systemctl stop"
+alias ctlrel="systemctl reload"
+alias ctlres="systemctl restart"
+
+
 # Configuring ruby
 
 set -gx PATH $HOME/.rbenv/bin $PATH
@@ -170,4 +182,15 @@ set pipenv_fish_fancy yes
 set -x PS1 $PS1' (⚡️  pipenv venv)'
 set -x PIPENV_VENV_IN_PROJECT 1
 
+# Pyenv cofig
+set -x PYENV_ROOT "$HOME/.pyenv"
+set -x PATH "$PYENV_ROOT/bin" $PATH
+status --is-interactive; and source (pyenv init - | psub)
+#if command -v pyenv > /dev/null; and status --is-interactive
+#    pyenv init - | source
+#end
+
+set -x ANDROID_HOME $HOME/Android/Sdk
+set -x PATH $PATH $ANDROID_HOME/emulator
+set -x PATH $PATH $ANDROID_HOME/platform-tools
 

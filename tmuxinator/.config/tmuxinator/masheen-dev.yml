@@ -9,7 +9,7 @@ windows:
   - console:
       layout: even-vertical
       panes:
-        - firefox http://143.198.249.188/dashboard/analytics && firefox https://bitbucket.org/mashheen
+        - clear
   - front:
       layout: even-vertical
       panes:
@@ -18,7 +18,7 @@ windows:
       layout: even-vertical
       panes:
         - cd masheenn_api
-  - database:
+  - logs:
       layout: even-vertical
       panes:
-        - clear
+        - pm2 logs

@@ -1,0 +1,17 @@
+# /home/tarikwaleed/.config/tmuxinator/masheen-staging.yml
+
+name: masheen
+windows:
+  - dev: 
+      layout: even-vertical
+      panes:
+        - cd /media/tarikwaleed/Data/jobs/completed/mostaql/733149-مطلوب-مطور-full-stack-engineer/repos/masheenn_admin 
+        - cd /media/tarikwaleed/Data/jobs/completed/mostaql/733149-مطلوب-مطور-full-stack-engineer/repos/masheenn_api
+  - staging:
+      layout: even-vertical
+      panes:
+        - masheen-staging-creds && ssh root@143.198.249.188
+  - live:
+      layout: even-vertical
+      panes:
+        - masheen-live-creds && ssh root@206.189.24.217
