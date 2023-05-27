@@ -143,6 +143,8 @@ alias dvlq="docker volume ls -q"
 alias db="docker build -t"
 alias dv="docker volume"
 alias dcrma="docker rm (docker ps -a -q)"
+alias dirma="docker rmi (docker images -q)"
+
 
 # Django Aliases
 alias py='python3'
