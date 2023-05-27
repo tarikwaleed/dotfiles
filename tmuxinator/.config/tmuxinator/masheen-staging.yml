@@ -9,12 +9,16 @@ windows:
   - front:
       layout: even-vertical
       panes:
-        - ssh root@143.198.249.188
+        - masheen-staging-creds && ssh root@143.198.249.188
   - back:
       layout: even-vertical
       panes:
-        - ssh root@143.198.249.188
+        - masheen-staging-creds && ssh root@143.198.249.188
+  - logs:
+      layout: even-vertical
+      panes:
+        - masheen-staging-creds && ssh root@143.198.249.188
   - database:
       layout: even-vertical
       panes:
-        - clear
+        - masheen-staging-creds && ssh root@143.198.249.188

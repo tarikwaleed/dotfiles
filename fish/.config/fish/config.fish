@@ -16,6 +16,12 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/Android/Sdk/emulator $PATH
+set -gx PATH ~/Android/Sdk/platform-tools $PATH
+set -gx PATH ~/Android/Sdk/build-tools/33.0.2 $PATH
+set -gx PATH ~/Android/Sdk/cmdline-tools/latest/bin $PATH
+set -gx PATH ~/Android/Sdk/tools $PATH
+set -gx PATH ~/Android/Sdk/tools/bin $PATH
 
 # Git aliases
 alias gcln='git clone'
@@ -67,6 +73,7 @@ alias ubuntu-access-token="cat /media/tarikwaleed/Data/creds/ubuntu-access-token
 alias bitbucket-app-password="cat /media/tarikwaleed/Data/creds/bitbucket-app-password|xclip -selection clipboard"
 alias masheen-staging-creds="cat /media/tarikwaleed/Data/creds/masheen-staging-creds|xclip -selection clipboard"
 alias masheen-live-creds="cat /media/tarikwaleed/Data/creds/masheen-live-creds|xclip -selection clipboard"
+alias arrivo-staging-creds="cat /media/tarikwaleed/Data/arrivo/creds/arrivo-staging-creds|xclip -selection clipboard"
 alias mostaql1-creds="cat /media/tarikwaleed/Data/creds/mostaql1-creds|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
@@ -162,13 +169,13 @@ alias dt=".venv/bin/python manage.py test"
 
 #PHP Aliases
 #systemctl Aliases
-alias ctls="systemctl status"
-alias ctlsr="systemctl start"
-alias ctlen="systemctl enable"
-alias ctldis="systemctl disable"
-alias ctlsp="systemctl stop"
-alias ctlrel="systemctl reload"
-alias ctlres="systemctl restart"
+alias ctlst="sudo systemctl status"
+alias ctlsr="sudo systemctl start"
+alias ctlen="sudo systemctl enable"
+alias ctldis="sudo systemctl disable"
+alias ctlsp="sudo systemctl stop"
+alias ctlrel="sudo systemctl reload"
+alias ctlres="sudo systemctl restart"
 
 
 # Configuring ruby
@@ -190,7 +197,4 @@ status --is-interactive; and source (pyenv init - | psub)
 #    pyenv init - | source
 #end
 
-set -x ANDROID_HOME $HOME/Android/Sdk
-set -x PATH $PATH $ANDROID_HOME/emulator
-set -x PATH $PATH $ANDROID_HOME/platform-tools
 

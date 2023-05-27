@@ -17,8 +17,12 @@ windows:
   - back:
       layout: even-vertical
       panes:
-        - cd masheenn_api
+        - cd masheenn_api && vs
   - logs:
       layout: even-vertical
       panes:
         - pm2 logs
+  - database:
+      layout: even-vertical
+      panes:
+        - mysqlsh

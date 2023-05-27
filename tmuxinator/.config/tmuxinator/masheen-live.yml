@@ -7,12 +7,16 @@ windows:
   - front:
       layout: even-vertical
       panes:
-        - ssh root@206.189.24.217
+        - masheen-live-creds && ssh root@206.189.24.217
   - back:
       layout: even-vertical
       panes:
-        - ssh root@206.189.24.217
+        - masheen-live-creds && ssh root@206.189.24.217
   - database:
       layout: even-vertical
       panes:
-        - ssh root@206.189.24.217
+        - masheen-live-creds && ssh root@206.189.24.217
+  - logs:
+      layout: even-vertical
+      panes:
+        - masheen-live-creds && ssh root@206.189.24.217 && pm2 logs

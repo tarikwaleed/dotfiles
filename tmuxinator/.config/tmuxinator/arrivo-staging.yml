@@ -1,0 +1,24 @@
+# /home/tarikwaleed/.config/tmuxinator/arrivo-staging.yml
+
+name: arrivo-staging
+windows:
+  - console: 
+      layout: even-vertical
+      panes:
+        - arrivo-staging-creds && ssh root@206.189.112.93
+  - front:
+      layout: even-vertical
+      panes:
+        - arrivo-staging-creds && ssh root@206.189.112.93
+  - back:
+      layout: even-vertical
+      panes:
+        - arrivo-staging-creds && ssh root@206.189.112.93
+  - logs:
+      layout: even-vertical
+      panes:
+        - arrivo-staging-creds && ssh root@206.189.112.93
+  - database:
+      layout: even-vertical
+      panes:
+        - arrivo-staging-creds && ssh root@206.189.112.93
