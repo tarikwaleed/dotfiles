@@ -1,0 +1,11 @@
+# /home/tarikwaleed/.config/tmuxinator/google-ads-api.yml
+
+name: google-ads-api
+root: ~/
+
+windows:
+  - editor:
+      layout: even-vertical
+      panes:
+        - clear
+        - clear
