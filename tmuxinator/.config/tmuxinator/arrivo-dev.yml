@@ -13,7 +13,7 @@ windows:
   - front:
       layout: even-vertical
       panes:
-        - cd arrivo_web
+        - cd arrivo-web
   - back:
       layout: even-vertical
       panes:
