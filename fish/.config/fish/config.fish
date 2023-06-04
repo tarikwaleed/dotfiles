@@ -74,6 +74,7 @@ alias bitbucket-app-password="cat /media/tarikwaleed/Data/creds/bitbucket-app-pa
 alias masheen-staging-creds="cat /media/tarikwaleed/Data/creds/masheen-staging-creds|xclip -selection clipboard"
 alias masheen-live-creds="cat /media/tarikwaleed/Data/creds/masheen-live-creds|xclip -selection clipboard"
 alias arrivo-staging-creds="cat /media/tarikwaleed/Data/arrivo/creds/arrivo-staging-creds|xclip -selection clipboard"
+alias arrivo-staging-ip="cat /media/tarikwaleed/Data/arrivo/creds/arrivo-staging-ip|xclip -selection clipboard"
 alias mostaql1-creds="cat /media/tarikwaleed/Data/creds/mostaql1-creds|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
