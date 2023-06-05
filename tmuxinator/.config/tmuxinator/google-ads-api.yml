@@ -1,11 +1,16 @@
 # /home/tarikwaleed/.config/tmuxinator/google-ads-api.yml
 
 name: google-ads-api
-root: ~/
+root: /media/tarikwaleed/Data/jobs/attempts/mostaql/750946-تطوير-تطبيق-ويب/repos/test-google-ads-api
 
 windows:
-  - editor:
+  - client:
       layout: even-vertical
       panes:
+        - cd client && clear
         - clear
+  - server:
+      layout: even-vertical
+      panes:
+        - cd server && clear
         - clear
