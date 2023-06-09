@@ -10,6 +10,11 @@ end
 # Environment Variables
 set -x -g EDITOR nvim
 set -x -g TERMINAL gnome-terminal
+# Related to Google Ads API
+set -x -g OAUTHLIB_RELAX_TOKE_SCOPE 1
+
+
+
 
 # Add to your path
 set -gx PATH ~/.local/bin $PATH
