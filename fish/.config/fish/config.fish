@@ -103,7 +103,6 @@ alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
 # Tmux aliases
 alias tkl="tmux kill-session -t"
 alias tls="tmux list-sessions"
-alias tsync="tmuxinator-sync.sh"
 
 # Tmuxinator aliases
 alias start="tmuxinator start"
