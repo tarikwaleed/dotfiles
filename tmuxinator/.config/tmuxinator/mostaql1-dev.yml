@@ -1,13 +1,12 @@
-# /home/tarikwaleed/.config/tmuxinator/mostaql1-dev.yml
-
 name: mostaql1-dev
-root: /media/tarikwaleed/Data/jobs/completed/mostaql/719433-برمجة-معادلات-وصيغ-وتحويلها-لموقع-إلكتروني/repos/mostaql1-v2
+root: /media/tarik/Data/jobs/completed/mostaql/719433-برمجة-معادلات-وصيغ-وتحويلها-لموقع-إلكتروني/repos/Gann-Math
+
 windows:
   - console: 
       layout: even-vertical
       panes:
-        - clear
+        - vs
   - server:
       layout: even-vertical
       panes:
-        - drs
+        - source Gann-Math/bin/activate.fish && drs

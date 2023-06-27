@@ -1,0 +1,11 @@
+name: shop2game-live
+root: /media/tarik/Data/jobs/attempts/offline/shop2game/repos/shop2game
+windows:
+  - local: clear
+  - console:
+      layout: even-vertical
+      panes:
+        - shop2game-creds && ssh -p 65002 u141160691@89.117.102.117
+        - shop2game-creds && ssh -p 65002 u141160691@89.117.102.117
+  - server: ssh -p 65002 u141160691@89.117.102.117
+  - tinker: ssh -p 65002 u141160691@89.117.102.117

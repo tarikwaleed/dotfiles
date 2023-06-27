@@ -81,6 +81,7 @@ alias masheen-live-creds="cat /media/tarik/Data/creds/masheen-live-creds|xclip -
 alias arrivo-staging-creds="cat /media/tarik/Data/arrivo/creds/arrivo-staging-creds|xclip -selection clipboard"
 alias arrivo-staging-ip="cat /media/tarik/Data/arrivo/creds/arrivo-staging-ip|xclip -selection clipboard"
 alias mostaql1-creds="cat /media/tarik/Data/creds/mostaql1-creds|xclip -selection clipboard"
+alias shop2game-creds="cat /media/tarik/Data/creds/shop2game-creds|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
@@ -159,22 +160,29 @@ alias ipy2='ipython2'
 alias jn='jupyter notebook'
 alias wo='workon'
 alias pf='pip freeze | sort'
+alias pfr='pip freeze > requirements.txt'
+alias pfc='pip freeze|wc -l'
 alias pi='pip install'
 alias pui='pip uninstall'
-alias dj=".venv/bin/python manage.py"
-alias drs=".venv/bin/python manage.py runserver"
-alias drp=".venv/bin/python manage.py runserverplus"
-alias dsh=".venv/bin/python manage.py shell"
-alias dsp=".venv/bin/python manage.py shell_plus"
-alias dsm=".venv/bin/python manage.py schemamigration"
-alias dm=".venv/bin/python manage.py migrate"
-alias dmm=".venv/bin/python manage.py makemigrations"
-alias dmmm=".venv/bin/python manage.py makemigrations & python manage.py migrate"
-alias ddd=".venv/bin/python manage.py dumpdata"
-alias dld=".venv/bin/python manage.py loaddata"
-alias dt=".venv/bin/python manage.py test"
+alias dj="python manage.py"
+alias drs="python manage.py runserver"
+alias drp="python manage.py runserverplus"
+alias dsh="python manage.py shell"
+alias dsp="python manage.py shell_plus"
+alias dsm="python manage.py schemamigration"
+alias dm="python manage.py migrate"
+alias dmm="python manage.py makemigrations"
+alias dmmm="python manage.py makemigrations & python manage.py migrate"
+alias ddd="python manage.py dumpdata"
+alias dld="python manage.py loaddata"
+alias dt="python manage.py test"
 
 #PHP Aliases
+alias arts="php artisan serve"
+alias artt="php artisan tinker"
+
+
+
 #systemctl Aliases
 alias ctlst="sudo systemctl status"
 alias ctlsr="sudo systemctl start"
@@ -195,13 +203,3 @@ rbenv init - | source
 set pipenv_fish_fancy yes
 set -x PS1 $PS1' (⚡️  pipenv venv)'
 set -x PIPENV_VENV_IN_PROJECT 1
-
-# Pyenv cofig
-set -x PYENV_ROOT "$HOME/.pyenv"
-set -x PATH "$PYENV_ROOT/bin" $PATH
-status --is-interactive; and source (pyenv init - | psub)
-#if command -v pyenv > /dev/null; and status --is-interactive
-#    pyenv init - | source
-#end
-
-

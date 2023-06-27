@@ -1,0 +1,11 @@
+
+name: shop2game
+root: /media/tarik/Data/jobs/attempts/offline/shop2game/repos/shop2game
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - vs
+        - clear
+  - server: arts
+  - tinker: artt
