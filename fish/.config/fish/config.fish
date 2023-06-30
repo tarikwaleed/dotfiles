@@ -180,6 +180,7 @@ alias dt="python manage.py test"
 #PHP Aliases
 alias arts="php artisan serve"
 alias artt="php artisan tinker"
+alias artm="php artisan migrate"
 
 
 

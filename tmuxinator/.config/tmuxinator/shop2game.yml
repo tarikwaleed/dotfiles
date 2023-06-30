@@ -9,3 +9,4 @@ windows:
         - clear
   - server: arts
   - tinker: artt
+  - database: clear
