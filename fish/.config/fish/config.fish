@@ -178,9 +178,13 @@ alias dld="python manage.py loaddata"
 alias dt="python manage.py test"
 
 #PHP Aliases
+alias art="php artisan"
 alias arts="php artisan serve"
 alias artt="php artisan tinker"
+alias artmm="php artisan make:migration"
 alias artm="php artisan migrate"
+alias artms="php artisan make:seeder"
+
 
 
 
