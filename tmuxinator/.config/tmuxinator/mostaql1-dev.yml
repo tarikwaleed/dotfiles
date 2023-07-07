@@ -5,8 +5,17 @@ windows:
   - console: 
       layout: even-vertical
       panes:
-        - vs
+        - source Gann-Math/bin/activate.fish && vs
   - server:
       layout: even-vertical
       panes:
         - source Gann-Math/bin/activate.fish && drs
+
+  - shell:
+      layout: even-vertical
+      panes:
+        - source Gann-Math/bin/activate.fish && dsh
+  - database:
+      layout: even-vertical
+      panes:
+        - mysql -uroot -p

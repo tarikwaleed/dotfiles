@@ -1,0 +1,11 @@
+# /home/tarik/.config/tmuxinator/resume.yml
+
+name: resume
+root: /media/tarik/Data/repos/resume
+
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - vs
+

@@ -1,8 +1,8 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=9
-launch-time=int64 1687523947
+launch-count=10
+launch-time=int64 1688382886
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-4'
@@ -13,7 +13,7 @@ window-is-maximized=true
 window-width=540
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1687523754
+release-check-time=uint32 1688745057
 
 [org/gnome/Totem]
 active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file', 'movie-properties', 'apple-trailers', 'skipto', 'open-directory', 'vimeo', 'recent', 'screenshot', 'rotation', 'media-player-keys']
@@ -36,7 +36,7 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(858, 348)
+window-position=(737, 358)
 word-size=64
 
 [org/gnome/cheese]
@@ -238,7 +238,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(0.91805555555555551, 0.99814814814814812)
+window-ratio=(0.9183006535947712, 0.99747474747474751)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -262,7 +262,7 @@ active-plugins=['spell', 'filebrowser', 'docinfo', 'modelines', 'time']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarik/Downloads/New%20folder'
+virtual-root='file:///media/tarik/Data/iti/DB%20Fundamentals-20230627T190617Z-001/DB%20Fundamentals/Course%20material/Day%201%20-%20Intro%20to%20DB%20&%20ERD/Lecture'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -365,9 +365,9 @@ switch-to-application-9=['<Alt>p']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1688032891
+check-timestamp=int64 1688745032
 online-updates-timestamp=int64 1678682555
-update-notification-timestamp=int64 1687523773
+update-notification-timestamp=int64 1688745023
 
 [org/gnome/system/location]
 enabled=false

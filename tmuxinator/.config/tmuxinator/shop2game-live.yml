@@ -1,5 +1,5 @@
 name: shop2game-live
-root: /media/tarik/Data/jobs/attempts/offline/shop2game/repos/shop2game
+root: /media/tarik/Data/jobs/attempts/offline/shop2game/repos/OGAds-Website
 windows:
   - local: clear
   - console:
