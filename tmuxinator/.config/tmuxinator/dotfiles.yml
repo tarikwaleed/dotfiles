@@ -2,7 +2,7 @@
 name: dotfiles
 root: ~/dotfiles
 windows:
-  - dotfiles: cd dotfiles
+  - dotfiles: 
   - Fish: fishconfiguration
   - creds: cd /media/tarik/Data/secrets/creds
   - dotenvs: cd /media/tarik/Data/secrets/dotenvs
