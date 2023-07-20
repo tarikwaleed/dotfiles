@@ -1,0 +1,7 @@
+name: pandas
+root: /media/tarik/Data/repos/python-practice/pandas-practice/repos/kaggle-tutorial
+windows:
+  - console:
+      layout: main-vertical
+      panes:
+        - source ~/venvs/pandas-env/bin/activate.fish

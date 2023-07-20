@@ -1,8 +1,8 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=10
-launch-time=int64 1688382886
+launch-count=12
+launch-time=int64 1689605971
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-4'
@@ -101,7 +101,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -178,6 +178,9 @@ application-id='snap-store_ubuntu-software.desktop'
 [org/gnome/desktop/notifications/application/teams-for-linux-teams-for-linux]
 application-id='teams-for-linux_teams-for-linux.desktop'
 
+[org/gnome/desktop/notifications/application/transmission-gtk]
+application-id='transmission-gtk.desktop'
+
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
 
@@ -238,7 +241,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(0.9183006535947712, 0.99747474747474751)
+window-ratio=(0.97990307867730908, 0.75772849462365588)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -262,7 +265,7 @@ active-plugins=['spell', 'filebrowser', 'docinfo', 'modelines', 'time']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///media/tarik/Data/iti/DB%20Fundamentals-20230627T190617Z-001/DB%20Fundamentals/Course%20material/Day%201%20-%20Intro%20to%20DB%20&%20ERD/Lecture'
+virtual-root='file:///media/tarik/Data/repos/sql-recap'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -306,11 +309,19 @@ initial-size=(768, 790)
 maximized=true
 start-with-sidebar=true
 
+[org/gnome/nm-applet/eap/0b17b030-6ed9-4b5b-8b2c-efaba4c6bf1d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/13b70904-d6dc-47e7-a07f-8f3db446497b]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/6c5ef409-4509-4af8-b6eb-41b00ad66717]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/86784ba8-1f1d-38f6-87a8-9338d4b15899]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -338,9 +349,10 @@ sleep-inactive-battery-type='nothing'
 hinting='slight'
 
 [org/gnome/shell]
+app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'Postman.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=false
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -365,9 +377,7 @@ switch-to-application-9=['<Alt>p']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1688745032
-online-updates-timestamp=int64 1678682555
-update-notification-timestamp=int64 1688745023
+check-timestamp=int64 1689837062
 
 [org/gnome/system/location]
 enabled=false
@@ -394,7 +404,7 @@ use-theme-colors=false
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=198
