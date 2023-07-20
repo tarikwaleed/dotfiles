@@ -79,6 +79,10 @@ alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-
 alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|xclip -selection clipboard"
 alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|xclip -selection clipboard"
 alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|xclip -selection clipboard"
+alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|xclip -selection clipboard"
+alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|xclip -selection clipboard"
+
+
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
