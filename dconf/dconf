@@ -370,8 +370,8 @@ switch-to-application-4=['<alt>d']
 switch-to-application-5=['<alt>m']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
-switch-to-application-8=['<Alt>s']
-switch-to-application-9=['<Alt>p']
+switch-to-application-8=['<Alt>p']
+switch-to-application-9=['<Alt>v']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false

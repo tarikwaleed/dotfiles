@@ -78,6 +78,7 @@ alias ubuntu-access-token="cat /media/tarik/Data/secrets/creds/ubuntu-access-tok
 alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-password|xclip -selection clipboard"
 alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|xclip -selection clipboard"
 alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|xclip -selection clipboard"
+alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|xclip -selection clipboard"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
