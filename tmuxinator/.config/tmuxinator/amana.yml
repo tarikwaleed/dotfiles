@@ -4,4 +4,8 @@ windows:
   - console:
       layout: main-vertical
       panes:
-        - cd repos/cleansing_tool_2023
+        - clear
+  - repo:
+      layout: main-vertical
+      panes:
+        - cd repos/cleansing_tool_2023 && vs
