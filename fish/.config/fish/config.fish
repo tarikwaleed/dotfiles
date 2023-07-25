@@ -80,6 +80,7 @@ alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|xclip -
 alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|xclip -selection clipboard"
 alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|xclip -selection clipboard"
 alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|xclip -selection clipboard"
+alias amana-rdp-creds="cat /media/tarik/Data/secrets/creds/amana-rdp-creds|xclip -selection clipboard"
 alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|xclip -selection clipboard"
 
 

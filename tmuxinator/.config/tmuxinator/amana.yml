@@ -1,11 +1,15 @@
 name: amana
-root: /media/tarik/Data/work/pk/amana
+root: /media/tarik/Data/work/pk/amana/repos/amana
 windows:
   - console:
       layout: main-vertical
       panes:
         - clear
-  - repo:
+  - src:
       layout: main-vertical
       panes:
-        - cd repos/cleansing_tool_2023 && vs
+        - source amana-env/bin/activate.fish && vs && cd src
+  - data:
+      layout: main-vertical
+      panes:
+        -  source amana-env/bin/activate.fish && vs && cd data

@@ -1,20 +1,24 @@
 name: mostaql1-dev
-root: /media/tarik/Data/jobs/completed/mostaql/719433-برمجة-معادلات-وصيغ-وتحويلها-لموقع-إلكتروني/repos/Gann-Math
+root: /media/tarik/Data/jobs/completed/mostaql/719433-برمجة-معادلات-وصيغ-وتحويلها-لموقع-إلكتروني/
 
 windows:
   - console: 
       layout: even-vertical
       panes:
-        - source Gann-Math/bin/activate.fish && vs
+        - cd repos/Gann-Math && source Gann-Math/bin/activate.fish && vs
+  - docs: 
+      layout: even-vertical
+      panes:
+        - cd documents
   - server:
       layout: even-vertical
       panes:
-        - source Gann-Math/bin/activate.fish && drs
+        - cd repos/Gann-Math && source Gann-Math/bin/activate.fish && drs
 
   - shell:
       layout: even-vertical
       panes:
-        - source Gann-Math/bin/activate.fish && dsh
+        - cd repos/Gann-Math && source Gann-Math/bin/activate.fish && dsh
   - database:
       layout: even-vertical
       panes:
