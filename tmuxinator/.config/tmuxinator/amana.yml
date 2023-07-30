@@ -13,3 +13,12 @@ windows:
       layout: main-vertical
       panes:
         -  source amana-env/bin/activate.fish && vs && cd data
+
+  - python:
+      layout: main-vertical
+      panes:
+        -  source amana-env/bin/activate.fish && python
+  - database:
+      layout: main-vertical
+      panes:
+        - docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/oracle:/opt/oracle/oradata oracle/database:19.3.0-ee

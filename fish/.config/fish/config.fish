@@ -62,6 +62,7 @@ alias gu="git fetch origin"
 
 
 # General aliases
+alias cpwd="pwd|copy"
 alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"
@@ -74,16 +75,14 @@ alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat /media/tarik/Data/secrets/creds/ubuntu-access-token|xclip -selection clipboard"
-alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-password|xclip -selection clipboard"
-alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|xclip -selection clipboard"
-alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|xclip -selection clipboard"
-alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|xclip -selection clipboard"
-alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|xclip -selection clipboard"
-alias amana-rdp-creds="cat /media/tarik/Data/secrets/creds/amana-rdp-creds|xclip -selection clipboard"
-alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|xclip -selection clipboard"
-
-
+alias ubuntu-access-token="cat /media/tarik/Data/secrets/creds/ubuntu-access-token|copy"
+alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-password|copy"
+alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|copy"
+alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|copy"
+alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|copy"
+alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|copy"
+alias amana-rdp-creds="cat /media/tarik/Data/secrets/creds/amana-rdp-creds|copy"
+alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|copy"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
@@ -150,8 +149,10 @@ alias dilq="sudo docker image ls -q"
 alias dvlq="sudo docker volume ls -q"
 alias db="sudo docker build -t"
 alias dv="sudo docker volume"
-alias dcrma="sudo docker rm (docker ps -a -q)"
-alias dirma="sudo docker rmi (docker images -q)"
+alias dcrma="sudo docker rm (sudo docker ps -a -q)"
+alias dirma="sudo docker rmi (sudo docker images -q)"
+alias dcsa="sudo docker stop (sudo docker ps -aq)"
+
 
 
 # Django Aliases
@@ -165,6 +166,7 @@ alias pf='pip freeze | sort'
 alias pfr='pip freeze > requirements.txt'
 alias pfc='pip freeze|wc -l'
 alias pi='pip install'
+alias pir='pip install -r requirements.txt'
 alias pui='pip uninstall'
 alias dj="python manage.py"
 alias drs="python manage.py runserver"
@@ -210,3 +212,7 @@ rbenv init - | source
 set pipenv_fish_fancy yes
 set -x PS1 $PS1' (⚡️  pipenv venv)'
 set -x PIPENV_VENV_IN_PROJECT 1
+
+# Configuring SQL*Plus
+set -gx LD_LIBRARY_PATH /opt/oracle/instantclient_21_8 $LD_LIBRARY_PATH
+set -x PATH /opt/oracle/instantclient_21_8 $PATH
