@@ -1,0 +1,21 @@
+name: amana-django
+root: /media/tarik/Data/work/pk/amana/repos/amana-django
+
+windows:
+  - console: 
+      layout: even-vertical
+      panes:
+        - source amana-django-env/bin/activate.fish && vs
+  - server:
+      layout: even-vertical
+      panes:
+        - source amana-django-env/bin/activate.fish && cd amana &&  drs
+  - shell:
+      layout: even-vertical
+      panes:
+        -  source amana-django-env/bin/activate.fish && cd amana && dsh
+  - database:                                                                                         
+      layout: even-vertical                                                                           
+      panes:                                                                                          
+        - docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/oracle:/opt/or
+        - dx oracle19c bash

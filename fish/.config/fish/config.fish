@@ -33,7 +33,7 @@ alias gcln='git clone'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
-alias gp='ubuntu-access-token&& git push -u origin'
+alias gp='ubuntu-access-token&& git push -u'
 alias gcm='git commit -m'
 alias glg='git log --oneline'
 alias glga='git log --oneline --all'
@@ -80,6 +80,7 @@ alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-
 alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|copy"
 alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|copy"
 alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|copy"
+alias amana-linux-creds="cat /media/tarik/Data/secrets/creds/amana-linux-creds|copy"
 alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|copy"
 alias amana-rdp-creds="cat /media/tarik/Data/secrets/creds/amana-rdp-creds|copy"
 alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|copy"
@@ -101,6 +102,16 @@ alias vim="nvim"
 alias tldr="tldr -t ocean"
 alias dpi="sudo dpkg -i"
 alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
+
+# Emojes
+alias memo="echo 📝 |copy"
+alias bug="echo 🐛|copy"
+alias fire="echo 🔥|copy"
+alias sparkles="echo ✨|copy"
+alias rocket="echo 🚀|copy"
+alias tada="echo 🎉|copy"
+alias recycle="echo ♻️ |copy"
+alias hammer="echo 🔨|copy"
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"

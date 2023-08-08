@@ -1,24 +1,18 @@
 name: amana
-root: /media/tarik/Data/work/pk/amana/repos/amana
+root: /media/tarik/Data/work/pk/amana/repos
 windows:
   - console:
-      layout: main-vertical
+      layout: even-vertical
       panes:
         - clear
-  - src:
-      layout: main-vertical
+        - cd amana && source amana-env/bin/activate.fish && cd _ooad/notebooks && jupyter lab
+  - repo:
+      layout: even-vertical
       panes:
-        - source amana-env/bin/activate.fish && vs && cd src
-  - data:
-      layout: main-vertical
-      panes:
-        -  source amana-env/bin/activate.fish && vs && cd data
-
-  - python:
-      layout: main-vertical
-      panes:
-        -  source amana-env/bin/activate.fish && python
+        - cd amana && source amana-env/bin/activate.fish && vs
   - database:
-      layout: main-vertical
+      layout: even-vertical
       panes:
         - docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/oracle:/opt/oracle/oradata oracle/database:19.3.0-ee
+        - dx oracle19c bash
+
