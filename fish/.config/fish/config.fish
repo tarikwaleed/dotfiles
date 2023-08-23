@@ -103,7 +103,7 @@ alias tldr="tldr -t ocean"
 alias dpi="sudo dpkg -i"
 alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
 
-# Emojes
+# Emojies
 alias memo="echo 📝 |copy"
 alias bug="echo 🐛|copy"
 alias fire="echo 🔥|copy"
@@ -112,6 +112,7 @@ alias rocket="echo 🚀|copy"
 alias tada="echo 🎉|copy"
 alias recycle="echo ♻️ |copy"
 alias hammer="echo 🔨|copy"
+alias construction="echo 🚧|copy"
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"

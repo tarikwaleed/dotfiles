@@ -1,15 +1,23 @@
 name: amana
-root: /media/tarik/Data/work/pk/amana/repos
+root: /media/tarik/Data/work/pk/amana
 windows:
   - console:
       layout: even-vertical
       panes:
-        - clear
-        - cd amana && source amana-env/bin/activate.fish && cd _ooad/notebooks && jupyter lab
+        - firefox https://app.clickup.com/7501909/v/l/li/900902187273
+        - cd repos/amana && source amana-env/bin/activate.fish && cd _ooad/notebooks && jupyter lab
+
+  - docs:
+      layout: even-vertical
+      panes:
+        - cd documents/pk-amana-design-documents
+
   - repo:
       layout: even-vertical
       panes:
-        - cd amana && source amana-env/bin/activate.fish && vs
+        - cd repos/amana && source amana-env/bin/activate.fish && vs
+        - cd repos/amana && source ~/venvs/pyarmor-env/bin/activate.fish 
+
   - database:
       layout: even-vertical
       panes:
