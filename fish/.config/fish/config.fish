@@ -21,6 +21,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/Downloads/nvim/bin $PATH
 set -gx PATH ~/Android/Sdk/emulator $PATH
 set -gx PATH ~/Android/Sdk/platform-tools $PATH
 set -gx PATH ~/Android/Sdk/build-tools/33.0.2 $PATH
