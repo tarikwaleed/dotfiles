@@ -1,5 +1,5 @@
 name: amana
-root: /media/tarik/Data/work/pk/amana
+root: /home/pk10/tarik/work/pk/amana
 windows:
   - console:
       layout: even-vertical
