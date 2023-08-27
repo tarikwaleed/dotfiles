@@ -4,7 +4,7 @@ windows:
   - console:
       layout: even-vertical
       panes:
-        - firefox https://app.clickup.com/7501909/v/l/li/900902187273
+        - firefox https://app.clickup.com/9009198963/v/l/li/900401688256 && firefox https://bitbucket.org/pk-amana/amana/src/master/ && firefox https://discord.com/channels/1143847002522783744/1143847003323908128
         - cd repos/amana && source amana-env/bin/activate.fish && cd _ooad/notebooks && jupyter lab
 
   - docs:
@@ -15,8 +15,8 @@ windows:
   - repo:
       layout: even-vertical
       panes:
-        - cd repos/amana && source amana-env/bin/activate.fish && vs
         - cd repos/amana && source ~/venvs/pyarmor-env/bin/activate.fish 
+        - cd repos/amana && source amana-env/bin/activate.fish && vs
 
   - database:
       layout: even-vertical
