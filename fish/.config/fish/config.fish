@@ -61,6 +61,9 @@ alias gpl="git pull"
 alias gu="git fetch origin"
 alias gda="git checkout -- ."
 alias gd="git checkout --"
+alias gr="git rebase"
+alias gri="git rebase -i"
+
 
 
 
