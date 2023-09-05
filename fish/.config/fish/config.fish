@@ -63,6 +63,7 @@ alias gda="git checkout -- ."
 alias gd="git checkout --"
 alias gr="git rebase"
 alias gri="git rebase -i"
+alias gt="git branch --track"
 
 
 
