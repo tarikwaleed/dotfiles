@@ -21,6 +21,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/Downloads/nvim/bin $PATH
 set -gx PATH ~/Android/Sdk/emulator $PATH
 set -gx PATH ~/Android/Sdk/platform-tools $PATH
 set -gx PATH ~/Android/Sdk/build-tools/33.0.2 $PATH
@@ -58,6 +59,12 @@ alias gsa="git stash apply"
 alias gm="git merge"
 alias gpl="git pull"
 alias gu="git fetch origin"
+alias gda="git checkout -- ."
+alias gd="git checkout --"
+alias gr="git rebase"
+alias gri="git rebase -i"
+alias gt="git branch --track"
+
 
 
 
@@ -75,16 +82,15 @@ alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat /media/tarik/Data/secrets/creds/ubuntu-access-token|copy"
-alias bitbucket-app-password="cat /media/tarik/Data/secrets/creds/bitbucket-app-password|copy"
-alias mostaql1-creds="cat /media/tarik/Data/secrets/creds/mostaql1-creds|copy"
-alias shop2game-creds="cat /media/tarik/Data/secrets/creds/shop2game-creds|copy"
-alias amana-vpn-password="cat /media/tarik/Data/secrets/creds/amana-vpn-password|copy"
-alias amana-vpn-creds="cat /media/tarik/Data/secrets/creds/amana-vpn-creds|copy"
-alias amana-linux-creds="cat /media/tarik/Data/secrets/creds/amana-linux-creds|copy"
-alias amana-rdp-password="cat /media/tarik/Data/secrets/creds/amana-rdp-password|copy"
-alias amana-rdp-creds="cat /media/tarik/Data/secrets/creds/amana-rdp-creds|copy"
-alias amana-rdp-ips="cat /media/tarik/Data/secrets/creds/amana-rdp-ips|copy"
+alias ubuntu-access-token="cat ~/secrets/creds/ubuntu-access-token|copy"
+alias bitbucket-app-password="cat ~/secrets/creds/bitbucket-app-password|copy"
+alias mostaql1-creds="cat ~/secrets/creds/mostaql1-creds|copy"
+alias shop2game-creds="cat ~/secrets/creds/shop2game-creds|copy"
+alias amana-vpn-password="cat ~/secrets/creds/amana-vpn-password|copy"
+alias amana-linux-creds="cat ~/secrets/creds/amana-linux-creds|copy"
+alias amana-rdp-password="cat ~/secrets/creds/amana-rdp-password|copy"
+alias amana-rdp-creds="cat ~/secrets/creds/amana-rdp-creds|copy"
+alias amana-rdp-ips="cat ~/secrets/creds/amana-rdp-ips|copy"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."

@@ -2,7 +2,8 @@
 
 name: notes
 
-root: /media/tarik/Data/repos/study-notes
+  #root: /media/tarik/Data/repos/study-notes
+root: /home/pk10/study-notes
 windows:
   - General:
       layout: main-vertical
