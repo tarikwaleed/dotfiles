@@ -172,6 +172,8 @@ alias dv="sudo docker volume"
 alias dcrma="sudo docker rm (sudo docker ps -a -q)"
 alias dirma="sudo docker rmi (sudo docker images -q)"
 alias dcsa="sudo docker stop (sudo docker ps -aq)"
+alias drst="dcsa && dcrma && dirma && db ."
+alias drn="docker run -it"
 
 
 
