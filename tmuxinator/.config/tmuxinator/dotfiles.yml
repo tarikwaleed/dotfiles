@@ -4,5 +4,5 @@ root: ~/dotfiles
 windows:
   - dotfiles: 
   - Fish: fishconfiguration
-  - creds: cd /media/tarik/Data/secrets/creds
-  - dotenvs: cd /media/tarik/Data/secrets/dotenvs
+  - creds: cd ~/secrets/creds
+  - dotenvs: cd ~/secrets/dotenvs
