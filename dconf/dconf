@@ -1,8 +1,8 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=19
-launch-time=int64 1693685971
+launch-count=20
+launch-time=int64 1694944011
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/shell/keybindings/'
@@ -14,7 +14,7 @@ window-width=540
 
 [com/ubuntu/update-notifier]
 no-show-notifications=true
-release-check-time=uint32 1693636246
+release-check-time=uint32 1694938777
 
 [org/gnome/Characters]
 recent-characters=['💃', '📝', '🎩']
@@ -53,7 +53,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='background'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -82,7 +82,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-07-26-12-18-13-wp3188182.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2023-09-18-23-05-56-2648921.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -224,7 +224,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-07-26-12-18-13-wp3188182.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2023-09-18-23-05-56-2648921.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -258,7 +258,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.2549019607843137, 0.99747474747474751)
+window-ratio=(0.9183006535947712, 0.73106060606060608)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -282,7 +282,7 @@ active-plugins=['spell', 'filebrowser', 'docinfo', 'modelines', 'time']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///media/tarik/Data/repos/sql-recap'
+virtual-root='file:///home/tarik/work/pk/amana/documents/pk-amana-design-documents'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -370,7 +370,7 @@ hinting='slight'
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'org.gnome.Totem.desktop', 'code.desktop', 'org.remmina.Remmina.desktop', 'Postman.desktop', 'forticlient.desktop', 'org.gnome.Evince.desktop', 'google-chrome.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'syntevo-smartgit.desktop', 'code.desktop', 'org.remmina.Remmina.desktop', 'Postman.desktop', 'google-chrome.desktop', 'forticlient.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -385,7 +385,7 @@ switch-to-application-1=['<alt>f']
 switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
 switch-to-application-4=['<alt>d']
-switch-to-application-5=['<alt>m']
+switch-to-application-5=['<alt>g']
 switch-to-application-6=['<alt>e']
 switch-to-application-7=['<alt>r']
 switch-to-application-8=['<Alt>p']
@@ -395,8 +395,7 @@ switch-to-application-9=['<Alt>v']
 focus-change-on-pointer-rest=false
 
 [org/gnome/software]
-check-timestamp=int64 1693983253
-update-notification-timestamp=int64 1693751067
+check-timestamp=int64 1695107351
 
 [org/gnome/system/location]
 enabled=false
@@ -431,7 +430,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(96, 27)
+window-position=(1536, 63)
 window-size=(1343, 790)
 
 [system/locale]
