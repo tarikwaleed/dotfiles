@@ -52,7 +52,7 @@ alias grla="git remote -v"
 alias gf="git fetch"
 alias gpull="git pull"
 alias gbrm="git branch -d"
-alias gsla="git stash list"
+alias gsl="git stash list"
 alias gsu="git stash -u"
 alias gsd="git stash drop"
 alias gsa="git stash apply"
@@ -121,6 +121,7 @@ alias recycle="echo ♻️ |copy"
 alias hammer="echo 🔨|copy"
 alias construction="echo 🚧|copy"
 alias ignore="echo 🙈|copy"
+alias snake="echo 🐍|copy"
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"
@@ -172,8 +173,13 @@ alias dv="sudo docker volume"
 alias dcrma="sudo docker rm (sudo docker ps -a -q)"
 alias dirma="sudo docker rmi (sudo docker images -q)"
 alias dcsa="sudo docker stop (sudo docker ps -aq)"
-alias drst="dcsa && dcrma && dirma && db ."
+alias drst="dcsa && dcrma && dirma"
 alias drn="docker run -it"
+alias dcb="docker compose build"
+alias dcup="docker compose up"
+alias dcd="docker compose down"
+
+
 
 
 

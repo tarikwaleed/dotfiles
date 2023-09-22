@@ -10,15 +10,15 @@ windows:
       panes:
         - cd documents/pk-amana-design-documents
 
-  - repo:
+  - package:
       layout: even-vertical
       panes:
-        - cd repos/amana && source ~/venvs/pyarmor-env/bin/activate.fish 
-        - cd repos/amana && source ~/venvs/amana-env/bin/activate.fish && vs
+        - cd repos/package && source ~/venvs/pyarmor-env/bin/activate.fish 
+        - cd repos/package && source ~/venvs/amana-env/bin/activate.fish && vs
+  - backend:
+      layout: even-vertical
+      panes:
+        - cd repos/backend 
+        - cd repos/backend && source ~/venvs/amana-api-env/bin/activate.fish && vs
 
-  - database:
-      layout: even-vertical
-      panes:
-        - docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/oracle:/opt/oracle/oradata oracle/database:19.3.0-ee
-        - dx oracle19c bash
 
