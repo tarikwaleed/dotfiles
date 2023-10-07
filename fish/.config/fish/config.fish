@@ -9,6 +9,8 @@ end
 
 # Environment Variables
 set -x -g EDITOR nvim
+set -x DOCKER_BUILDKIT 1
+set -x COMPOSE_DOCKER_CLI_BUILD 1
 set -x -g TERMINAL gnome-terminal
 # Related to Google Ads API
 set -x -g OAUTHLIB_RELAX_TOKE_SCOPE 1
@@ -21,13 +23,6 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
-set -gx PATH ~/Downloads/nvim/bin $PATH
-set -gx PATH ~/Android/Sdk/emulator $PATH
-set -gx PATH ~/Android/Sdk/platform-tools $PATH
-set -gx PATH ~/Android/Sdk/build-tools/33.0.2 $PATH
-set -gx PATH ~/Android/Sdk/cmdline-tools/latest/bin $PATH
-set -gx PATH ~/Android/Sdk/tools $PATH
-set -gx PATH ~/Android/Sdk/tools/bin $PATH
 
 # Git aliases
 alias gcln='git clone'

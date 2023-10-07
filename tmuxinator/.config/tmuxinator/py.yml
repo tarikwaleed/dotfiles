@@ -1,0 +1,8 @@
+name: py
+root: ~/repos/python-practice
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - vs
+  - ipython: ipython

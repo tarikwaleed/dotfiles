@@ -19,6 +19,6 @@ windows:
       layout: even-vertical
       panes:
         - cd repos/backend 
-        - cd repos/backend && source ~/venvs/amana-api-env/bin/activate.fish && vs
+        - cd repos/backend && source venv/bin/activate.fish && vs
 
 
