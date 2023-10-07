@@ -3,7 +3,7 @@
 name: notes
 
   #root: /media/tarik/Data/repos/study-notes
-root: ~/repos/study-notes
+root: ~/study-notes
 windows:
   - General:
       layout: main-vertical

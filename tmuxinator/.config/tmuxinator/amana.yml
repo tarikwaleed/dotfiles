@@ -1,5 +1,5 @@
 name: amana
-root: ~/work/pk/amana
+root: ~/work/pk
 windows:
   - console:
       layout: even-vertical
@@ -8,17 +8,15 @@ windows:
   - docs:
       layout: even-vertical
       panes:
-        - cd documents/pk-amana-design-documents
-
+        - cd docs
   - package:
       layout: even-vertical
       panes:
-        - cd repos/package && source ~/venvs/pyarmor-env/bin/activate.fish 
-        - cd repos/package && source ~/venvs/amana-env/bin/activate.fish && vs
+        - cd package && source venv/bin/activate.fish && vs
   - backend:
       layout: even-vertical
       panes:
-        - cd repos/backend 
-        - cd repos/backend && source venv/bin/activate.fish && vs
+        - cd backend 
+        - cd backend && source venv/bin/activate.fish && vs
 
 

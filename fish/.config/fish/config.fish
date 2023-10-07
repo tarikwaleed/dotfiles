@@ -23,7 +23,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
-
+set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 # Git aliases
 alias gcln='git clone'
 alias gst='git status'
