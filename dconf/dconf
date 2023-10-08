@@ -1,8 +1,8 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=20
-launch-time=int64 1694944011
+launch-count=21
+launch-time=int64 1696713160
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/shell/keybindings/'
@@ -14,7 +14,7 @@ window-width=540
 
 [com/ubuntu/update-notifier]
 no-show-notifications=true
-release-check-time=uint32 1694938777
+release-check-time=uint32 1696697783
 
 [org/gnome/Characters]
 recent-characters=['💃', '📝', '🎩']
@@ -57,7 +57,7 @@ last-panel='background'
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2023-08-25T14:26:10+00'
+prompt-check='2023-10-07T21:15:13+00'
 
 [org/gnome/deja-dup/file]
 migrated=true
@@ -82,7 +82,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-09-18-23-05-56-2648921.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2023-10-08-13-37-16-desktop-wallpaper-devops.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -99,7 +99,7 @@ clock-format='12h'
 clock-show-seconds=false
 clock-show-weekday=true
 cursor-size=32
-gtk-im-module='ibus'
+gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita'
 locate-pointer=true
 show-battery-percentage=true
@@ -203,7 +203,7 @@ application-id='update-manager.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 217
-numlock-state=false
+numlock-state=true
 repeat-interval=uint32 12
 
 [org/gnome/desktop/peripherals/mouse]
@@ -224,7 +224,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-09-18-23-05-56-2648921.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2023-10-08-13-37-16-desktop-wallpaper-devops.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -370,7 +370,7 @@ hinting='slight'
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'syntevo-smartgit.desktop', 'code.desktop', 'org.remmina.Remmina.desktop', 'Postman.desktop', 'google-chrome.desktop', 'forticlient.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'syntevo-smartgit.desktop', 'org.remmina.Remmina.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'Postman.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -413,7 +413,7 @@ background-color='rgb(238,238,236)'
 cursor-blink-mode='on'
 default-size-columns=90
 default-size-rows=30
-font='Cousine Nerd Font Bold 18'
+font='Cousine Nerd Font Bold Italic 16'
 foreground-color='rgb(46,52,54)'
 use-system-font=false
 use-theme-colors=false
@@ -430,7 +430,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1536, 63)
+window-position=(49, 42)
 window-size=(1343, 790)
 
 [system/locale]
