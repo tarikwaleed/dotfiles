@@ -17,6 +17,6 @@ windows:
       layout: even-vertical
       panes:
         - cd backend 
-        - cd backend && source venv/bin/activate.fish && vs
+        - cd backend/api && source venv/bin/activate.fish && vs
 
 

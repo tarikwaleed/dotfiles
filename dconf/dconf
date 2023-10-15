@@ -1,8 +1,8 @@
 [apps/update-manager]
 check-new-release-ignore='jammy'
 first-run=false
-launch-count=21
-launch-time=int64 1696713160
+launch-count=23
+launch-time=int64 1697370437
 
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/shell/keybindings/'
@@ -53,7 +53,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='ubuntu'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -100,7 +100,7 @@ clock-show-seconds=false
 clock-show-weekday=true
 cursor-size=32
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Adwaita'
+gtk-theme='Yaru-dark'
 locate-pointer=true
 show-battery-percentage=true
 toolkit-accessibility=false
@@ -370,7 +370,7 @@ hinting='slight'
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'syntevo-smartgit.desktop', 'org.remmina.Remmina.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'Postman.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.remmina.Remmina.desktop', 'syntevo-smartgit.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'Postman.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'libreoffice-writer.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/auto-move-windows]
@@ -379,6 +379,7 @@ application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.des
 [org/gnome/shell/extensions/dash-to-dock]
 dock-fixed=false
 intellihide=false
+preferred-monitor=0
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=['<alt>f']
@@ -409,12 +410,12 @@ close-window='<alt>Escape'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
-background-color='rgb(238,238,236)'
+background-color='rgb(0,0,0)'
 cursor-blink-mode='on'
 default-size-columns=90
 default-size-rows=30
 font='Cousine Nerd Font Bold Italic 16'
-foreground-color='rgb(46,52,54)'
+foreground-color='rgb(0,255,0)'
 use-system-font=false
 use-theme-colors=false
 
