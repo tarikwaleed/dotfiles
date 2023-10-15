@@ -1,2 +1,2 @@
-vim.cmd [[silent! colorscheme tokyonight-day]]
+vim.cmd [[silent! colorscheme tokyonight-night]]
 
