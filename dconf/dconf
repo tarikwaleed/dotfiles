@@ -53,7 +53,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='ubuntu'
+last-panel='display'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -322,7 +322,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1409, 790)
+initial-size=(915, 496)
 maximized=true
 sidebar-width=198
 start-with-sidebar=true
@@ -423,7 +423,7 @@ use-theme-colors=false
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=198
@@ -431,8 +431,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(49, 42)
-window-size=(1343, 790)
+window-position=(208, 93)
+window-size=(1024, 694)
 
 [system/locale]
 region='en_US.UTF-8'
