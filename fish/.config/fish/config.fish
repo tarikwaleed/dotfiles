@@ -117,6 +117,9 @@ alias hammer="echo 🔨|copy"
 alias construction="echo 🚧|copy"
 alias ignore="echo 🙈|copy"
 alias snake="echo 🐍|copy"
+alias restructure="echo 🏗️|copy"
+
+
 
 # Tmux aliases
 alias tkl="tmux kill-session -t"

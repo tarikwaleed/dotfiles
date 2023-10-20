@@ -1,10 +1,6 @@
 name: amana
 root: ~/work/pk
 windows:
-  - console:
-      layout: even-vertical
-      panes:
-        - firefox https://app.clickup.com/7501909/v/l/s/90090466050 && firefox https://bitbucket.org/pk-amana/amana/src/master/ && firefox https://discord.com/channels/1143847002522783744/1143847003323908128
   - docs:
       layout: even-vertical
       panes:
