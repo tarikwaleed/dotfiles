@@ -118,6 +118,8 @@ alias construction="echo 🚧|copy"
 alias ignore="echo 🙈|copy"
 alias snake="echo 🐍|copy"
 alias restructure="echo 🏗️|copy"
+alias wrench="echo 🔧|copy"
+
 
 
 
