@@ -1,29 +1,3 @@
-# On Startup
-# Load myscript.fish only if the MYSCRIPT_LOADED variable is not set
-if not set -q MYSCRIPT_LOADED
-    set -x MYSCRIPT_LOADED 1
-    source ~/.config/scripts/startup_commands.sh
-end
-
-
-
-# Environment Variables
-set -x -g EDITOR nvim
-set -x DOCKER_BUILDKIT 1
-set -x COMPOSE_DOCKER_CLI_BUILD 1
-set -x -g TERMINAL gnome-terminal
-# Related to Google Ads API
-set -x -g OAUTHLIB_RELAX_TOKE_SCOPE 1
-
-
-
-
-# Add to your path
-set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/.pub-cache/bin $PATH
-set -gx PATH ~/.config/scripts $PATH
-set -gx PATH ~/.cargo/bin $PATH
-set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 # Git aliases
 alias gcln='git clone'
 alias gst='git status'
@@ -228,20 +202,4 @@ alias ctlen="sudo systemctl enable"
 alias ctldis="sudo systemctl disable"
 alias ctlsp="sudo systemctl stop"
 alias ctlrel="sudo systemctl reload"
-alias ctlres="sudo systemctl restart"
-
-
-# Configuring ruby
-
-set -gx PATH $HOME/.rbenv/bin $PATH
-set -gx PATH $HOME/.rbenv/plugins/ruby-build/bin $PATH
-rbenv init - | source
-
-# set if your term supports `pipenv shell --fancy`
-set pipenv_fish_fancy yes
-set -x PS1 $PS1' (⚡️  pipenv venv)'
-set -x PIPENV_VENV_IN_PROJECT 1
-
-# Configuring SQL*Plus
-set -gx LD_LIBRARY_PATH /opt/oracle/instantclient_21_8 $LD_LIBRARY_PATH
-set -x PATH /opt/oracle/instantclient_21_8 $PATH
+alias ctlres="sudo systemctl restart
