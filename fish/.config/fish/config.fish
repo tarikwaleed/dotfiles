@@ -120,6 +120,8 @@ alias ignore="echo 🙈|copy"
 alias snake="echo 🐍|copy"
 alias restructure="echo 🏗️|copy"
 alias wrench="echo 🔧|copy"
+alias gear="echo ⚙️|copy"
+alias migration="echo 🗃️|copy"
 
 
 
