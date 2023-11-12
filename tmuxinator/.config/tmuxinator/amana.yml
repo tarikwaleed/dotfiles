@@ -17,12 +17,10 @@ windows:
       layout: even-vertical
       panes:
         - cd backend 
-        - cd backend/api && source venv/bin/activate.fish && vs
+        - cd backend && source api/venv/bin/activate.fish && vs
   - droplet:
       panes:
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
-
-
