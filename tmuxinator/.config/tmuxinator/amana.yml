@@ -1,14 +1,6 @@
 name: amana
 root: ~/work/pk
 windows:
-  - console:
-      layout: even-vertical
-      panes:
-        - clear
-  - docs:
-      layout: even-vertical
-      panes:
-        - cd docs
   - package:
       layout: even-vertical
       panes:
@@ -18,9 +10,16 @@ windows:
       panes:
         - cd backend 
         - cd backend && source api/venv/bin/activate.fish && vs
-  - droplet:
+  - backend-droplet:
       panes:
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
+  - frontend-droplet:
+      panes:
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
+

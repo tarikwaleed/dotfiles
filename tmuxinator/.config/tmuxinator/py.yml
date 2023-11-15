@@ -1,5 +1,5 @@
 name: py
-root: ~/repos/python-practice
+root: ~/python-practice
 windows:
   - console:
       layout: even-vertical
