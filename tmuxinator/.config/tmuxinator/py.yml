@@ -5,4 +5,9 @@ windows:
       layout: even-vertical
       panes:
         - vs
-  - ipython: ipython
+  - ipython:
+      panes:
+        - ipython
+        - ipython
+        - ipython
+        - ipython

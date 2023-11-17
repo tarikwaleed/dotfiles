@@ -38,75 +38,15 @@ alias gt="git branch --track"
 
 
 # General aliases
-alias cpwd="pwd|copy"
-alias charm="nohup charm . >/dev/null 2>&1 &"
-alias vs="code ."
-alias r="zathura"
-alias la="colorls -lA --git-status --dark"
-alias fishconfiguration="vim ~/.config/fish/config.fish"
-alias tmuxconfiguration="vim ~/.tmux.conf"
-alias ideavimrc="vim ~/.ideavimrc"
-alias sf="source ~/.config/fish/config.fish"
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
 alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
 alias install="sudo apt-get install -y"
-alias ubuntu-access-token="cat ~/secrets/creds/ubuntu-access-token|copy"
-alias bitbucket-app-password="cat ~/secrets/creds/bitbucket-app-password|copy"
-alias mostaql1-creds="cat ~/secrets/creds/mostaql1-creds|copy"
-alias shop2game-creds="cat ~/secrets/creds/shop2game-creds|copy"
-alias amana-vpn-password="cat ~/secrets/creds/amana-vpn-password|copy"
-alias amana-linux-creds="cat ~/secrets/creds/amana-linux-creds|copy"
-alias amana-rdp-password="cat ~/secrets/creds/amana-rdp-password|copy"
-alias amana-rdp-creds="cat ~/secrets/creds/amana-rdp-creds|copy"
-alias amana-rdp-ips="cat ~/secrets/creds/amana-rdp-ips|copy"
-alias amana-droplet-ip="cat ~/secrets/creds/amana-droplet-ip|copy"
-alias copy="xclip -selection clipboard"
-alias studio="studio.sh"
 alias b="cd .."
 alias bb="cd ../.."
 alias bbb="cd ../../.."
 alias bbbb="cd ../../../.."
-#alias awrc="vim ~/dotfiles/awesome/.config/awesome/rc.lua"
-#alias awtheme="vim ~/dotfiles/awesome/.config/awesome/theme.lua"
-#alias awxrandr="vim ~/dotfiles/awesome/.config/awesome/xrandr.lua"
-#alias logout="dm-tool switch-to-greeter"
-#alias vu="amixer -D pulse sset Master 10%+ -q"
-#alias vd="amixer -D pulse sset Master 10%- -q"
-#alias vm="amixer -D pulse sset Master 50% -q"
-#alias vh="amixer -D pulse sset Master 100% -q"
-alias tldr="tldr -t ocean"
 alias dpi="sudo dpkg -i"
-alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
-
-# Emojies
-alias memo="echo 📝 |copy"
-alias bug="echo 🐛|copy"
-alias fire="echo 🔥|copy"
-alias sparkles="echo ✨|copy"
-alias rocket="echo 🚀|copy"
-alias tada="echo 🎉|copy"
-alias recycle="echo ♻️ |copy"
-alias hammer="echo 🔨|copy"
-alias construction="echo 🚧|copy"
-alias ignore="echo 🙈|copy"
-alias snake="echo 🐍|copy"
-alias restructure="echo 🏗️|copy"
-alias wrench="echo 🔧|copy"
-
-
-
-
-# Tmux aliases
-alias tkl="tmux kill-session -t"
-alias tls="tmux list-sessions"
-
-# Tmuxinator aliases
-alias start="tmuxinator start"
-alias new="tmuxinator new"
-alias stop="tmuxinator stop"
-alias edit="tmuxinator edit"
-alias list="tmuxinator list"
 
 # Angular aliases
 alias ns="ng serve"
@@ -153,10 +93,6 @@ alias dcb="docker compose build"
 alias dcup="docker compose up"
 alias dcd="docker compose down"
 
-
-
-
-
 # Django Aliases
 alias py='python3'
 alias ipy='ipython3'
@@ -190,9 +126,6 @@ alias artt="php artisan tinker"
 alias artmm="php artisan make:migration"
 alias artm="php artisan migrate"
 alias artms="php artisan make:seeder"
-
-
-
 
 #systemctl Aliases
 alias ctlst="sudo systemctl status"

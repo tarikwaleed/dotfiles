@@ -22,4 +22,10 @@ windows:
         - ssh root@144.126.200.198
         - ssh root@144.126.200.198
         - ssh root@144.126.200.198
+  - database-droplet:
+      panes:
+        - ssh root@134.209.177.109
+        - ssh root@134.209.177.109
+        - ssh root@134.209.177.109
+        - ssh root@134.209.177.109
 

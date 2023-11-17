@@ -1,0 +1,13 @@
+name: sml
+root: ~/sml-course
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - vs
+  - sml:
+      panes:
+        - sml
+        - sml
+        - sml
+        - sml

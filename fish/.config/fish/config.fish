@@ -24,6 +24,7 @@ set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
+set -gx PATH ~/Downloads/sml/bin $PATH
 # Git aliases
 alias gcln='git clone'
 alias gst='git status'
@@ -88,6 +89,7 @@ alias amana-rdp-creds="cat ~/secrets/creds/amana-rdp-creds|copy"
 alias amana-rdp-ips="cat ~/secrets/creds/amana-rdp-ips|copy"
 alias amana-droplet-ip="cat ~/secrets/creds/amana-droplet-ip|copy"
 alias amana-frontend-droplet-ip="cat ~/secrets/creds/amana-frontend-droplet-ip|copy"
+alias amana-database-droplet-ip="cat ~/secrets/creds/amana-database-droplet-ip|copy"
 alias copy="xclip -selection clipboard"
 alias studio="studio.sh"
 alias b="cd .."
