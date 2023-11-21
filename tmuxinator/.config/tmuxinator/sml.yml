@@ -1,13 +1,13 @@
 name: sml
 root: ~/sml-course
 windows:
-  - console:
+  - matarial:
       layout: even-vertical
       panes:
-        - vs
+        - cd /media/tarik/Data/courses/programming-languages-part-A
   - sml:
       panes:
-        - sml
+        - vs
         - sml
         - sml
         - sml

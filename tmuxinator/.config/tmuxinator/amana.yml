@@ -16,16 +16,4 @@ windows:
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
         - ssh root@167.71.143.82
-  - frontend-droplet:
-      panes:
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-  - database-droplet:
-      panes:
-        - ssh root@134.209.177.109
-        - ssh root@134.209.177.109
-        - ssh root@134.209.177.109
-        - ssh root@134.209.177.109
 

@@ -134,4 +134,4 @@ alias ctlen="sudo systemctl enable"
 alias ctldis="sudo systemctl disable"
 alias ctlsp="sudo systemctl stop"
 alias ctlrel="sudo systemctl reload"
-alias ctlres="sudo systemctl restart
+alias ctlres="sudo systemctl restart"
