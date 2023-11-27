@@ -1,5 +1,5 @@
 name: js
-root: /media/tarik/Data/repos/js-practice
+root: ~/js-practice
 windows:
   - console:
       layout: even-vertical
