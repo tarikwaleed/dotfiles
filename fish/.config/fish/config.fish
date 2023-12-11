@@ -67,6 +67,7 @@ alias gt="git branch --track"
 
 # General aliases
 alias cpwd="pwd|copy"
+alias csshkey="cat ~/.ssh/id_ed25519.pub|copy"
 alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"

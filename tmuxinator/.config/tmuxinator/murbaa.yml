@@ -1,0 +1,14 @@
+name: murbaa
+root: /media/tarik/Data/jobs/attempts/mostaql/846631-إضافات-على-موقع-قائم(murbaa)/code/public_html
+windows:
+  - console: 
+      layout: even-vertical
+      panes:
+        - clear
+        - clear
+  - server: 
+      panes:
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
+        - ssh root@144.126.200.198
