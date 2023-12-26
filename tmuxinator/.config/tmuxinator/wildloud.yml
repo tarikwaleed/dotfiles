@@ -1,9 +1,9 @@
-name: murbaa
-root: /media/tarik/Data/jobs/attempts/mostaql/murbaa-846631/code/murbaa
+name: wildloud
+root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code
 windows:
   - local: 
       panes:
-        - vs
+        - cd old && vs
         - clear
         - clear
         - clear

@@ -1,0 +1,10 @@
+name: polyglot
+root: ~/polyglot-developer
+windows:
+  - py: 
+      panes:
+        - ipython
+        - cd src/python && source ./venv/bin/activate.fish && vs
+  - js: 
+      panes:
+        - cd src/js && node

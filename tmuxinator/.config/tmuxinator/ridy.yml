@@ -1,0 +1,15 @@
+name: ridy
+root: /media/tarik/Data/jobs/attempts/mostaql/ridy-853074
+windows:
+  - console: 
+      panes:
+        - clear
+        - clear
+        - clear
+        - clear
+  - server: 
+      panes:
+        - ssh root@162.19.231.17
+        - ssh root@162.19.231.17
+        - ssh root@162.19.231.17
+        - ssh root@162.19.231.17
