@@ -1,0 +1,16 @@
+# /home/tarikwaleed/.config/tmuxinator/mostaql1-live.yml
+
+name: gannmath
+root: /media/tarik/Data/jobs/completed/mostaql/719433-gannmath
+windows:
+  - local: 
+      layout: even-vertical
+      panes:
+        - cd repos/Gann-Math && vs
+  - server:
+      layout: 
+      panes:
+        - ssh root@89.116.52.40
+        - ssh root@89.116.52.40
+        - ssh root@89.116.52.40
+        - ssh root@89.116.52.40

@@ -159,6 +159,9 @@ alias ngcl="ng generate cl"
 
 #Node aliases
 alias nr="npm run"
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias nrs="npm run start"
 alias ni="npm install"
 
 # Docker Aliases

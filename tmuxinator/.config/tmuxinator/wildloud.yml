@@ -1,10 +1,10 @@
 name: wildloud
-root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code
+root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code/new
 windows:
-  - local: 
+  - frontend: 
       panes:
-        - cd old && vs
-        - clear
+        - cd wildloud-next && vs
+        - cd wildloud-next && nrd
         - clear
         - clear
   - server: 
