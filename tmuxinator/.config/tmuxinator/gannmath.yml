@@ -4,11 +4,12 @@ name: gannmath
 root: /media/tarik/Data/jobs/completed/mostaql/719433-gannmath
 windows:
   - local: 
-      layout: even-vertical
       panes:
-        - cd repos/Gann-Math && vs
+        - cd repos/old && source venv/bin/activate.fish && vs
+        - cd repos/old && source venv/bin/activate.fish 
+        - cd repos/old && source venv/bin/activate.fish 
+        - cd repos/old && source venv/bin/activate.fish 
   - server:
-      layout: 
       panes:
         - ssh root@89.116.52.40
         - ssh root@89.116.52.40

@@ -1,10 +1,10 @@
 name: wildloud
-root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code/new
+root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code/new/wildloud-django
 windows:
-  - frontend: 
+  - djanto: 
       panes:
-        - cd wildloud-next && vs
-        - cd wildloud-next && nrd
+        - vs
+        - source app/venv/bin/activate.fish  && cd app/src && drs
         - clear
         - clear
   - server: 
