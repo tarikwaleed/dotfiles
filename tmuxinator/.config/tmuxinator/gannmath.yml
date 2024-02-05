@@ -1,14 +1,12 @@
-# /home/tarikwaleed/.config/tmuxinator/mostaql1-live.yml
-
 name: gannmath
-root: /media/tarik/Data/jobs/completed/mostaql/719433-gannmath
+root: ~/work/gannmath
 windows:
   - local: 
       panes:
-        - cd repos/old && source venv/bin/activate.fish && vs
-        - cd repos/old && source venv/bin/activate.fish 
-        - cd repos/old && source venv/bin/activate.fish 
-        - cd repos/old && source venv/bin/activate.fish 
+        - cd gannmath && source venv/bin/activate.fish && vs
+        - cd gannmath && source venv/bin/activate.fish 
+        - cd gannmath && source venv/bin/activate.fish 
+        - cd gannmath && source venv/bin/activate.fish 
   - server:
       panes:
         - ssh root@89.116.52.40

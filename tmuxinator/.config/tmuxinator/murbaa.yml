@@ -1,5 +1,5 @@
 name: murbaa
-root: /media/tarik/Data/jobs/attempts/mostaql/murbaa-846631/code/murbaa
+root: ~/work/murbaa/code
 windows:
   - local: 
       panes:
@@ -9,7 +9,7 @@ windows:
         - clear
   - server: 
       panes:
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250

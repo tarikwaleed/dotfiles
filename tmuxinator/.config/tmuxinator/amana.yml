@@ -1,19 +1,22 @@
 name: amana
-root: ~/work/pk
+root: ~/work/amana
 windows:
   - package:
-      layout: even-vertical
       panes:
         - cd package && source venv/bin/activate.fish && vs
+        - cd package && source venv/bin/activate.fish && vs
+        - cd package && source venv/bin/activate.fish && vs
+        - cd package && source venv/bin/activate.fish && vs
   - backend:
-      layout: even-vertical
       panes:
-        - cd backend 
+        - cd backend && source api/venv/bin/activate.fish && vs
+        - cd backend && source api/venv/bin/activate.fish && vs
+        - cd backend && source api/venv/bin/activate.fish && vs
         - cd backend && source api/venv/bin/activate.fish && vs
   - backend-droplet:
       panes:
-        - ssh root@167.71.143.82
-        - ssh root@167.71.143.82
-        - ssh root@167.71.143.82
-        - ssh root@167.71.143.82
+        - ssh root@161.35.172.25
+        - ssh root@161.35.172.25
+        - ssh root@161.35.172.25
+        - ssh root@161.35.172.25
 
