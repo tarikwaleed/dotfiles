@@ -5,4 +5,3 @@ windows:
   - dotfiles: 
   - Fish: fishconfiguration
   - creds: cd ~/secrets/creds
-  - dotenvs: cd ~/secrets/dotenvs
