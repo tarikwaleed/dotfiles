@@ -1,7 +1,5 @@
-# /home/tarik/.config/tmuxinator/django-starter.yml
-
 name: django-starter
-root: ~/django-starter
+root: ~/repos/django-starter
 
 windows:
   - console:
