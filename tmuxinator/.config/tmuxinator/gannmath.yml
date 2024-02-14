@@ -9,7 +9,8 @@ windows:
         - cd gannmath && source venv/bin/activate.fish 
   - server:
       panes:
-        - ssh root@89.116.52.40
-        - ssh root@89.116.52.40
-        - ssh root@89.116.52.40
-        - ssh root@89.116.52.40
+
+        - ssh root@161.35.30.201
+        - ssh root@161.35.30.201
+        - ssh root@161.35.30.201
+        - ssh root@161.35.30.201
