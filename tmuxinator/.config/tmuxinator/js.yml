@@ -1,8 +1,9 @@
 name: js
-root: ~/js-practice
+root: ~/repos/js-practice
 windows:
   - console:
-      layout: even-vertical
       panes:
         - vs
+        - clear
+        - clear
         - clear

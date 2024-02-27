@@ -3,10 +3,10 @@ root: ~/work/gannmath
 windows:
   - local: 
       panes:
-        - cd gannmath && source venv/bin/activate.fish && vs
-        - cd gannmath && source venv/bin/activate.fish 
-        - cd gannmath && source venv/bin/activate.fish 
-        - cd gannmath && source venv/bin/activate.fish 
+        - cd gannmath && source app/venv/bin/activate.fish && vs
+        - cd gannmath && source app/venv/bin/activate.fish 
+        - cd gannmath && source app/venv/bin/activate.fish 
+        - cd gannmath && source app/venv/bin/activate.fish 
   - server:
       panes:
 

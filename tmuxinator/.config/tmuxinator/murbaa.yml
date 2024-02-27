@@ -1,5 +1,5 @@
 name: murbaa
-root: ~/work/murbaa/code
+root: ~/work/murbaa/code/murbaa
 windows:
   - local: 
       panes:
