@@ -8,19 +8,5 @@ windows:
   - py: 
       panes:
         - cd src/py && source ./venv/bin/activate.fish && ipython
-        - cd src/py && source ./venv/bin/activate.fish && ipython
-        - cd src/py && source ./venv/bin/activate.fish && ipython
-        - cd src/py && source ./venv/bin/activate.fish && ipython
-  - js: 
-      panes:
-        - cd src/js && node
-        - cd src/js && node
-        - cd src/js && node
-        - cd src/js && node
-  - c: 
-      panes:
-        - cd src/c 
-        - cd src/c 
-        - cd src/c 
-        - cd src/c 
+        - irb
 
