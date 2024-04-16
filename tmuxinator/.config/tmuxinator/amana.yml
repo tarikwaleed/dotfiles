@@ -9,14 +9,14 @@ windows:
         - cd package && source venv/bin/activate.fish && vs
   - backend:
       panes:
-        - cd backend && source api/venv/bin/activate.fish && vs
-        - cd backend && source api/venv/bin/activate.fish && vs
-        - cd backend && source api/venv/bin/activate.fish && vs
-        - cd backend && source api/venv/bin/activate.fish && vs
+        - cd backend && vs
+        - cd backend  
+        - cd backend  
+        - cd backend  
   - backend-droplet:
       panes:
-        - ssh root@161.35.172.25
-        - ssh root@161.35.172.25
-        - ssh root@161.35.172.25
-        - ssh root@161.35.172.25
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
 

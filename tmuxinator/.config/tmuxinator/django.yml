@@ -1,12 +1,16 @@
-# /home/tarik/.config/tmuxinator/django.yml
-
 name: django
-root: ~/django-official-tutorial
+root: ~/repos/django-repos
 
 windows:
-  - console:
+  - practice: 
       panes:
-        - source app/venv/bin/activate.fish 
-        - source app/venv/bin/activate.fish 
-        - source app/venv/bin/activate.fish 
-        - source app/venv/bin/activate.fish
+        - clear
+        - clear
+        - clear
+        - clear
+  - adt:
+      panes:
+        - clear
+        - clear
+        - clear
+        - clear

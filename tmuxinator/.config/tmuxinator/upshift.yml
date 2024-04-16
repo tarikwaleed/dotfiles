@@ -1,0 +1,11 @@
+name: upshift
+root: ~/work/upshift
+windows:
+
+  - frontend: 
+      panes:
+        - cd upshift-next && nrd
+        - cd upshift-next && vs
+        - cd upshift-next 
+        - cd upshift-next 
+

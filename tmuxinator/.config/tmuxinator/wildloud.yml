@@ -1,15 +1,24 @@
 name: wildloud
-root: /media/tarik/Data/jobs/completed/mostaql/845914-wildloud/code/new/wildloud-django
+root: ~/work/wildloud
 windows:
-  - djanto: 
+  - backend: 
       panes:
-        - vs
-        - source app/venv/bin/activate.fish  && cd app/src && drs
-        - clear
-        - clear
-  - server: 
+        - cd wildloud-django &&source app/venv/bin/activate.fish && vs
+        - cd wildloud-django &&source app/venv/bin/activate.fish 
+        - cd wildloud-django &&source app/venv/bin/activate.fish 
+        - cd wildloud-django &&source app/venv/bin/activate.fish 
+
+  - frontend: 
       panes:
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
-        - ssh root@144.126.200.198
+        - cd wildloud-angular
+        - cd wildloud-angular
+        - cd wildloud-angular
+        - cd wildloud-angular
+
+  - droplet: 
+      panes:
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250
+        - ssh root@167.71.140.250
+

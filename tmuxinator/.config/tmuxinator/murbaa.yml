@@ -1,12 +1,18 @@
 name: murbaa
-root: ~/work/murbaa/code/murbaa
+root: ~/work/murbaa/code
 windows:
-  - local: 
+  - php: 
       panes:
-        - vs
-        - clear
-        - clear
-        - clear
+        - cd murbaa
+        - cd murbaa
+        - cd murbaa
+        - cd murbaa
+  - react: 
+      panes:
+        - cd murbaa-react && vs
+        - cd murbaa-react && npm start
+        - cd murbaa-react && clear
+        - cd murbaa-react && clear
   - server: 
       panes:
         - ssh root@167.71.140.250

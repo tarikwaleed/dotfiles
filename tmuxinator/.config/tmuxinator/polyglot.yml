@@ -4,9 +4,14 @@ windows:
   - console: 
       panes:
         - vs
-
   - py: 
       panes:
         - cd src/py && source ./venv/bin/activate.fish && ipython
-        - irb
+  - js: 
+      panes:
+        - cd js && node
+        - cd js && node
+        - cd js && node
+        - cd js && node
+
 

@@ -8,3 +8,10 @@ windows:
         - source app/venv/bin/activate.fish 
         - source app/venv/bin/activate.fish 
         - source app/venv/bin/activate.fish
+  - droplet:
+      panes:
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
+        - ssh root@46.101.93.245
+

@@ -1,0 +1,18 @@
+# /home/tarik/.config/tmuxinator/monhna.yml
+
+name: monhna
+root: ~/work/monhna
+
+windows:
+  - python:
+      panes:
+        - cd prototype && source ./venv/bin/activate.fish && vs
+        - cd prototype && source ./venv/bin/activate.fish 
+        - cd prototype && source ./venv/bin/activate.fish 
+        - cd prototype && source ./venv/bin/activate.fish 
+  - next:
+      panes:
+        - cd noon-affiliate-next && nrd
+        - cd noon-affiliate-next && vs
+        - cd noon-affiliate-next 
+        - cd noon-affiliate-next 
