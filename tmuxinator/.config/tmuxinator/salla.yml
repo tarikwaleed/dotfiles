@@ -1,0 +1,12 @@
+# /home/tarik/.config/tmuxinator/salla.yml
+
+name: salla
+root: ~/work/salla
+
+windows:
+  - next:
+      panes:
+        - cd salla-next && nrd
+        - cd salla-next && vs
+        - cd salla-next
+        - cd salla-next
