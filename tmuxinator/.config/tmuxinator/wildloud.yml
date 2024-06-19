@@ -10,10 +10,10 @@ windows:
 
   - frontend: 
       panes:
-        - cd wildloud-angular
-        - cd wildloud-angular
-        - cd wildloud-angular
-        - cd wildloud-angular
+        - cd wildloud-next
+        - cd wildloud-next
+        - cd wildloud-next
+        - cd wildloud-next
 
   - droplet: 
       panes:

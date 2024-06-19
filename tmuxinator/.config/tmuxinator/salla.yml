@@ -10,3 +10,9 @@ windows:
         - cd salla-next && vs
         - cd salla-next
         - cd salla-next
+  - salla:
+      panes:
+        - cd animals_store && vs
+        - cd animals_store 
+        - cd animals_store 
+        - cd animals_store 

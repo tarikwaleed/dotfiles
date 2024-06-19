@@ -1,0 +1,10 @@
+name: spex
+root: ~/work/spex
+
+windows:
+  - django:
+      panes:
+        - cd spex-django && vs
+        - cd spex-django/app/src && drs
+        - cd spex-django/app
+        - cd spex-django/app/src 

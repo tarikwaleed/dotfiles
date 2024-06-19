@@ -4,10 +4,10 @@ root: ~/work/zubi
 windows:
   - next:
       panes:
-        - clear
-        - clear
-        - clear
-        - clear
+        - cd zubi-law-next
+        - cd zubi-law-next
+        - cd zubi-law-next
+        - cd zubi-law-next
   - django:
       panes:
         - cd zubi-law-django
@@ -16,7 +16,7 @@ windows:
         - cd zubi-law-django
   - server:
       panes:
-        - ssh ubuntu@18.132.97.250
-        - ssh ubuntu@18.132.97.250
-        - ssh ubuntu@18.132.97.250
-        - ssh ubuntu@18.132.97.250
+        - ssh root@(cat ~/secrets/creds/zubi-backend-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/zubi-backend-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/zubi-backend-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/zubi-backend-droplet-ip)

@@ -4,12 +4,12 @@ name: monhna
 root: ~/work/monhna
 
 windows:
-  - python:
+  - django:
       panes:
-        - cd prototype && source ./venv/bin/activate.fish && vs
-        - cd prototype && source ./venv/bin/activate.fish 
-        - cd prototype && source ./venv/bin/activate.fish 
-        - cd prototype && source ./venv/bin/activate.fish 
+        - cd noon-affiliate-django
+        - cd noon-affiliate-django
+        - cd noon-affiliate-django
+        - cd noon-affiliate-django
   - next:
       panes:
         - cd noon-affiliate-next && nrd
