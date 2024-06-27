@@ -2,9 +2,9 @@ name: spex
 root: ~/work/spex
 
 windows:
-  - django:
+  - express:
       panes:
-        - cd spex-django && vs
-        - cd spex-django/app/src && drs
-        - cd spex-django/app
-        - cd spex-django/app/src 
+        - cd spex-express && vim
+        - cd spex-express && nrd
+        - cd spex-express 
+        - cd spex-express 

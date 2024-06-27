@@ -5,8 +5,8 @@ launch-count=25
 launch-time=int64 1698662585
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/keybindings/'
-saved-view='/org/gnome/shell/keybindings/'
+saved-pathbar-path='/org/gnome/shell/extensions/dash-to-dock/'
+saved-view='/org/gnome/shell/extensions/dash-to-dock/'
 show-warning=false
 window-height=500
 window-is-maximized=true
@@ -14,7 +14,7 @@ window-width=540
 
 [com/ubuntu/update-notifier]
 no-show-notifications=true
-release-check-time=uint32 1697909873
+release-check-time=uint32 1719018552
 
 [org/gnome/Characters]
 recent-characters=['💃', '📝', '🎩']
@@ -26,6 +26,7 @@ repeat=true
 subtitle-encoding='UTF-8'
 
 [org/gnome/baobab/ui]
+is-maximized=false
 window-size=(960, 600)
 window-state=87168
 
@@ -53,7 +54,8 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='network'
+last-panel='power'
+window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
 backend='google'
@@ -99,8 +101,10 @@ clock-format='12h'
 clock-show-seconds=false
 clock-show-weekday=true
 cursor-size=32
+font-hinting='slight'
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Yaru-dark'
+gtk-theme='Yaru'
+icon-theme='Yaru'
 locate-pointer=true
 show-battery-percentage=true
 toolkit-accessibility=false
@@ -208,6 +212,7 @@ repeat-interval=uint32 12
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
+double-click=196
 speed=0.75
 
 [org/gnome/desktop/peripherals/touchpad]
@@ -303,6 +308,7 @@ state=43908
 [org/gnome/mutter]
 center-new-windows=true
 dynamic-workspaces=false
+edge-tiling=false
 experimental-features=['x11-randr-fractional-scaling']
 workspaces-only-on-primary=true
 
@@ -314,10 +320,11 @@ toggle-tiled-right=['<Alt>o']
 default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='larger'
+default-zoom-level='extra-large'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
+migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 search-view='list-view'
 
@@ -347,8 +354,8 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
-[org/gnome/settings-daemon/peripherals/mouse]
-double-click=196
+[org/gnome/portal/filechooser/snap.firefox]
+last-folder-path='/home/tarik/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -358,20 +365,18 @@ night-light-temperature=uint32 3274
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
-power-button-action='nothing'
+power-button-action='suspend'
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
-[org/gnome/settings-daemon/plugins/xsettings]
-hinting='slight'
-
 [org/gnome/shell]
 app-picker-view=uint32 1
 disabled-extensions=@as []
-enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'dbeaver-ce.desktop', 'syntevo-smartgit.desktop', 'code.desktop', 'org.gnome.Evince.desktop', 'Postman.desktop', 'google-chrome.desktop', 'forticlient.desktop', 'org.remmina.Remmina.desktop', 'org.gnome.Totem.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'qgit.desktop', 'libreoffice-writer.desktop']
+enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com', 'ding@rastersoft.com', 'tiling-assistant@ubuntu.com']
+favorite-apps=['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
 had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='46.0'
 
 [org/gnome/shell/extensions/auto-move-windows]
 application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.desktop:2', 'org.gnome.Nautilus.desktop:3', 'org.gnome.Totem.desktop:3']
@@ -379,21 +384,26 @@ application-list=['firefox.desktop:1', 'code.desktop:2', 'org.gnome.Terminal.des
 [org/gnome/shell/extensions/dash-to-dock]
 dock-fixed=false
 intellihide=false
-preferred-monitor=0
+preferred-monitor=-2
+preferred-monitor-by-connector='DP-0'
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(211,70,21)'
+last-version-installed=46
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>}
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=['<alt>f']
 switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
-switch-to-application-4=['<alt>d']
-switch-to-application-5=['<alt>g']
-switch-to-application-6=['<alt>e']
-switch-to-application-7=['<alt>r']
-switch-to-application-8=['<Alt>p']
-switch-to-application-9=['<Alt>v']
+switch-to-application-4=['<alt>v']
+switch-to-application-5=['<alt>r']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
+
+[org/gnome/shell/world-clocks]
+locations=@av []
 
 [org/gnome/software]
 check-timestamp=int64 1695107351
@@ -408,16 +418,63 @@ theme-variant='system'
 [org/gnome/terminal/legacy/keybindings]
 close-window='<alt>Escape'
 
+[org/gnome/terminal/legacy/profiles:]
+list=['9d8e7ec7-9fa0-472c-91ba-ae71a30ac813', '2d98af7e-d8a5-466f-8954-1bac21333bd0']
+
+[org/gnome/terminal/legacy/profiles:/:2d98af7e-d8a5-466f-8954-1bac21333bd0]
+allow-bold=true
+background-color='#090903030000'
+bold-color='#A5A5A2A2A2A2'
+bold-color-same-as-fg=true
+cursor-background-color='#A5A5A2A2A2A2'
+cursor-colors-set=true
+cursor-foreground-color='#090903030000'
+foreground-color='#A5A5A2A2A2A2'
+palette=['#090903030000', '#DBDB2D2D2020', '#0101A2A25252', '#FDFDEDED0202', '#0101A0A0E4E4', '#A1A16A6A9494', '#B5B5E4E4F4F4', '#A5A5A2A2A2A2', '#5C5C58585555', '#E8E8BBBBD0D0', '#3A3A34343232', '#4A4A45454343', '#80807D7D7C7C', '#D6D6D5D5D4D4', '#CDCDABAB5353', '#F7F7F7F7F7F7']
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='3024 Night'
+
+[org/gnome/terminal/legacy/profiles:/:9d8e7ec7-9fa0-472c-91ba-ae71a30ac813]
+allow-bold=true
+background-color='rgb(238,238,236)'
+bold-color='#4A4A45454343'
+bold-color-same-as-fg=true
+cursor-background-color='#4A4A45454343'
+cursor-colors-set=true
+cursor-foreground-color='#F7F7F7F7F7F7'
+font='FiraCode Nerd Font 18'
+foreground-color='rgb(46,52,54)'
+palette=['#090903030000', '#DBDB2D2D2020', '#0101A2A25252', '#FDFDEDED0202', '#0101A0A0E4E4', '#A1A16A6A9494', '#B5B5E4E4F4F4', '#A5A5A2A2A2A2', '#5C5C58585555', '#E8E8BBBBD0D0', '#3A3A34343232', '#4A4A45454343', '#80807D7D7C7C', '#D6D6D5D5D4D4', '#CDCDABAB5353', '#F7F7F7F7F7F7']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='3024 Day'
+
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
-background-color='rgb(0,0,0)'
+background-color='rgb(253,246,227)'
 cursor-blink-mode='on'
 default-size-columns=90
 default-size-rows=30
-font='Cousine Nerd Font Bold Italic 18'
-foreground-color='rgb(0,255,0)'
+font='Fira Code 18'
+foreground-color='rgb(101,123,131)'
 use-system-font=false
 use-theme-colors=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(821, 372)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'

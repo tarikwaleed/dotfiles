@@ -4,4 +4,5 @@ root: ~/dotfiles
 windows:
   - dotfiles: 
   - Fish: fishconfiguration
+  - nvim: cd ~/.config/nvim/ && vim
   - creds: cd ~/secrets/creds

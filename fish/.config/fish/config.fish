@@ -1,4 +1,4 @@
-# On Startup
+#Fish On Startup
 # Load myscript.fish only if the MYSCRIPT_LOADED variable is not set
 if not set -q MYSCRIPT_LOADED
     set -x MYSCRIPT_LOADED 1

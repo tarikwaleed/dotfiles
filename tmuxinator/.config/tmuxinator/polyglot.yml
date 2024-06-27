@@ -3,13 +3,13 @@ root: ~/repos/polyglot-developer
 windows:
   - console: 
       panes:
-        - vs
+        - 
   - py: 
       panes:
         - cd src/py && source ./venv/bin/activate.fish && ipython
   - js: 
       panes:
-        - cd js && node
+        - cd js && vim
         - cd js && node
         - cd js && node
         - cd js && node
