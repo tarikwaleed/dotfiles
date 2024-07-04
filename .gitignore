@@ -11,3 +11,5 @@ fisher.fish
 fish_prompt.fish
 nvm.fish
 bass.fish
+.uuid
+fonts/.local/share/fonts/.uuid

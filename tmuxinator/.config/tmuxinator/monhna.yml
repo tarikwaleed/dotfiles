@@ -1,18 +1,18 @@
 # /home/tarik/.config/tmuxinator/monhna.yml
 
 name: monhna
-root: ~/work/monhna
+root: ~/repos/monhna
 
 windows:
   - django:
       panes:
-        - cd noon-affiliate-django
-        - cd noon-affiliate-django
+        - cd noon-affiliate-django && vim
+        - cd noon-affiliate-django && source .venv/bin/activate.fish
         - cd noon-affiliate-django
         - cd noon-affiliate-django
   - next:
       panes:
-        - cd noon-affiliate-next && nrd
-        - cd noon-affiliate-next && vs
+        - cd noon-affiliate-next && vim
+        - cd noon-affiliate-next && nvm use lts && nrd
         - cd noon-affiliate-next 
         - cd noon-affiliate-next 

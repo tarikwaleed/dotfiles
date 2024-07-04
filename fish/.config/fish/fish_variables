@@ -4,13 +4,14 @@ SETUVAR --export EMAIL_PASSWORD:Takysmeee333\x23\x23\x23
 SETUVAR --export LAZYGIT_VERSION:0\x2e42\x2e0
 SETUVAR --export LV_BRANCH:release\x2d1\x2e4/neovim\x2d0\x2e9
 SETUVAR --export MONHNA_ENVIRONMENT:dev
+SETUVAR --export NVIM_APPNAME:\x1d
 SETUVAR --export SPEX_ENVIRONMENT:dev
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/tarik/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/tarik/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/tarik\x24
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish

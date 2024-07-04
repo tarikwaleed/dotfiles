@@ -1,12 +1,9 @@
 name: django-starter
-root: /home/tarik/repos/python-django-repos/django-starter
+root: /home/tarik/repos/django-starter/
 
 
 windows:
   - console:
       panes:
-        - source app/.venv/bin/activate.fish && vs
-        - source app/.venv/bin/activate.fish && python ./app/src/manage.py runserver
-        - source app/.venv/bin/activate.fish 
-        - source app/.venv/bin/activate.fish 
+        - vim
 

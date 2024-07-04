@@ -1,0 +1,13 @@
+# /home/tarik/.config/tmuxinator/personal_website.yml
+
+name: personal_website
+root: ~/repos/personal-website-3/
+
+
+windows:
+  - editor:
+      panes:
+        - vim
+        - nvm use lts && ngrok http localhost:3000
+        - nvm use lts && nrd
+        - clear

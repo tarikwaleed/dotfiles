@@ -1,10 +1,7 @@
 name: spex
-root: ~/work/spex
+root: ~/repos
 
 windows:
   - express:
       panes:
-        - cd spex-express && vim
-        - cd spex-express && nrd
-        - cd spex-express 
-        - cd spex-express 
+        - cd spex-django-v2 && vim

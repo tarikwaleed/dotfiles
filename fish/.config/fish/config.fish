@@ -70,7 +70,7 @@ alias cpsshkey="cat ~/.ssh/id_ed25519.pub|copy"
 alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"
-alias la="colorls -lA --git-status --light"
+alias la="colorls -lA --git-status --dark"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
@@ -198,6 +198,7 @@ alias di="docker inspect"
 
 
 # Django Aliases
+alias djurls='python manage.py show_urls'
 alias py='python3'
 alias ipy='ipython3'
 alias py2='python2'
