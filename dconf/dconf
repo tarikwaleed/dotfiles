@@ -16,11 +16,18 @@ window-width=540
 no-show-notifications=true
 release-check-time=uint32 1719018552
 
+[io/elementary/appcenter/settings]
+cached-drivers=['nvidia-driver-550', 'nvidia-driver-470', 'nvidia-driver-470-server', 'nvidia-driver-418-server', 'nvidia-driver-450-server', 'nvidia-driver-390', 'nvidia-driver-535-server']
+last-refresh-time=int64 1720862394
+window-height=660
+window-maximized=true
+window-width=1024
+
 [org/gnome/Characters]
 recent-characters=['💃', '📝', '🎩']
 
 [org/gnome/Totem]
-active-plugins=['screensaver', 'variable-rate', 'autoload-subtitles', 'save-file', 'movie-properties', 'apple-trailers', 'skipto', 'open-directory', 'vimeo', 'recent', 'screenshot', 'rotation', 'media-player-keys']
+active-plugins=['vimeo', 'open-directory', 'screenshot', 'rotation', 'apple-trailers', 'recent', 'save-file', 'screensaver', 'movie-properties', 'autoload-subtitles', 'skipto', 'variable-rate', 'mpris']
 open-uri='file:///media/tarikwaleed/Data/iti/ANGULAR/hs-course/recordings/Day2'
 repeat=true
 subtitle-encoding='UTF-8'
@@ -42,7 +49,7 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(737, 358)
+window-position=(737, 416)
 word-size=64
 
 [org/gnome/cheese]
@@ -54,7 +61,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='bluetooth'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -84,7 +91,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-10-08-13-37-16-desktop-wallpaper-devops.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2024-07-04-06-33-44-24045-Albert-Einstein-Quote-Any-fool-can-know-The-point-is-to-understand.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -100,23 +107,30 @@ xkb-options=['ctrl:swapcaps', 'shift:both_capslock']
 clock-format='12h'
 clock-show-seconds=false
 clock-show-weekday=true
+color-scheme='prefer-light'
 cursor-size=32
 font-hinting='slight'
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Yaru'
+gtk-theme='Pop'
 icon-theme='Yaru'
 locate-pointer=true
 show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird', 'io-elementary-appcenter', 'com-discordapp-discord', 'com-obsproject-studio']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
+
+[org/gnome/desktop/notifications/application/com-discordapp-discord]
+application-id='com.discordapp.Discord.desktop'
+
+[org/gnome/desktop/notifications/application/com-obsproject-studio]
+application-id='com.obsproject.Studio.desktop'
 
 [org/gnome/desktop/notifications/application/dbeaver-ce]
 application-id='dbeaver-ce.desktop'
@@ -135,6 +149,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
 
 [org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
 application-id='io.snapcraft.SessionAgent.desktop'
@@ -218,8 +235,9 @@ speed=0.75
 [org/gnome/desktop/peripherals/touchpad]
 click-method='fingers'
 edge-scrolling-enabled=false
+natural-scroll=true
 send-events='enabled'
-speed=1.0
+speed=0.77205882352941169
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -228,8 +246,9 @@ report-technical-problems=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
+lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/tarik/.local/share/backgrounds/2023-10-08-13-37-16-desktop-wallpaper-devops.jpg'
+picture-uri='file:///home/tarik/.local/share/backgrounds/2024-07-04-06-33-44-24045-Albert-Einstein-Quote-Any-fool-can-know-The-point-is-to-understand.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -263,7 +282,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(0.9183006535947712, 0.73106060606060608)
+window-ratio=(1.5686274509803921, 1.3636363636363635)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -282,16 +301,16 @@ window-height=480
 window-width=600
 
 [org/gnome/gedit/plugins]
-active-plugins=['filebrowser', 'spell', 'time', 'docinfo', 'modelines']
+active-plugins=['docinfo', 'time', 'filebrowser', 'modelines', 'spell']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarik/dotfiles/fish/.config/fish'
+virtual-root='file:///home/tarik/Downloads'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
-scheme='tango'
+scheme='pop-light'
 use-default-font=false
 wrap-last-split-mode='word'
 
@@ -308,7 +327,7 @@ state=43908
 [org/gnome/mutter]
 center-new-windows=true
 dynamic-workspaces=false
-edge-tiling=false
+edge-tiling=true
 experimental-features=['x11-randr-fractional-scaling']
 workspaces-only-on-primary=true
 
@@ -320,7 +339,7 @@ toggle-tiled-right=['<Alt>o']
 default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='extra-large'
+default-zoom-level='larger'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -364,6 +383,7 @@ night-light-schedule-from=6.0
 night-light-temperature=uint32 3274
 
 [org/gnome/settings-daemon/plugins/power]
+ambient-enabled=false
 idle-dim=false
 power-button-action='suspend'
 sleep-inactive-ac-timeout=3600
@@ -371,10 +391,11 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
+app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'repoman.desktop': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'org.gnome.Calculator.desktop': <{'position': <6>}>, 'org.gnome.gedit.desktop': <{'position': <7>}>, 'simple-scan.desktop': <{'position': <8>}>, 'Pop-Utility': <{'position': <9>}>, 'gnome-system-monitor.desktop': <{'position': <10>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <11>}>, 'fish.desktop': <{'position': <12>}>, 'nm-connection-editor.desktop': <{'position': <13>}>, 'org.gnome.FileRoller.desktop': <{'position': <14>}>, 'yelp.desktop': <{'position': <15>}>, 'gucharmap.desktop': <{'position': <16>}>, 'org.gnome.baobab.desktop': <{'position': <17>}>, 'org.gnome.font-viewer.desktop': <{'position': <18>}>, 'org.gnome.DiskUtility.desktop': <{'position': <19>}>, 'org.gnome.Evince.desktop': <{'position': <20>}>, 'com.github.donadigo.eddy.desktop': <{'position': <21>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'org.gnome.eog.desktop': <{'position': <1>}>, 'gnome-language-selector.desktop': <{'position': <2>}>, 'libreoffice-startcenter.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-draw.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-math.desktop': <{'position': <7>}>, 'libreoffice-writer.desktop': <{'position': <8>}>, 'nvidia-settings.desktop': <{'position': <9>}>, 'org.gnome.seahorse.Application.desktop': <{'position': <10>}>, 'com.system76.Popsicle.desktop': <{'position': <11>}>, 'org.gnome.PowerStats.desktop': <{'position': <12>}>, 'gnome-session-properties.desktop': <{'position': <13>}>, 'info.desktop': <{'position': <14>}>}]
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com', 'ding@rastersoft.com', 'tiling-assistant@ubuntu.com']
-favorite-apps=['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='46.0'
 
@@ -387,6 +408,9 @@ intellihide=false
 preferred-monitor=-2
 preferred-monitor-by-connector='DP-0'
 
+[org/gnome/shell/extensions/pop-shell]
+tile-by-default=false
+
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(211,70,21)'
 last-version-installed=46
@@ -397,7 +421,7 @@ switch-to-application-1=['<alt>f']
 switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
 switch-to-application-4=['<alt>v']
-switch-to-application-5=['<alt>r']
+switch-to-application-5=['<alt>d']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
@@ -438,14 +462,14 @@ visible-name='3024 Night'
 
 [org/gnome/terminal/legacy/profiles:/:9d8e7ec7-9fa0-472c-91ba-ae71a30ac813]
 allow-bold=true
-background-color='rgb(238,238,236)'
+background-color='rgb(0,43,54)'
 bold-color='#4A4A45454343'
 bold-color-same-as-fg=true
 cursor-background-color='#4A4A45454343'
 cursor-colors-set=true
 cursor-foreground-color='#F7F7F7F7F7F7'
 font='FiraCode Nerd Font 18'
-foreground-color='rgb(46,52,54)'
+foreground-color='rgb(131,148,150)'
 palette=['#090903030000', '#DBDB2D2D2020', '#0101A2A25252', '#FDFDEDED0202', '#0101A0A0E4E4', '#A1A16A6A9494', '#B5B5E4E4F4F4', '#A5A5A2A2A2A2', '#5C5C58585555', '#E8E8BBBBD0D0', '#3A3A34343232', '#4A4A45454343', '#80807D7D7C7C', '#D6D6D5D5D4D4', '#CDCDABAB5353', '#F7F7F7F7F7F7']
 use-system-font=false
 use-theme-background=false
@@ -468,13 +492,15 @@ use-theme-colors=false
 date-format='regular'
 location-mode='path-bar'
 show-hidden=true
+show-size-column=true
+show-type-column=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(821, 372)
+window-size=(821, 374)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -488,7 +514,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(208, 93)
+window-position=(2392, 1045)
 window-size=(1024, 694)
 
 [system/locale]

@@ -1,0 +1,11 @@
+
+name: jshp
+root: ~/repos/jshp
+
+windows:
+  - console:
+      panes:
+        - vim
+        - clear
+        - clear
+        - clear

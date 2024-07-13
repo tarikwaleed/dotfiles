@@ -54,6 +54,7 @@ return {
         "prettier",
         "pyright",
         "black",
+        "blade-formatter",
       },
     },
   },
@@ -69,8 +70,15 @@ return {
         "css",
         "typescript",
         "tsx",
+        "python",
+        "php",
+        "blade"
       },
     },
+  },
+  {
+    "EmranMR/tree-sitter-blade",
+    ft = { "blade" },
   },
   {
     "JoosepAlviste/nvim-ts-context-commentstring",

@@ -23,6 +23,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.pub-cache/bin $PATH
 set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/.config/composer/vendor/bin $PATH
 set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 set -gx PATH ~/Downloads/sml/bin $PATH
 # Git aliases
