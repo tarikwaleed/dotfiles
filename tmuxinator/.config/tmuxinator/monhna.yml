@@ -16,3 +16,9 @@ windows:
         - cd noon-affiliate-next && nvm use lts && nrd
         - cd noon-affiliate-next 
         - cd noon-affiliate-next 
+  - server:
+      panes:
+        - ssh root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/monhna-droplet-ip)

@@ -71,7 +71,7 @@ alias cpsshkey="cat ~/.ssh/id_ed25519.pub|copy"
 alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"
-alias la="colorls -lA --git-status --dark"
+alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
@@ -262,3 +262,7 @@ set -x PIPENV_VENV_IN_PROJECT 1
 # Configuring SQL*Plus
 set -gx LD_LIBRARY_PATH /opt/oracle/instantclient_21_8 $LD_LIBRARY_PATH
 set -x PATH /opt/oracle/instantclient_21_8 $PATH
+
+# bun
+set --export BUN_INSTALL "$HOME/.local/share/reflex/bun"
+set --export PATH $BUN_INSTALL/bin $PATH
