@@ -55,7 +55,9 @@ return {
         "pyright",
         "black",
         "blade-formatter",
-        "intelephense"
+        "intelephense",
+        "docker-compose-language-service",
+        "dockerfile-language-server",
       },
     },
   },
@@ -73,7 +75,7 @@ return {
         "tsx",
         "python",
         "php",
-        "blade"
+        "blade",
       },
     },
   },

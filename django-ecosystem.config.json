@@ -1,19 +1,26 @@
 {
     "apps": [
         {
-            "name": "zubi-django-pm2",
-            "script": "/root/zubi-law-django/app/src/manage.py",
+            "name": "monhna-django",
+            "script": "gunicorn",
             "args": [
-                "runserver",
-                "0.0.0.0:8000"
+                "core.wsgi",
+                "--reload",
+                "--bind",
+                "0.0.0.0:8000",
+                "--workers",
+                "4",
+                "--threads",
+                "4",
+                "--timeout",
+                "120"
             ],
             "exec_mode": "fork",
             "instances": "1",
             "wait_ready": true,
             "autorestart": false,
             "max_restarts": 5,
-            "interpreter": "/root/.local/share/virtualenvs/app-KpfsMCDG/bin/python"
+            "interpreter": "/home/tarik/.local/share/virtualenvs/app-uqwMx_b8/bin/python"
         }
     ]
 }
-
