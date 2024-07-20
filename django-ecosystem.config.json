@@ -2,9 +2,8 @@
     "apps": [
         {
             "name": "monhna-django",
-            "script": "gunicorn",
+            "script": "/home/tarik/.local/share/virtualenvs/app-uqwMx_b8/bin/gunicorn",
             "args": [
-                "core.wsgi",
                 "--reload",
                 "--bind",
                 "0.0.0.0:8000",
@@ -13,14 +12,14 @@
                 "--threads",
                 "4",
                 "--timeout",
-                "120"
+                "120",
+                "core.wsgi"
             ],
             "exec_mode": "fork",
             "instances": "1",
             "wait_ready": true,
             "autorestart": false,
-            "max_restarts": 5,
-            "interpreter": "/home/tarik/.local/share/virtualenvs/app-uqwMx_b8/bin/python"
+            "max_restarts": 5
         }
     ]
 }
