@@ -1,7 +1,16 @@
 name: spex
-root: ~/repos
+root: ~/repos/spex/
 
 windows:
-  - express:
+  - django:
       panes:
         - cd spex-django-v2 && vim
+        - cd spex-django-v2 
+        - cd spex-django-v2 
+        - cd spex-django-v2 
+  - droplet:
+      panes:
+        - ssh tarik@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/monhna-droplet-ip)
