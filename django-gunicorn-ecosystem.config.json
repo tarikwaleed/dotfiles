@@ -1,0 +1,26 @@
+{
+    "apps": [
+        {
+            "name": "monhna-django",
+            "script": "/home/tarik/.local/share/virtualenvs/app-uqwMx_b8/bin/gunicorn",
+            "args": [
+                "--reload",
+                "--bind",
+                "0.0.0.0:8000",
+                "--workers",
+                "4",
+                "--threads",
+                "4",
+                "--timeout",
+                "120",
+                "core.wsgi:application"
+            ],
+            "exec_mode": "fork",
+            "instances": "1",
+            "wait_ready": true,
+            "autorestart": false,
+            "max_restarts": 5,
+            "cwd": "/home/tarik/noon-affiliate-django-v2/app/src"
+        }
+    ]
+}
