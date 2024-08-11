@@ -66,14 +66,10 @@ alias nrs="npm run start"
 alias ni="npm install"
 
 # docker Aliases
-alias dils="sudo docker image ls"
-alias dcls="sudo docker container ls"
 alias dila="sudo docker image ls -a"
 alias dcla="sudo docker container ls -a"
 alias dpl="sudo docker pull"
 alias dpsh="sudo docker push"
-alias dc="sudo docker container"
-alias di="sudo docker image"
 alias dvla="sudo docker volume ls"
 alias dvi="sudo docker volume inspect"
 alias dci="sudo docker container inspect"
@@ -86,11 +82,15 @@ alias dv="sudo docker volume"
 alias dcrma="sudo docker rm $(sudo docker ps -a -q)"
 alias dirma="sudo docker rmi -f $(sudo docker images -q ) "
 alias dcsa="sudo docker stop $(sudo docker ps -aq)"
-alias drst="dcsa && dcrma && dirma"
-alias drn="sudo docker run -it --rm"
+alias dcrst="dcsa && dcrma && dirma"
+alias dcrn="sudo docker run -it --rm"
 alias dcb="sudo docker compose build"
 alias dcup="sudo docker compose up"
 alias dcd="sudo docker compose down"
+dcbld() {
+  sudo docker build -t "$1" .
+}
+
 
 # Django Aliases
 alias py='python3'
