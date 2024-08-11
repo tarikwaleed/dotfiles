@@ -2,15 +2,17 @@ name: spex
 root: ~/repos/spex/
 
 windows:
-  - local:
+  - editor:
       panes:
-        - cd spex-django-v2 && vim
-        - cd spex-django-v2 
-        - cd spex-django-v2 
-        - cd spex-django-v2 
+        - cd spex-django-v2 && source ./app/.venv/bin/activate.fish && vim
+  - console:
+      layout: even-vertical
+      panes:
+        - cd spex-django-v2 && source ./app/.venv/bin/activate.fish 
+        - cd spex-django-v2 && source ./app/.venv/bin/activate.fish && dj2sh
   - droplet:
       panes:
-        - ssh root@(cat ~/secrets/creds/spex-droplet-ip)
-        - ssh root@(cat ~/secrets/creds/spex-droplet-ip)
-        - ssh root@(cat ~/secrets/creds/spex-droplet-ip)
-        - ssh root@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)

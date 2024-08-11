@@ -1,10 +1,8 @@
-# /home/tarikwaleed/.config/tmuxinator/html.yml
 
-name: html
-root: ~/repos/html
+name: codility
+root: ~/repos/codility
 
 windows:
-
   - editor:
       panes:
         - vim
@@ -12,4 +10,4 @@ windows:
       layout: even-vertical
       panes:
         - clear
-        - clear
+        - python3

@@ -34,13 +34,10 @@ alias gr="git rebase"
 alias gri="git rebase -i"
 alias gt="git branch --track"
 
-
-
-
 # General aliases
 alias update="sudo apt-get update -y"
 alias upgrade="sudo apt-get upgrade -y"
-alias unu="sudo apt-get update -y && sudo apt-get  upgrade -y"
+alias unu="sudo apt-get update -y && sudo apt-getupgrade -y"
 alias install="sudo apt-get install -y"
 alias b="cd .."
 alias bb="cd ../.."
@@ -64,9 +61,11 @@ alias ngcl="ng generate cl"
 
 #Node aliases
 alias nr="npm run"
+alias nrd="npm run dev"
+alias nrs="npm run start"
 alias ni="npm install"
 
-# Docker Aliases
+# docker Aliases
 alias dils="sudo docker image ls"
 alias dcls="sudo docker container ls"
 alias dila="sudo docker image ls -a"
@@ -88,10 +87,10 @@ alias dcrma="sudo docker rm $(sudo docker ps -a -q)"
 alias dirma="sudo docker rmi -f $(sudo docker images -q ) "
 alias dcsa="sudo docker stop $(sudo docker ps -aq)"
 alias drst="dcsa && dcrma && dirma"
-alias drn="docker run -it --rm"
-alias dcb="docker compose build"
-alias dcup="docker compose up"
-alias dcd="docker compose down"
+alias drn="sudo docker run -it --rm"
+alias dcb="sudo docker compose build"
+alias dcup="sudo docker compose up"
+alias dcd="sudo docker compose down"
 
 # Django Aliases
 alias py='python3'

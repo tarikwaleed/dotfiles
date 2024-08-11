@@ -102,6 +102,7 @@ return {
         "intelephense",
         "docker-compose-language-service",
         "dockerfile-language-server",
+        "json-lsp"
       },
     },
   },

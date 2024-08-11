@@ -5,20 +5,23 @@ launch-count=25
 launch-time=int64 1698662585
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/extensions/dash-to-dock/'
-saved-view='/org/gnome/shell/extensions/dash-to-dock/'
+saved-pathbar-path='/org/gnome/shell/keybindings/switch-to-application-7'
+saved-view='/org/gnome/shell/keybindings/switch-to-application-7'
 show-warning=false
 window-height=500
 window-is-maximized=true
 window-width=540
+
+[com/system76/hidpi]
+mode='hidpi'
 
 [com/ubuntu/update-notifier]
 no-show-notifications=true
 release-check-time=uint32 1719018552
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-550', 'nvidia-driver-470', 'nvidia-driver-470-server', 'nvidia-driver-418-server', 'nvidia-driver-450-server', 'nvidia-driver-390', 'nvidia-driver-535-server']
-last-refresh-time=int64 1720862394
+cached-drivers=['nvidia-driver-390', 'nvidia-driver-450-server', 'nvidia-driver-470', 'nvidia-driver-555', 'nvidia-driver-470-server', 'nvidia-driver-535-server', 'nvidia-driver-418-server']
+last-refresh-time=int64 1722707560
 window-height=660
 window-maximized=true
 window-width=1024
@@ -105,7 +108,7 @@ xkb-options=['ctrl:swapcaps', 'shift:both_capslock']
 
 [org/gnome/desktop/interface]
 clock-format='12h'
-clock-show-seconds=false
+clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-light'
 cursor-size=32
@@ -282,7 +285,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.5686274509803921, 1.3636363636363635)
+window-ratio=(1.5686274509803921, 1.3232323232323233)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -306,7 +309,7 @@ active-plugins=['docinfo', 'time', 'filebrowser', 'modelines', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarik/Downloads'
+virtual-root='file:///home/tarik/repos/monhna/noon-affiliate-django/app/src/shared'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -322,7 +325,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(960, 763)
-state=43908
+state=43780
 
 [org/gnome/mutter]
 center-new-windows=true
@@ -348,7 +351,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(915, 496)
+initial-size=(1920, 1048)
 maximized=true
 sidebar-width=198
 start-with-sidebar=true
@@ -395,7 +398,7 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com', 'ding@rastersoft.com', 'tiling-assistant@ubuntu.com']
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'Postman.desktop', 'libreoffice-calc.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='46.0'
 
@@ -422,6 +425,8 @@ switch-to-application-2=['<alt>a']
 switch-to-application-3=['<alt>t']
 switch-to-application-4=['<alt>v']
 switch-to-application-5=['<alt>d']
+switch-to-application-6=['<alt>p']
+switch-to-application-7=['<alt>r']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
@@ -462,15 +467,15 @@ visible-name='3024 Night'
 
 [org/gnome/terminal/legacy/profiles:/:9d8e7ec7-9fa0-472c-91ba-ae71a30ac813]
 allow-bold=true
-background-color='rgb(0,43,54)'
+background-color='rgb(238,238,236)'
 bold-color='#4A4A45454343'
 bold-color-same-as-fg=true
 cursor-background-color='#4A4A45454343'
 cursor-colors-set=true
 cursor-foreground-color='#F7F7F7F7F7F7'
 font='FiraCode Nerd Font 18'
-foreground-color='rgb(131,148,150)'
-palette=['#090903030000', '#DBDB2D2D2020', '#0101A2A25252', '#FDFDEDED0202', '#0101A0A0E4E4', '#A1A16A6A9494', '#B5B5E4E4F4F4', '#A5A5A2A2A2A2', '#5C5C58585555', '#E8E8BBBBD0D0', '#3A3A34343232', '#4A4A45454343', '#80807D7D7C7C', '#D6D6D5D5D4D4', '#CDCDABAB5353', '#F7F7F7F7F7F7']
+foreground-color='rgb(46,52,54)'
+palette=['rgb(9,3,0)', 'rgb(219,45,32)', 'rgb(1,162,82)', 'rgb(253,129,2)', 'rgb(1,160,228)', 'rgb(161,106,148)', 'rgb(181,228,244)', 'rgb(165,162,162)', 'rgb(92,88,85)', 'rgb(232,187,208)', 'rgb(58,52,50)', 'rgb(74,69,67)', 'rgb(128,125,124)', 'rgb(214,213,212)', 'rgb(205,171,83)', 'rgb(247,247,247)']
 use-system-font=false
 use-theme-background=false
 use-theme-colors=false
@@ -500,7 +505,11 @@ sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(821, 374)
+window-size=(1237, 682)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.99215686274509807, 0.50665076841547441, 0.0078431372549019156, 1.0), (0.99215686274509807, 0.92941176470588238, 0.0078431372549019607, 1.0)]
+selected-color=(true, 0.99215686274509807, 0.50665076841547441, 0.0078431372549019156, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'

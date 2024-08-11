@@ -214,18 +214,27 @@ alias pir='pip install -r requirements.txt'
 alias pird='pip install -r requirements-dev.txt'
 alias pirl='pip install -r requirements-live.txt'
 alias pui='pip uninstall'
-alias dj="python manage.py"
-alias drs="python manage.py runserver"
-alias drp="python manage.py runserverplus"
-alias dsh="python manage.py shell"
-alias dsp="python manage.py shell_plus"
-alias dsm="python manage.py schemamigration"
-alias dm="python manage.py migrate"
-alias dmm="python manage.py makemigrations"
-alias dmmm="python manage.py makemigrations & python manage.py migrate"
-alias ddd="python manage.py dumpdata"
-alias dld="python manage.py loaddata"
-alias dt="python manage.py test"
+alias dj="python -Wa manage.py"
+
+alias dj2="python -Wa ./app/src/manage.py"
+alias dj2m="python -Wa ./app/src/manage.py migrate"
+alias dj2mm="python -Wa ./app/src/manage.py makemigrations"
+alias dj2mmm="python -Wa ./app/src/manage.py makemigrations && python -Wa ./app/src/manage.py migrate"
+alias dj2sh="python -Wa ./app/src/manage.py shell_plus"
+
+
+alias dj1="python -Wa ./src/manage.py"
+alias drs="python -Wa manage.py runserver"
+alias drp="python -Wa manage.py runserverplus"
+alias dsh="python -Wa manage.py shell"
+alias dsp="python -Wa manage.py shell_plus"
+alias dsm="python -Wa manage.py schemamigration"
+alias dm="python -Wa manage.py migrate"
+alias dmm="python -Wa manage.py makemigrations"
+alias dmmm="python -Wa manage.py makemigrations & python manage.py migrate"
+alias ddd="python -Wa manage.py dumpdata"
+alias dld="python -Wa manage.py loaddata"
+alias dt="python -Wa manage.py test"
 
 #PHP Aliases
 alias art="php artisan"

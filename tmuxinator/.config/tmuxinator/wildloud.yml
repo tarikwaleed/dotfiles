@@ -1,24 +1,11 @@
 name: wildloud
-root: ~/work/wildloud
+root: ~/repos/wildloud
 windows:
-  - backend: 
+  - fe-editor: 
       panes:
-        - cd wildloud-django &&source app/venv/bin/activate.fish && vs
-        - cd wildloud-django &&source app/venv/bin/activate.fish 
-        - cd wildloud-django &&source app/venv/bin/activate.fish 
-        - cd wildloud-django &&source app/venv/bin/activate.fish 
-
-  - frontend: 
+        - cd wildloud-next && vim
+  - fe-console: 
       panes:
         - cd wildloud-next
-        - cd wildloud-next
-        - cd wildloud-next
-        - cd wildloud-next
-
-  - droplet: 
-      panes:
-        - ssh root@167.71.140.250
-        - ssh root@167.71.140.250
-        - ssh root@167.71.140.250
-        - ssh root@167.71.140.250
+        - cd wildloud-next && nvm use lts && nrd
 
