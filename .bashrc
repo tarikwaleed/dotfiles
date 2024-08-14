@@ -222,7 +222,7 @@ dcsa() {
 
 
 dcbld() {
-    docker build -t "$1" .
+    sudo docker build -t "$1" .
 }
 
 # Django Aliases
