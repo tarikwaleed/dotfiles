@@ -204,10 +204,10 @@ alias db='sudo docker build'
 alias dv='sudo docker volume'
 alias dcrst='dcsa && dcrma && dirma'
 alias dcprn='sudo docker system prune -f'
-alias drn='docker run -it --rm'
-alias dcb='docker compose build'
-alias dcup='docker compose up'
-alias dcd='docker compose down'
+alias dcrn='sudo docker run -it --rm'
+alias dcb='sudo docker compose build'
+alias dcup='sudo docker compose up'
+alias dcd='sudo docker compose down'
 
 dcrma(){
   sudo docker rm $(sudo docker ps -a -q)
