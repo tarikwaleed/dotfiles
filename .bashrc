@@ -165,6 +165,7 @@ alias bbb='cd ../../..'
 alias bbbb='cd ../../../..'
 alias dpi='sudo dpkg -i'
 alias sbrc='source ~/.bashrc'
+alias copy='xclip -selection clipboard'
 
 # Angular aliases
 alias ns='ng serve'
