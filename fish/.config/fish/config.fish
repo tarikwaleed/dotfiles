@@ -165,6 +165,7 @@ alias nrd="npm run dev"
 alias nrb="npm run build"
 alias nrs="npm run start"
 alias ni="npm install"
+alias nig="npm install -g"
 
 # Docker Aliases
 alias dils="sudo docker image ls"

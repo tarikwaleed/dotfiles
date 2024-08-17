@@ -1,0 +1,19 @@
+name: excel-scrapper
+root: ~/repos/excel-scrapper
+
+windows:
+  - editor:
+      panes:
+        - source ./app/.venv/bin/activate.fish && vim
+  - console:
+      layout: even-vertical
+      panes:
+        - source ./app/.venv/bin/activate.fish && dj2 runserver 0.0.0.0:8000
+        - source ./app/.venv/bin/activate.fish 
+        - source ./app/.venv/bin/activate.fish && dj2sh
+        - source ./app/.venv/bin/activate.fish 
+  - droplet:
+      layout: even-vertical
+      panes:
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)

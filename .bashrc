@@ -252,6 +252,12 @@ alias ddd='python manage.py dumpdata'
 alias dld='python manage.py loaddata'
 alias dt='python manage.py test'
 
+alias dj2='python -Wa ./app/src/manage.py'
+alias dj2m='python -Wa ./app/src/manage.py migrate'
+alias dj2mm='python -Wa ./app/src/manage.py makemigrations'
+alias dj2mmm='python -Wa ./app/src/manage.py makemigrations && python -Wa ./app/src/manage.py migrate'
+alias dj2sh='python -Wa ./app/src/manage.py shell_plus'
+
 #PHP Aliases
 alias art='php artisan'
 alias arts='php artisan serve'
