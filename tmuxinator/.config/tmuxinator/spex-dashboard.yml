@@ -1,0 +1,25 @@
+name: spex-dashboard
+root: ~/repos/spex/
+
+windows:
+  - be-editor:
+      panes:
+        - cd ../excel-scrapper && source ./app/.venv/bin/activate.fish && vim
+  - be-console:
+      layout: even-vertical
+      panes:
+        - cd ../excel-scrapper && source ./app/.venv/bin/activate.fish 
+        - cd ../excel-scrapper && source ./app/.venv/bin/activate.fish 
+        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
+  - fe-editor:
+      panes:
+        - cd spex-dashboard-2 && vim
+  - fe-console:
+      layout: even-vertical
+      panes:
+        - cd spex-dashboard-2
+        - cd spex-dashboard-2 && nrd
+        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
+

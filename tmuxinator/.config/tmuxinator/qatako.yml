@@ -1,0 +1,21 @@
+name: qatako
+root: ~/repos/qatako/
+
+windows:
+  - editor:
+      panes:
+        - cd turn14-woocommerce && source ./app/.venv/bin/activate.fish && vim
+  - console:
+      layout: even-vertical
+      panes:
+        - cd  turn14-woocommerce && source ./app/.venv/bin/activate.fish 
+        - cd  turn14-woocommerce && source ./app/.venv/bin/activate.fish && dj2sh
+        - cd  turn14-woocommerce && source ./app/.venv/bin/activate.fish  
+        - cd  turn14-woocommerce && source ./app/.venv/bin/activate.fish  
+  - droplet:
+      layout: even-vertical
+      panes:
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)

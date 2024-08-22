@@ -5,7 +5,7 @@ root: /home/tarik/repos/django-starter/
 windows:
   - editor:
       panes:
-        - source ./app/.venv/bin/activate.fish
+        - source ./app/.venv/bin/activate.fish && vim
   - console:
       panes:
         - source ./app/.venv/bin/activate.fish

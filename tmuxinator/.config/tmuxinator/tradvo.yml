@@ -1,0 +1,14 @@
+name: tradvo
+root: ~/repos/tradvo/
+
+windows:
+  - editor:
+      panes:
+        - cd tradvo-task && source ./app/.venv/bin/activate.fish && vim
+  - console:
+      layout: even-vertical
+      panes:
+        - cd  tradvo-task && source ./app/.venv/bin/activate.fish 
+        - cd  tradvo-task && source ./app/.venv/bin/activate.fish && dj2sh
+        - ssh root@(cat ~/secrets/creds/tradvo-droplet-ip)
+        - ssh root@(cat ~/secrets/creds/tradvo-droplet-ip)
