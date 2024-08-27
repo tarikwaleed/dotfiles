@@ -277,4 +277,4 @@ alias ctlsp='sudo systemctl stop'
 alias ctlrel='sudo systemctl reload'
 alias ctlres='sudo systemctl restart'
 
-export MONHNA_ENVIRONMENT='dev'     
+export APP_ENVIRONMENT='dev'     
