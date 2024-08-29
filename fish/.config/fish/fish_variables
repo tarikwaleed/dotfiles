@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export APP_ENVIRONMENT:dev
 SETUVAR --export EMAIL_PASSWORD:Takysmeee333\x23\x23\x23
 SETUVAR --export LAZYGIT_VERSION:0\x2e42\x2e0
 SETUVAR --export LV_BRANCH:release\x2d1\x2e4/neovim\x2d0\x2e9
