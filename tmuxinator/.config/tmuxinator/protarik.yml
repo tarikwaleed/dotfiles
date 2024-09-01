@@ -1,0 +1,18 @@
+# /home/tarik/.config/tmuxinator/personal_website.yml
+
+name: protarik
+root: ~/repos/protarik/
+
+
+windows:
+  - editor:
+      layout: even-vertical
+      panes:
+        - vim
+  - console:
+      layout: even-vertical
+      panes:
+        - nvm use lts && ngrok http localhost:3000
+        - nvm use lts && nrd
+        - clear
+        - clear

@@ -185,6 +185,10 @@ alias ngcl='ng generate cl'
 #Node aliases
 alias nr='npm run'
 alias ni='npm install'
+alias nrd='npm run dev'
+alias nrb='npm run build'
+alias nrs='npm run start'
+alias nig='npm install -g'
 
 # Docker Aliases
 alias dils='sudo docker image ls'
