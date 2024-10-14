@@ -20,8 +20,8 @@ no-show-notifications=true
 release-check-time=uint32 1719018552
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-560', 'nvidia-driver-470-server', 'nvidia-driver-535-server', 'nvidia-driver-390', 'nvidia-driver-450-server', 'nvidia-driver-470', 'nvidia-driver-418-server']
-last-refresh-time=int64 1727982982
+cached-drivers=['nvidia-driver-418-server', 'nvidia-driver-390', 'nvidia-driver-470', 'nvidia-driver-560', 'nvidia-driver-470-server', 'nvidia-driver-535-server', 'nvidia-driver-450-server']
+last-refresh-time=int64 1728866003
 window-height=660
 window-maximized=true
 window-width=1024
@@ -52,7 +52,7 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(676, 544)
+window-position=(699, 290)
 word-size=64
 
 [org/gnome/calendar]
@@ -70,7 +70,7 @@ video-x-resolution=640
 video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='display'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -134,7 +134,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird', 'io-elementary-appcenter', 'com-discordapp-discord', 'com-obsproject-studio', 'mountable-volume-5ba2-8667']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird', 'io-elementary-appcenter', 'com-discordapp-discord', 'com-obsproject-studio', 'mountable-volume-5ba2-8667', 'org-gnome-fileroller']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -198,6 +198,9 @@ application-id='org.gnome.DejaDup.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-gedit]
 application-id='org.gnome.gedit.desktop'
@@ -301,7 +304,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.5718954248366013, 1.244949494949495)
+window-ratio=(1.5722222222222222, 1.2447447447447448)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -418,7 +421,7 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com', 'ding@rastersoft.com', 'tiling-assistant@ubuntu.com']
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'Postman.desktop', 'org.gnome.Evince.desktop', 'jetbrains-pycharm-ce.desktop', 'org.gnome.gedit.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'Postman.desktop', 'org.gnome.Evince.desktop', 'PyCharm Professional.desktop', 'org.gnome.gedit.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop', 'jetbrains-pycharm-ce.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='46.0'
 
@@ -548,7 +551,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(2368, 1054)
+window-position=(448, 182)
 window-size=(1024, 694)
 
 [system/locale]
