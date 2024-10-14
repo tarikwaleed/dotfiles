@@ -1,0 +1,14 @@
+name: payment
+root: ~/repos/payment-automation/payment-automation/
+
+windows:
+  - editor:
+      panes:
+        - source .venv/bin/activate.fish && vim
+  - console:
+      layout: even-vertical
+      panes:
+        - source .venv/bin/activate.fish && dj2 runserver 0.0.0.0:8000
+        - source .venv/bin/activate.fish 
+        - source .venv/bin/activate.fish 
+        - source .venv/bin/activate.fish 

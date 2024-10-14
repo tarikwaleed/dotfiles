@@ -4,21 +4,14 @@ root: ~/repos/spex/
 windows:
   - be-editor:
       panes:
-        - cd spex-excel-scrapper && source ./app/.venv/bin/activate.fish && vim
-  - be-console:
-      layout: even-vertical
-      panes:
-        - cd spex-excel-scrapper && source ./app/.venv/bin/activate.fish 
-        - cd spex-excel-scrapper && source ./app/.venv/bin/activate.fish 
-        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
-        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
+        - cd spex-excel-scrapper && source .venv/bin/activate.fish && vim
   - fe-editor:
       panes:
         - cd spex-dashboard-2 && vim
-  - fe-console:
+  - console:
       layout: even-vertical
       panes:
-        - cd spex-dashboard-2
+        - cd spex-excel-scrapper && source .venv/bin/activate.fish 
         - cd spex-dashboard-2 && nrd
         - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)
         - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)

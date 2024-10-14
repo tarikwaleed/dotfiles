@@ -20,8 +20,8 @@ no-show-notifications=true
 release-check-time=uint32 1719018552
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-390', 'nvidia-driver-450-server', 'nvidia-driver-470', 'nvidia-driver-555', 'nvidia-driver-470-server', 'nvidia-driver-535-server', 'nvidia-driver-418-server']
-last-refresh-time=int64 1722707560
+cached-drivers=['nvidia-driver-560', 'nvidia-driver-470-server', 'nvidia-driver-535-server', 'nvidia-driver-390', 'nvidia-driver-450-server', 'nvidia-driver-470', 'nvidia-driver-418-server']
+last-refresh-time=int64 1727982982
 window-height=660
 window-maximized=true
 window-width=1024
@@ -52,8 +52,14 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(737, 416)
+window-position=(676, 544)
 word-size=64
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-position=(0, 416)
+window-size=(1920, 1048)
 
 [org/gnome/cheese]
 burst-delay=1000
@@ -74,8 +80,15 @@ prompt-check='2023-10-07T21:15:13+00'
 [org/gnome/deja-dup/file]
 migrated=true
 
+[org/gnome/desktop/a11y/applications]
+screen-magnifier-enabled=false
+
 [org/gnome/desktop/a11y/keyboard]
 mousekeys-enable=false
+
+[org/gnome/desktop/a11y/magnifier]
+mouse-tracking='proportional'
+scroll-at-edges=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -121,7 +134,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird', 'io-elementary-appcenter', 'com-discordapp-discord', 'com-obsproject-studio']
+application-children=['update-manager', 'org-gnome-nautilus', 'firefox', 'snap-store-ubuntu-software', 'gnome-power-panel', 'gnome-control-center', 'apport-gtk', 'teams-for-linux-teams-for-linux', 'org-gnome-totem', 'libreoffice-writer', 'libreoffice-impress', 'gnome-network-panel', 'org-gnome-shell-portalhelper', 'slack-slack', 'org-gnome-eog', 'org-gnome-baobab', 'org-gnome-terminal', 'jetbrains-idea-ce', 'code', 'org-gnome-dejadup', 'postman', 'jetbrains-pycharm-ce', 'io-snapcraft-sessionagent', 'dbeaver-ce', 'org-gnome-gedit', 'transmission-gtk', 'libreoffice-calc', 'org-remmina-remmina', 'google-chrome', 'thunderbird', 'io-elementary-appcenter', 'com-discordapp-discord', 'com-obsproject-studio', 'mountable-volume-5ba2-8667']
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -173,6 +186,9 @@ application-id='libreoffice-impress.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
+
+[org/gnome/desktop/notifications/application/mountable-volume-5ba2-8667]
+application-id='mountable-volume:5BA2-8667.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
@@ -285,7 +301,7 @@ use-background-color=true
 document-directory=@ms 'file:///media/tarikwaleed/Data/iti/ADMIN2/materials'
 
 [org/gnome/evince/default]
-window-ratio=(1.5686274509803921, 1.3232323232323233)
+window-ratio=(1.5718954248366013, 1.244949494949495)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -309,7 +325,7 @@ active-plugins=['docinfo', 'time', 'filebrowser', 'modelines', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tarik/repos/monhna/noon-affiliate-django/app/src/shared'
+virtual-root='file:///home/tarik/repos/spex/spex-excel-scrapper/app/resources/generated/divel_single_vision_profit_monthly'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Cousine Nerd Font Bold 16'
@@ -325,7 +341,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(960, 763)
-state=43780
+state=43908
 
 [org/gnome/mutter]
 center-new-windows=true
@@ -364,6 +380,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/30e6e407-7d2a-4d30-acca-8e1651fcc57b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/6c5ef409-4509-4af8-b6eb-41b00ad66717]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -383,7 +403,7 @@ last-folder-path='/home/tarik/Downloads'
 night-light-enabled=true
 night-light-schedule-automatic=false
 night-light-schedule-from=6.0
-night-light-temperature=uint32 3274
+night-light-temperature=uint32 3235
 
 [org/gnome/settings-daemon/plugins/power]
 ambient-enabled=false
@@ -398,7 +418,7 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 app-picker-view=uint32 1
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-dock@ubuntu.com', 'disable-workspace-switcher@jbradaric.me', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com', 'ding@rastersoft.com', 'tiling-assistant@ubuntu.com']
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'Postman.desktop', 'libreoffice-calc.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'dbeaver-ce.desktop', 'Postman.desktop', 'org.gnome.Evince.desktop', 'jetbrains-pycharm-ce.desktop', 'org.gnome.gedit.desktop', 'libreoffice-calc.desktop', 'org.gnome.eog.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='46.0'
 
@@ -427,9 +447,14 @@ switch-to-application-4=['<alt>v']
 switch-to-application-5=['<alt>d']
 switch-to-application-6=['<alt>p']
 switch-to-application-7=['<alt>r']
+switch-to-application-8=['<alt>e']
 
 [org/gnome/shell/overrides]
 focus-change-on-pointer-rest=false
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=@av []
 
 [org/gnome/shell/world-clocks]
 locations=@av []
@@ -523,7 +548,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(2392, 1045)
+window-position=(2368, 1054)
 window-size=(1024, 694)
 
 [system/locale]

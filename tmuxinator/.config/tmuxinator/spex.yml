@@ -11,6 +11,7 @@ windows:
         - cd spex-django-v2 && source ./app/.venv/bin/activate.fish 
         - cd spex-django-v2 && source ./app/.venv/bin/activate.fish && dj2sh
   - droplet:
+      layout: even-vertical
       panes:
         - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)
         - ssh tarik@(cat ~/secrets/creds/spex-droplet-ip)

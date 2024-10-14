@@ -1,0 +1,11 @@
+name: refq
+root: ~/repos/refq/refq-store-salla-app
+
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - source .venv/bin/activate.fish && dj2 runserver 0.0.0.0:8000
+        - source .venv/bin/activate.fish 
+        - source .venv/bin/activate.fish 
+        - ssh -X tarik@(cat ~/secrets/creds/spex-droplet-ip)

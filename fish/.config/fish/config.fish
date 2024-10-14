@@ -26,6 +26,8 @@ set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/.config/composer/vendor/bin $PATH
 set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
 set -gx PATH ~/Downloads/sml/bin $PATH
+set -gx PATH ~/Downloads/pycharm-community-2024.2.3/bin $PATH
+
 # Git aliases
 alias gcln='git clone'
 alias gst='git status'
@@ -276,3 +278,9 @@ set -x PATH /opt/oracle/instantclient_21_8 $PATH
 # bun
 set --export BUN_INSTALL "$HOME/.local/share/reflex/bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+
+# pyenv init
+if command -v pyenv 1>/dev/null 2>&1
+  pyenv init - | source
+end

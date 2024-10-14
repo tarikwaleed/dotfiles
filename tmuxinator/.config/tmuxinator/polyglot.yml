@@ -1,20 +1,11 @@
 name: polyglot
 root: ~/repos/polyglot-developer
 windows:
+  - editor: 
+      layout: even-vertical
+      panes:
+        - cd py && source ./venv/bin/activate.fish && vim
   - console: 
+      layout: even-vertical
       panes:
-        -  vim
-  - py: 
-      panes:
-        - cd py && source ./venv/bin/activate.fish && ipython
-        - cd py && source ./venv/bin/activate.fish && ipython
-        - cd py && source ./venv/bin/activate.fish && ipython
-        - cd py && source ./venv/bin/activate.fish && ipython
-  - js: 
-      panes:
-        - cd js && vim
-        - cd js && node
-        - cd js && node
-        - cd js && node
-
-
+        - cd py && source ./venv/bin/activate.fish 

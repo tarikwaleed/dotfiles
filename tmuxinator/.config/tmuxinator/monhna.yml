@@ -4,20 +4,20 @@ name: monhna
 root: ~/repos/monhna
 
 windows:
-  - scrapper:
-      panes:
-        - cd ~/repos/monhna/prototype/ && source .venv/bin/activate.fish && vim
-  - front:
-      panes:
-        - cd noon-affiliate-next && vim
   - back:
       panes:
         - cd noon-affiliate-django && source ./app/.venv/bin/activate.fish && vim
+  - front:
+      panes:
+        - cd noon-affiliate-next && vim
+  - scrapper:
+      panes:
+        - cd ~/repos/monhna/prototype/ && source .venv/bin/activate.fish && vim
   - console:
       layout: even-vertical
       panes:
         - cd noon-affiliate-django && source ./app/.venv/bin/activate.fish && dj2 runserver 0.0.0.0:8001
+        - ssh -X tarik@(cat ~/secrets/creds/monhna-droplet-ip)
         - cd noon-affiliate-next && nvm use lts && nrd
+        - ssh -X root@(cat ~/secrets/creds/monhna-frontend-droplet-ip)
         - cd ~/repos/monhna/prototype/ && source .venv/bin/activate.fish 
-        - ssh tarik@(cat ~/secrets/creds/monhna-droplet-ip)
-        - ssh root@(cat ~/secrets/creds/monhna-frontend-droplet-ip)
