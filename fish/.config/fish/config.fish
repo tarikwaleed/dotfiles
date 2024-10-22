@@ -25,8 +25,12 @@ set -gx PATH ~/.config/scripts $PATH
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/.config/composer/vendor/bin $PATH
 set -gx PATH ~/Downloads/nvim-linux64/bin $PATH
+set -gx PATH ~/Downloads/exa/bin $PATH
 set -gx PATH ~/Downloads/sml/bin $PATH
 set -gx PATH ~/Downloads/pycharm-community-2024.2.3/bin $PATH
+
+#exa aliases
+alias la='exa --long --icons --git'
 
 # Git aliases
 alias gcln='git clone'
@@ -68,12 +72,13 @@ alias gt="git branch --track"
 
 
 # General aliases
+alias o='open .'
 alias cpwd="pwd|copy"
 alias cpsshkey="cat ~/.ssh/id_ed25519.pub|copy"
 alias charm="nohup charm . >/dev/null 2>&1 &"
 alias vs="code ."
 alias r="zathura"
-alias la="colorls -lA --git-status --light"
+# alias la="colorls -lA --git-status --light"
 alias fishconfiguration="vim ~/.config/fish/config.fish"
 alias tmuxconfiguration="vim ~/.tmux.conf"
 alias ideavimrc="vim ~/.ideavimrc"
@@ -114,6 +119,8 @@ alias bbbb="cd ../../../.."
 alias vim="nvim"
 alias tldr="tldr -t ocean"
 alias dpi="sudo dpkg -i"
+alias dpin="sudo dpkg --info"
+
 alias dd="dconf dump / > ~/dotfiles/dconf/dconf"
 
 # Emojies
@@ -196,6 +203,7 @@ alias dcb="docker compose build"
 alias dcup="docker compose up"
 alias dcd="docker compose down"
 alias di="docker inspect"
+alias dcl="dcsa && dcrma && dirma"
 
 
 
@@ -284,3 +292,5 @@ set --export PATH $BUN_INSTALL/bin $PATH
 if command -v pyenv 1>/dev/null 2>&1
   pyenv init - | source
 end
+
+
