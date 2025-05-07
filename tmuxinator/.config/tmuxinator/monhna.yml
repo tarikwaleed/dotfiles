@@ -4,20 +4,21 @@ name: monhna
 root: ~/repos/monhna
 
 windows:
-  - back:
-      panes:
-        - cd noon-affiliate-django && source ./app/.venv/bin/activate.fish && vim
-  - front:
-      panes:
-        - cd noon-affiliate-next && vim
-  - scrapper:
-      panes:
-        - cd ~/repos/monhna/prototype/ && source .venv/bin/activate.fish && vim
-  - console:
+  - local:
       layout: even-vertical
       panes:
-        - cd noon-affiliate-django && source ./app/.venv/bin/activate.fish && dj2 runserver 0.0.0.0:8001
-        - ssh -X tarik@(cat ~/secrets/creds/monhna-droplet-ip)
-        - cd noon-affiliate-next && nvm use lts && nrd
-        - ssh -X root@(cat ~/secrets/creds/monhna-frontend-droplet-ip)
-        - cd ~/repos/monhna/prototype/ && source .venv/bin/activate.fish 
+        - cd noon-affiliate && source .venv/bin/activate.fish && pycharm-professional .
+  - production:
+      layout: even-vertical
+      panes:
+        - ssh -X root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-droplet-ip)
+  - testing:
+      layout: even-vertical
+      panes:
+        - ssh -X root@(cat ~/secrets/creds/monhna-testing-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-testing-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-testing-droplet-ip)
+        - ssh -X root@(cat ~/secrets/creds/monhna-testing-droplet-ip)

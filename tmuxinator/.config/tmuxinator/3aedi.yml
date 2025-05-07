@@ -1,0 +1,11 @@
+name: 3aedi
+root: ~/repos/3aedi
+
+windows:
+  - console:
+      layout: even-vertical
+      panes:
+        - cd ads-dashboard-django && source app/.venv/bin/activate.fish 
+        - cd ads-dashboard-django && source app/.venv/bin/activate.fish 
+        - ssh root@(cat ~/secrets/creds/3aedi-vps-ip)
+        - ssh root@(cat ~/secrets/creds/3aedi-vps-ip)

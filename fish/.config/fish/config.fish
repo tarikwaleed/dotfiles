@@ -30,7 +30,7 @@ set -gx PATH ~/Downloads/sml/bin $PATH
 set -gx PATH ~/Downloads/pycharm-community-2024.2.3/bin $PATH
 
 #exa aliases
-alias la='exa --long --icons --git'
+alias la='exa --long --icons --git --all'
 
 # Git aliases
 alias gcln='git clone'
@@ -203,7 +203,7 @@ alias dcb="docker compose build"
 alias dcup="docker compose up"
 alias dcd="docker compose down"
 alias di="docker inspect"
-alias dcl="dcsa && dcrma && dirma"
+alias dclr="dcsa && dcrma && dirma"
 
 
 

@@ -1,0 +1,25 @@
+# /home/tarik/.config/tmuxinator/webnwell.yml
+
+name: webnwell
+root: ~/repos/webnwell
+
+windows:
+  - back:
+      layout: even-vertical
+      panes:
+        - cd backend && source app/.venv/bin/activate.fish && pycharm-professional .
+  - front:
+      layout: even-vertical
+      panes:
+        - cd frontend && cursor .
+        - cd frontend 
+        - cd frontend 
+        - cd frontend 
+  - server:
+      layout: even-vertical
+      panes:
+        - ssh -X root@(cat ~/secrets/creds/my-vps-ip)
+        - ssh -X root@(cat ~/secrets/creds/my-vps-ip)
+        - ssh -X root@(cat ~/secrets/creds/my-vps-ip)
+        - ssh -X root@(cat ~/secrets/creds/my-vps-ip)
+

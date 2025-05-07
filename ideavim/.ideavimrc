@@ -1,6 +1,6 @@
 "Key Mappings
 inoremap <leader>; <C-o>A;<Esc>
-inoremap <leader>p <C-o>A(){<CR>
+"inoremap <leader>p <C-o>A(){<CR>
 inoremap <leader>[ <C-o>A{<CR>
 nnoremap <space> za
 inoremap jk <Esc>

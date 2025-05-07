@@ -5,4 +5,5 @@ root: /home/tarik/repos/django-starter
 windows:
   - console:
       panes:
+        - source ./app/.venv/bin/activate.fish && pycharm-professional .
         - source ./app/.venv/bin/activate.fish

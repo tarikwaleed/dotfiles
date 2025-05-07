@@ -1,0 +1,18 @@
+# /home/tarik/.config/tmuxinator/cliquify.yml
+
+name: cliquify
+root: ~/repos/cliquify
+
+windows:
+  - local:
+      layout: even-vertical
+      panes:
+        - cd backend && source app/.venv/bin/activate.fish && pycharm-professional .
+  - server:
+      layout: even-vertical
+      panes:
+        - ssh -i /home/tarik/Downloads/cliquify_ad_v1.pem ubuntu@100.26.106.255
+        - ssh -i /home/tarik/Downloads/cliquify_ad_v1.pem ubuntu@100.26.106.255
+        - ssh -i /home/tarik/Downloads/cliquify_ad_v1.pem ubuntu@100.26.106.255
+        - ssh -i /home/tarik/Downloads/cliquify_ad_v1.pem ubuntu@100.26.106.255
+

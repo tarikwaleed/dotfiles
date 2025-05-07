@@ -1,11 +1,11 @@
-name: spex
+name: daftra
 root: ~/repos/spex/daftra-onecup-glue
 
 windows:
   - console:
       layout: even-vertical
       panes:
-        - source .venv/bin/activate.fish 
-        - source .venv/bin/activate.fish && dj2sh
+        - source app/.venv/bin/activate.fish 
+        - source app/.venv/bin/activate.fish 
         - ssh root@(cat ~/secrets/creds/my-vps-ip)
         - ssh root@(cat ~/secrets/creds/my-vps-ip)

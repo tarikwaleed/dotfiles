@@ -214,7 +214,7 @@ alias dcrn='sudo docker run -it --rm'
 alias dcb='sudo docker compose build'
 alias dcup='sudo docker compose up'
 alias dcd='sudo docker compose down'
-alias dcl='dcsa && dcrma && dirma'
+alias dclr='dcsa && dcrma && dirma'
 
 dcrma(){
   sudo docker rm $(sudo docker ps -a -q)
