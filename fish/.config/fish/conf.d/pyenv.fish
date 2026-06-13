@@ -1,1 +1,1 @@
-set --export PYENV_ROOT /home/tarik/.pyenv
+set --export PYENV_ROOT /home/traik/.pyenv
